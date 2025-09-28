@@ -6,7 +6,7 @@ const ServicesPage = () => {
   const mainServices = [{
     title: 'Kunstgras op Platte Daken',
     description: 'Wij specialiseren ons in het transformeren van platte daken in groene, functionele ruimtes met behulp van hoogwaardig kunstgras, juiste isolatie en drainagesystemen.',
-    image: 'https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: '/src/assets/images/team.jpg',
     link: '/services/rooftop'
   }, {
     title: 'Systemen voor Hellende Daken',

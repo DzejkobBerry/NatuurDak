@@ -15,7 +15,7 @@ const RooftopServicePage = () => {
   const applications = [{
     title: 'Dakterrassen',
     description: 'Transformeer uw platte dak in een prachtige recreatieruimte met een zachte, groene ondergrond.',
-    image: 'https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    image: '/src/assets/images/team.jpg'
   }, {
     title: 'Hellende Daken',
     description: 'Gespecialiseerde oplossingen voor hellende daken met het juiste bevestigings- en drainagesysteem.',
@@ -28,7 +28,7 @@ const RooftopServicePage = () => {
   return <div className="w-full">
       <div className="relative bg-primary-600 py-32">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Kunstgras op het dak" className="w-full h-full object-cover" />
+          <img src="/src/assets/images/team.jpg" alt="Kunstgras op het dak" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
