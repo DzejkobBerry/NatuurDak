@@ -11,31 +11,31 @@ interface Testimonial {
 const testimonials: Testimonial[] = [{
   id: 1,
   name: 'Anna Kowalska',
-  role: 'Właścicielka Apartamentu',
+  role: 'Appartement Eigenaar',
   image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
   rating: 5,
-  content: 'Przekształciliśmy nasz dach w niesamowity ogród z trawą syntetyczną GreenTurf. Instalacja była bezbłędna, a dwa lata później nadal wygląda jak nowa pomimo ciągłego użytkowania i ekspozycji na warunki atmosferyczne.'
+  content: 'We hebben ons dak getransformeerd in een geweldige tuin met Natuur Dak kunstgras. De installatie was vlekkeloos en twee jaar later ziet het er nog steeds uit als nieuw ondanks constant gebruik en blootstelling aan de elementen.'
 }, {
   id: 2,
   name: 'Michał Nowak',
-  role: 'Właściciel Restauracji',
+  role: 'Restaurant Eigenaar',
   image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
   rating: 5,
-  content: 'Strefa wypoczynkowa na dachu naszej restauracji wygląda niesamowicie dzięki instalacji trawy syntetycznej. Nasi klienci uwielbiają atmosferę, a utrzymanie jest znacznie łatwiejsze niż w przypadku prawdziwej trawy w tak uczęszczanym miejscu.'
+  content: 'Het dakterras van ons restaurant ziet er fantastisch uit dankzij de kunstgras installatie. Onze klanten houden van de sfeer en het onderhoud is veel eenvoudiger dan echt gras in zo\'n drukke omgeving.'
 }, {
   id: 3,
   name: 'Ewa Wiśniewska',
-  role: 'Zarządca Nieruchomości',
+  role: 'Vastgoedbeheerder',
   image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3',
   rating: 4,
-  content: 'Zainstalowaliśmy trawę syntetyczną na dachu naszego kompleksu apartamentów i mieszkańcy absolutnie ją kochają. Zespół GreenTurf był profesjonalny, wydajny i dostarczył dokładnie to, co obiecał.'
+  content: 'We hebben kunstgras geïnstalleerd op het dak van ons appartementencomplex en de bewoners zijn er dol op. Het Natuur Dak team was professioneel, efficiënt en leverde precies wat ze beloofden.'
 }, {
   id: 4,
   name: 'Jan Kowalczyk',
-  role: 'Architekt Krajobrazu',
+  role: 'Landschapsarchitect',
   image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
   rating: 5,
-  content: 'Jako architekt krajobrazu, współpracowałem z wieloma firmami zajmującymi się trawą syntetyczną, ale GreenTurf wyróżnia się jakością produktów i dbałością o szczegóły, zwłaszcza w instalacjach dachowych. Polecam ich wszystkim moim klientom szukającym rozwiązań bezobsługowych.'
+  content: 'Als landschapsarchitect heb ik met veel kunstgras bedrijven gewerkt, maar Natuur Dak onderscheidt zich door productkwaliteit en aandacht voor detail, vooral bij dakinstallaties. Ik beveel ze aan bij al mijn klanten die onderhoudsvrije oplossingen zoeken.'
 }];
 const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -52,14 +52,14 @@ const TestimonialsSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-            Opinie Klientów
+            Klantbeoordelingen
           </div>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-            Co Mówią Nasi Klienci
+            Wat Onze Klanten Zeggen
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-            Nie musisz wierzyć nam na słowo. Oto co mówią nasi zadowoleni
-            klienci o swoich doświadczeniach z GreenTurf.
+            U hoeft ons niet op ons woord te geloven. Hier is wat onze tevreden
+            klanten zeggen over hun ervaringen met Natuur Dak.
           </p>
         </div>
         <div className="relative max-w-4xl mx-auto">
@@ -101,7 +101,7 @@ const TestimonialsSection = () => {
         </div>
         <div className="text-center mt-12">
           <a href="/reviews" className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
-            Przeczytaj Więcej Opinii
+            Lees Meer Beoordelingen
           </a>
         </div>
       </div>

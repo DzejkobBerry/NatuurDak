@@ -21,25 +21,25 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <h3 className="text-xl font-bold text-secondary-900 mb-3">{title}</h3>
         <p className="text-secondary-600 mb-4">{description}</p>
         <Link to={link} className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors">
-          Dowiedz się więcej <ArrowRightIcon className="ml-2 h-4 w-4" />
+          Lees meer <ArrowRightIcon className="ml-2 h-4 w-4" />
         </Link>
       </div>
     </div>;
 };
 const ServicesSection = () => {
   const services = [{
-    title: 'Trawa Syntetyczna na Dachach Płaskich',
-    description: 'Przekształć swój płaski dach w zieloną oazę z naszymi specjalistycznymi instalacjami trawy syntetycznej, idealnymi dla przestrzeni miejskich.',
+    title: 'Kunstgras op Platte Daken',
+    description: 'Transformeer uw platte dak in een groene oase met onze gespecialiseerde kunstgras installaties, ideaal voor stedelijke ruimtes.',
     image: 'https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: '/services/rooftop'
   }, {
-    title: 'Systemy na Dachy Skośne',
-    description: 'Specjalistyczne rozwiązania dla dachów skośnych, zapewniające bezpieczną i trwałą instalację trawy syntetycznej z odpowiednim systemem mocowań.',
+    title: 'Systemen voor Hellende Daken',
+    description: 'Gespecialiseerde oplossingen voor hellende daken, die zorgen voor veilige en duurzame kunstgras installatie met het juiste bevestigingssysteem.',
     image: 'https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: '/services/rooftop'
   }, {
-    title: 'Projekty Niestandardowe',
-    description: 'Od tarasów dachowych po ogrody na dachach, projektujemy niestandardowe rozwiązania z trawy syntetycznej dostosowane do Twoich unikalnych potrzeb.',
+    title: 'Maatwerk Projecten',
+    description: 'Van dakterrassen tot daktuinen, wij ontwerpen op maat gemaakte kunstgras oplossingen aangepast aan uw unieke behoeften.',
     image: 'https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: '/services/custom'
   }];
@@ -47,15 +47,14 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-            Nasze Usługi
+            Onze Diensten
           </div>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-            Specjalistyczne Rozwiązania dla Dachów
+            Gespecialiseerde Dakoplossingen
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-            Oferujemy kompleksową gamę usług instalacji trawy syntetycznej na
-            dachach, dostosowanych do Twoich konkretnych potrzeb i wymagań
-            przestrzennych.
+            Wij bieden een uitgebreid scala aan kunstgras installatiediensten voor
+            daken, aangepast aan uw specifieke behoeften en ruimtelijke vereisten.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -63,7 +62,7 @@ const ServicesSection = () => {
         </div>
         <div className="text-center mt-12">
           <Link to="/services" className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
-            Zobacz Wszystkie Usługi
+            Bekijk Alle Diensten
           </Link>
         </div>
       </div>

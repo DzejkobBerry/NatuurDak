@@ -5,37 +5,37 @@ import { Link } from 'react-router-dom';
 const AboutPage = () => {
   const teamMembers = [{
     name: 'Jan Kowalski',
-    position: 'Założyciel i Dyrektor',
+    position: 'Oprichter en Directeur',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
-    bio: 'Z ponad 15-letnim doświadczeniem w branży, Jan założył GreenTurf z pasją do przekształcania niewykorzystanych przestrzeni dachowych w zielone oazy.'
+    bio: 'Met meer dan 15 jaar ervaring in de branche richtte Jan Natuur Dak op uit passie voor het transformeren van onbenutte dakruimtes in groene oases.'
   }, {
     name: 'Anna Nowak',
-    position: 'Główny Projektant',
+    position: 'Hoofdontwerper',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80',
-    bio: 'Anna łączy wiedzę z zakresu architektury krajobrazu i specjalistyczne doświadczenie w projektach dachowych, tworząc innowacyjne i funkcjonalne przestrzenie.'
+    bio: 'Anna combineert kennis van landschapsarchitectuur met gespecialiseerde ervaring in dakprojecten, waarbij ze innovatieve en functionele ruimtes creëert.'
   }, {
     name: 'Tomasz Wiśniewski',
-    position: 'Kierownik Techniczny',
+    position: 'Technisch Manager',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
-    bio: 'Tomasz specjalizuje się w technicznych aspektach instalacji dachowych, zapewniając, że każdy projekt jest realizowany z najwyższą precyzją i bezpieczeństwem.'
+    bio: 'Tomasz specialiseert zich in de technische aspecten van dakinstallaties en zorgt ervoor dat elk project wordt uitgevoerd met de hoogste precisie en veiligheid.'
   }, {
     name: 'Marta Kowalczyk',
-    position: 'Specjalista ds. Obsługi Klienta',
+    position: 'Klantenservice Specialist',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=761&q=80',
-    bio: 'Marta dba o to, aby każdy klient otrzymał wyjątkową obsługę od pierwszej konsultacji do końcowej instalacji i dalej.'
+    bio: 'Marta zorgt ervoor dat elke klant uitzonderlijke service ontvangt van de eerste consultatie tot de definitieve installatie en daarna.'
   }];
   const values = [{
     icon: <UserIcon className="h-10 w-10 text-primary-600" />,
-    title: 'Zorientowanie na Klienta',
-    description: 'Stawiamy potrzeby i wizje naszych klientów na pierwszym miejscu, zapewniając spersonalizowane rozwiązania i wyjątkową obsługę.'
+    title: 'Klantgericht',
+    description: 'Wij luisteren naar uw behoeften en passen onze oplossingen aan uw specifieke vereisten aan.'
   }, {
     icon: <TrophyIcon className="h-10 w-10 text-primary-600" />,
-    title: 'Doskonałość',
-    description: 'Dążymy do najwyższej jakości w każdym aspekcie naszej pracy, od pierwszej konsultacji po końcową instalację i obsługę posprzedażową.'
+    title: 'Excellentie',
+    description: 'Wij streven naar de hoogste kwaliteitsnormen in elk aspect van ons werk.'
   }, {
     icon: <HeartIcon className="h-10 w-10 text-primary-600" />,
-    title: 'Pasja',
-    description: 'Nasza pasja do przekształcania przestrzeni dachowych w zielone oazy napędza naszą innowacyjność i zaangażowanie w każdy projekt.'
+    title: 'Passie',
+    description: 'Onze passie voor groene ruimtes drijft ons om innovatieve en duurzame oplossingen te creëren.'
   }];
   return <div className="w-full">
       <div className="relative bg-primary-600 py-32">
@@ -45,10 +45,10 @@ const AboutPage = () => {
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            O Firmie GreenTurf
+            Over Natuur Dak
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Poznaj naszą firmę, misję i zaangażowanie w jakość
+            Leer meer over ons bedrijf, missie en toewijding aan kwaliteit
           </p>
         </div>
       </div>
@@ -58,58 +58,58 @@ const AboutPage = () => {
           <div className="mb-20">
             <div className="text-center mb-10">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-                Nasza Historia
+                Onze Geschiedenis
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-                Od Wizji do Rzeczywistości
+                Van Visie tot Werkelijkheid
               </h2>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
                 <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img src="https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Historia GreenTurf" className="w-full h-auto object-cover" />
+                  <img src="https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Geschiedenis Natuur Dak" className="w-full h-auto object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-primary-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
                   <p className="text-3xl font-bold">2013</p>
                   <p className="text-sm uppercase tracking-wider">
-                    Rok Założenia
+                    Oprichtingsjaar
                   </p>
                 </div>
               </div>
               <div>
                 <p className="text-lg text-secondary-600 mb-6">
-                  GreenTurf rozpoczęło działalność w 2013 roku jako firma
-                  specjalizująca się w instalacji trawy syntetycznej dla różnych
-                  zastosowań. Z biegiem lat, zauważyliśmy rosnące
-                  zapotrzebowanie na specjalistyczne rozwiązania dla przestrzeni
-                  dachowych, szczególnie w obszarach miejskich, gdzie zieleń
-                  jest na wagę złota.
+                  Natuur Dak begon in 2013 als een bedrijf gespecialiseerd in
+                  kunstgrasinstallaties voor verschillende toepassingen. In de
+                  loop der jaren merkten we een groeiende vraag naar
+                  gespecialiseerde oplossingen voor dakruimtes, vooral in
+                  stedelijke gebieden waar groen van onschatbare waarde is.
                 </p>
                 <p className="text-lg text-secondary-600 mb-6">
-                  Nasz zespół ekspertów zdobył specjalistyczną wiedzę w zakresie
-                  instalacji na dachach, rozwiązując unikalne wyzwania związane
-                  z wagą, drenażem i ekspozycją na warunki atmosferyczne. Dziś
-                  jesteśmy dumni, że jesteśmy liderem w branży, specjalizującym
-                  się w przekształcaniu niewykorzystanych przestrzeni dachowych
-                  w piękne, funkcjonalne i ekologiczne zielone oazy.
+                  Ons team van experts heeft gespecialiseerde kennis opgebouwd
+                  in dakinstallaties, waarbij we unieke uitdagingen oplossen
+                  gerelateerd aan gewicht, drainage en blootstelling aan
+                  weersomstandigheden. Vandaag zijn we er trots op dat we
+                  marktleider zijn, gespecialiseerd in het transformeren van
+                  onbenutte dakruimtes in prachtige, functionele en
+                  milieuvriendelijke groene oases.
                 </p>
                 <div className="space-y-3 mb-8">
                   <div className="flex items-start">
                     <CheckCircleIcon className="h-6 w-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-secondary-700">
-                      Ponad 500 ukończonych projektów dachowych
+                      Meer dan 500 voltooide dakprojecten
                     </p>
                   </div>
                   <div className="flex items-start">
                     <CheckCircleIcon className="h-6 w-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-secondary-700">
-                      Zespół 25 wyspecjalizowanych ekspertów
+                      Team van 25 gespecialiseerde experts
                     </p>
                   </div>
                   <div className="flex items-start">
                     <CheckCircleIcon className="h-6 w-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-secondary-700">
-                      Obsługa projektów w całej Polsce i Europie
+                      Service voor projecten in heel Nederland en Europa
                     </p>
                   </div>
                 </div>
@@ -120,16 +120,13 @@ const AboutPage = () => {
           <div className="mb-20 bg-secondary-50 py-16 px-6 rounded-xl">
             <div className="text-center mb-10">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-                Nasza Misja
+                Onze Missie
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-                Transformacja Przestrzeni Dachowych
+                Transformatie van Dakruimtes
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-                Nasza misja jest prosta, ale ambitna: przekształcać
-                niewykorzystane przestrzenie dachowe w zielone, funkcjonalne i
-                estetyczne środowiska, które zwiększają wartość nieruchomości i
-                poprawiają jakość życia w miastach.
+                Onze missie is eenvoudig maar ambitieus: onbenutte dakruimtes transformeren in groene, functionele en esthetische omgevingen die de waarde van onroerend goed verhogen en de levenskwaliteit in steden verbeteren.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -146,15 +143,13 @@ const AboutPage = () => {
           <div className="mb-16">
             <div className="text-center mb-10">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-                Nasz Zespół
+                Ons Team
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-                Poznaj Ekspertów
+                Ontmoet de Experts
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-                Za każdym udanym projektem stoi zespół oddanych
-                profesjonalistów. Poznaj kluczowych członków naszego zespołu,
-                którzy sprawiają, że GreenTurf jest liderem w branży.
+                Achter elk succesvol project staat een team van toegewijde professionals. Ontmoet de belangrijkste leden van ons team die Natuur Dak tot een marktleider in de branche maken.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -177,14 +172,13 @@ const AboutPage = () => {
           {/* CTA */}
           <div className="text-center">
             <h3 className="text-2xl font-bold text-secondary-900 mb-4">
-              Gotowy do Współpracy?
+              Klaar voor Samenwerking?
             </h3>
             <p className="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto">
-              Nasz zespół ekspertów jest gotowy pomóc Ci w transformacji Twojej
-              przestrzeni dachowej w zieloną oazę.
+              Ons team van experts staat klaar om u te helpen bij het transformeren van uw dakruimte in een groene oase.
             </p>
             <Link to="/contact" className="inline-flex items-center px-8 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
-              Skontaktuj Się z Nami
+              Neem Contact Met Ons Op
             </Link>
           </div>
         </div>

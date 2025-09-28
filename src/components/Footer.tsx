@@ -12,8 +12,8 @@ const Footer = () => {
               Natuur Dak B.V.
             </h3>
             <p className="text-gray-300 mb-4">
-              Transformujemy dachy w piękne, zielone przestrzenie dzięki
-              najwyższej jakości trawie syntetycznej.
+              Wij transformeren daken in prachtige, groene ruimtes met
+              kunstgras van de hoogste kwaliteit.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-primary-400 transition-colors">
@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
           {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">Snelle Links</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-primary-400 transition-colors">
@@ -41,17 +41,17 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/about" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  About Us
+                  Over Ons
                 </Link>
               </li>
               <li>
                 <Link to="/services" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Services
+                  Diensten
                 </Link>
               </li>
               <li>
                 <Link to="/gallery" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Gallery
+                  Galerij
                 </Link>
               </li>
               <li>
@@ -68,49 +68,49 @@ const Footer = () => {
           </div>
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+            <h3 className="text-lg font-semibold mb-4">Onze Diensten</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/services/rooftop" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Rooftop Grass Installation
+                  Dakgras Installatie
                 </Link>
               </li>
               <li>
                 <Link to="/services/ground" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Ground Grass Installation
+                  Grondgras Installatie
                 </Link>
               </li>
               <li>
                 <Link to="/services/custom" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Custom Projects
+                  Maatwerk Projecten
                 </Link>
               </li>
               <li>
                 <Link to="/how-it-works" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  How It Works
+                  Hoe Het Werkt
                 </Link>
               </li>
               <li>
                 <Link to="/reviews" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Customer Reviews
+                  Klantbeoordelingen
                 </Link>
               </li>
             </ul>
           </div>
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+            <h3 className="text-lg font-semibold mb-4">Neem Contact Op</h3>
             <div className="space-y-3">
               <div className="flex items-start">
                 <MapPinIcon className="h-5 w-5 text-primary-400 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">
-                  123 Green Street, Eco City, EC 12345
+                  Groene Straat 123, Eco Stad, EC 12345
                 </span>
               </div>
               <div className="flex items-center">
                 <PhoneIcon className="h-5 w-5 text-primary-400 mr-3 flex-shrink-0" />
-                <a href="tel:+11234567890" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  +1 (123) 456-7890
+                <a href="tel:+31123456789" className="text-gray-300 hover:text-primary-400 transition-colors">
+                  +31 (12) 345-6789
                 </a>
               </div>
               <div className="flex items-center">
@@ -125,14 +125,14 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} Natuur Dak B.V. All rights reserved.
+              &copy; {currentYear} Natuur Dak B.V. Alle rechten voorbehouden.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy-policy" className="text-gray-400 text-sm hover:text-primary-400 transition-colors">
-                Privacy Policy
+                Privacybeleid
               </Link>
               <Link to="/terms-of-service" className="text-gray-400 text-sm hover:text-primary-400 transition-colors">
-                Terms of Service
+                Algemene Voorwaarden
               </Link>
             </div>
           </div>

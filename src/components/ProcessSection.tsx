@@ -32,38 +32,38 @@ const ProcessStep: React.FC<ProcessStepProps> = ({
 const ProcessSection = () => {
   const steps = [{
     number: 1,
-    title: 'Konsultacja i Ocena Dachu',
-    description: 'Zaczynamy od dokładnej konsultacji, aby zrozumieć Twoje potrzeby, ocenić konstrukcję dachu, nośność, system drenażowy i omówić najlepsze opcje trawy syntetycznej dla Twojego projektu.',
+    title: 'Consultatie en Dakevaluatie',
+    description: 'We beginnen met een grondige consultatie om uw behoeften te begrijpen, de dakconstructie, draagkracht, drainagesysteem te evalueren en de beste kunstgras opties voor uw project te bespreken.',
     icon: <ClipboardIcon size={40} />
   }, {
     number: 2,
-    title: 'Projekt i Wycena',
-    description: 'Nasz zespół tworzy niestandardowy projekt dla Twojego dachu, uwzględniający specyfikę konstrukcji, oraz przedstawia szczegółową wycenę z przejrzystymi cenami i oczekiwaniami dotyczącymi harmonogramu.',
+    title: 'Ontwerp en Offerte',
+    description: 'Ons team creëert een op maat gemaakt ontwerp voor uw dak, rekening houdend met de constructiespecificaties, en presenteert een gedetailleerde offerte met transparante prijzen en tijdlijnverwachtingen.',
     icon: <RulerIcon size={40} />
   }, {
     number: 3,
-    title: 'Specjalistyczna Instalacja',
-    description: 'Nasz zespół ekspertów przygotowuje powierzchnię dachu, instaluje odpowiednie systemy drenażowe i mocowania, a następnie precyzyjnie układa trawę syntetyczną, zapewniając najwyższą jakość wykonania.',
+    title: 'Gespecialiseerde Installatie',
+    description: 'Ons expertteam bereidt het dakoppervlak voor, installeert de juiste drainagesystemen en bevestigingen, en legt vervolgens het kunstgras met precisie aan, waarbij de hoogste kwaliteit wordt gegarandeerd.',
     icon: <Shovel size={40} />
   }, {
     number: 4,
-    title: 'Końcowa Inspekcja i Gwarancja',
-    description: 'Po dokładnej końcowej inspekcji, możesz cieszyć się swoją nową, bezobsługową, piękną zieloną przestrzenią na dachu przez wiele lat, z pełnym wsparciem naszej gwarancji.',
+    title: 'Eindcontrole en Garantie',
+    description: 'Na een grondige eindcontrole kunt u jarenlang genieten van uw nieuwe, onderhoudsvrije, prachtige groene ruimte op het dak, met volledige ondersteuning van onze garantie.',
     icon: <ThumbsUpIcon size={40} />
   }];
   return <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-            Nasz Proces
+            Ons Proces
           </div>
           <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-            Jak Działamy
+            Hoe Wij Werken
           </h2>
           <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-            Nasz usprawniony proces instalacji zapewnia płynne doświadczenie od
-            początkowej konsultacji do końcowego zadowolenia z Twojej nowej
-            zielonej przestrzeni na dachu.
+            Ons gestroomlijnde installatieproces zorgt voor een soepele ervaring van
+            de eerste consultatie tot uw volledige tevredenheid met uw nieuwe
+            groene ruimte op het dak.
           </p>
         </div>
         <div className="max-w-4xl mx-auto">
@@ -71,7 +71,7 @@ const ProcessSection = () => {
         </div>
         <div className="text-center mt-8">
           <a href="/how-it-works" className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
-            Dowiedz Się Więcej o Naszym Procesie
+            Lees Meer Over Ons Proces
           </a>
         </div>
       </div>

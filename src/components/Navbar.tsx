@@ -25,29 +25,29 @@ const Navbar = () => {
     name: 'Home',
     path: '/'
   }, {
-    name: 'About Us',
+    name: 'Over Ons',
     path: '/about'
   }, {
-    name: 'Services',
+    name: 'Diensten',
     path: '/services',
     subLinks: [{
-      name: 'Rooftop Grass',
+      name: 'Dakgras',
       path: '/services/rooftop'
     }, {
-      name: 'Ground Grass',
+      name: 'Grondgras',
       path: '/services/ground'
     }, {
-      name: 'Custom Projects',
+      name: 'Maatwerk Projecten',
       path: '/services/custom'
     }]
   }, {
-    name: 'How It Works',
+    name: 'Hoe Het Werkt',
     path: '/how-it-works'
   }, {
-    name: 'Gallery',
+    name: 'Galerij',
     path: '/gallery'
   }, {
-    name: 'Reviews',
+    name: 'Beoordelingen',
     path: '/reviews'
   }, {
     name: 'Blog',
@@ -86,13 +86,13 @@ const Navbar = () => {
           </div>
           <div className="hidden md:block">
             <Link to="/contact" className="inline-flex items-center px-6 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200">
-              Get a Quote
+              Offerte Aanvragen
             </Link>
           </div>
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)} className="inline-flex items-center justify-center p-2 rounded-md text-secondary-700 hover:text-primary-600 hover:bg-gray-100 focus:outline-none">
-              <span className="sr-only">Open main menu</span>
+              <span className="sr-only">Hoofdmenu openen</span>
               {isOpen ? <XIcon className="block h-6 w-6" aria-hidden="true" /> : <MenuIcon className="block h-6 w-6" aria-hidden="true" />}
             </button>
           </div>
@@ -115,7 +115,7 @@ const Navbar = () => {
                     </div>}
                 </div>)}
             <Link to="/contact" className="block w-full text-center mt-3 px-4 py-2 rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 font-medium">
-              Get a Quote
+              Offerte Aanvragen
             </Link>
           </div>
         </div>}

@@ -12,21 +12,21 @@ interface Slide {
 }
 const slides: Slide[] = [{
   id: 1,
-  title: 'Eksperci w Trawie na Dachach',
-  subtitle: 'Specjalistyczne rozwiązania z trawy syntetycznej dla przestrzeni dachowych',
-  ctaText: 'Poznaj Nasze Rozwiązania',
+  title: 'Experts in Dakgras',
+  subtitle: 'Gespecialiseerde kunstgras oplossingen voor dakruimtes',
+  ctaText: 'Ontdek Onze Oplossingen',
   ctaLink: '/services/rooftop'
 }, {
   id: 2,
-  title: 'Zamień Swój Dach w Zieloną Oazę',
-  subtitle: 'Trwała, bezobsługowa trawa syntetyczna dla każdego dachu',
-  ctaText: 'Sprawdź Możliwości',
+  title: 'Verander Uw Dak in een Groene Oase',
+  subtitle: 'Duurzaam, onderhoudsvrij kunstgras voor elk dak',
+  ctaText: 'Bekijk Mogelijkheden',
   ctaLink: '/services/rooftop'
 }, {
   id: 3,
-  title: 'Innowacyjne Rozwiązania Dachowe',
-  subtitle: 'Dostosowane instalacje trawy syntetycznej dla wyjątkowych projektów dachowych',
-  ctaText: 'Zobacz Realizacje',
+  title: 'Innovatieve Dakoplossingen',
+  subtitle: 'Op maat gemaakte kunstgras installaties voor unieke dakprojecten',
+  ctaText: 'Bekijk Realisaties',
   ctaLink: '/gallery'
 }];
 

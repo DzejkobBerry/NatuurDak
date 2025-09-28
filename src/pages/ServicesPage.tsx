@@ -4,42 +4,42 @@ import { Link } from 'react-router-dom';
 import { ArrowRightIcon, ShieldIcon, LeafIcon, SunIcon, DropletIcon } from 'lucide-react';
 const ServicesPage = () => {
   const mainServices = [{
-    title: 'Trawa na Dachach Płaskich',
-    description: 'Specjalizujemy się w przekształcaniu płaskich dachów w zielone, funkcjonalne przestrzenie przy użyciu wysokiej jakości trawy syntetycznej, odpowiedniej izolacji i systemów drenażowych.',
+    title: 'Kunstgras op Platte Daken',
+    description: 'Wij specialiseren ons in het transformeren van platte daken in groene, functionele ruimtes met behulp van hoogwaardig kunstgras, juiste isolatie en drainagesystemen.',
     image: 'https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: '/services/rooftop'
   }, {
-    title: 'Systemy dla Dachów Skośnych',
-    description: 'Nasze innowacyjne rozwiązania umożliwiają instalację trawy syntetycznej nawet na dachach skośnych, z wykorzystaniem specjalnych systemów mocowań i zabezpieczeń.',
+    title: 'Systemen voor Hellende Daken',
+    description: 'Onze innovatieve oplossingen maken kunstgrasinstallatie mogelijk, zelfs op hellende daken, met behulp van speciale bevestigingssystemen en beveiligingen.',
     image: 'https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: '/services/rooftop'
   }, {
-    title: 'Trawa dla Przestrzeni Przyziemnych',
-    description: 'Oprócz specjalizacji w instalacjach dachowych, oferujemy również rozwiązania z trawy syntetycznej dla ogrodów, tarasów i innych przestrzeni przyziemnych.',
+    title: 'Kunstgras voor Grondruimtes',
+    description: 'Naast onze specialisatie in dakinstallaties bieden wij ook kunstgrasoplossingen voor tuinen, terrassen en andere grondruimtes.',
     image: 'https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
     link: '/services/ground'
   }, {
-    title: 'Projekty Niestandardowe',
-    description: 'Realizujemy projekty niestandardowe, dostosowane do unikalnych potrzeb i wymagań naszych klientów, od małych tarasów po rozległe ogrody dachowe.',
+    title: 'Maatwerk Projecten',
+    description: 'Wij realiseren maatwerk projecten, aangepast aan de unieke behoeften en vereisten van onze klanten, van kleine terrassen tot uitgebreide daktuinen.',
     image: 'https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: '/services/custom'
   }];
   const additionalServices = [{
     icon: <ShieldIcon className="h-12 w-12 text-primary-600" />,
-    title: 'Konsultacje i Ocena',
-    description: 'Profesjonalna ocena dachu pod kątem możliwości instalacji trawy syntetycznej, uwzględniająca nośność, drenaż i inne kluczowe czynniki.'
+    title: 'Consultaties en Evaluatie',
+    description: 'Professionele dakevaluatie voor kunstgrasinstallatie mogelijkheden, rekening houdend met draagkracht, drainage en andere belangrijke factoren.'
   }, {
     icon: <LeafIcon className="h-12 w-12 text-primary-600" />,
-    title: 'Projektowanie Przestrzeni',
-    description: 'Kompleksowe projektowanie przestrzeni dachowych, uwzględniające elementy zieleni, meble i inne elementy aranżacyjne.'
+    title: 'Ruimte Ontwerp',
+    description: 'Uitgebreid ontwerp van dakruimtes, inclusief groene elementen, meubilair en andere decoratieve elementen.'
   }, {
     icon: <SunIcon className="h-12 w-12 text-primary-600" />,
-    title: 'Serwis i Konserwacja',
-    description: 'Regularne przeglądy i konserwacja zainstalowanej trawy syntetycznej, zapewniające jej długotrwałą estetykę i funkcjonalność.'
+    title: 'Service en Onderhoud',
+    description: 'Regelmatige inspecties en onderhoud van geïnstalleerd kunstgras, waardoor langdurige esthetiek en functionaliteit wordt gegarandeerd.'
   }, {
     icon: <DropletIcon className="h-12 w-12 text-primary-600" />,
-    title: 'Systemy Nawadniania',
-    description: 'Instalacja opcjonalnych systemów nawadniania dla roślin doniczkowych i elementów zieleni towarzyszących trawie syntetycznej.'
+    title: 'Irrigatiesystemen',
+    description: 'Installatie van optionele irrigatiesystemen voor potplanten en groene elementen die het kunstgras aanvullen.'
   }];
   return <div className="w-full">
       <div className="relative bg-primary-600 py-32">
@@ -49,11 +49,10 @@ const ServicesPage = () => {
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Nasze Usługi
+            Onze Diensten
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Odkryj nasze premium usługi instalacji trawy syntetycznej dla dachów
-            i nie tylko
+            Ontdek onze premium kunstgrasinstallatie diensten voor daken en meer
           </p>
         </div>
       </div>
@@ -63,15 +62,13 @@ const ServicesPage = () => {
           <div className="mb-20">
             <div className="text-center mb-12">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-                Główne Usługi
+                Hoofddiensten
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-                Specjalistyczne Rozwiązania z Trawy Syntetycznej
+                Gespecialiseerde Kunstgras Oplossingen
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-                Oferujemy kompleksowe usługi instalacji trawy syntetycznej, ze
-                szczególnym uwzględnieniem specjalistycznych rozwiązań dla
-                przestrzeni dachowych.
+                Wij bieden uitgebreide kunstgrasinstallatie diensten, met speciale focus op gespecialiseerde oplossingen voor dakruimtes.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -87,7 +84,7 @@ const ServicesPage = () => {
                       {service.description}
                     </p>
                     <Link to={service.link} className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors">
-                      Dowiedz się więcej{' '}
+                      Lees meer{' '}
                       <ArrowRightIcon className="ml-2 h-4 w-4" />
                     </Link>
                   </div>
@@ -98,15 +95,13 @@ const ServicesPage = () => {
           <div className="mb-20 bg-secondary-50 py-16 px-6 rounded-xl">
             <div className="text-center mb-12">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-                Usługi Dodatkowe
+                Aanvullende Diensten
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-                Kompleksowe Wsparcie
+                Uitgebreide Ondersteuning
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-                Oprócz głównych usług instalacyjnych, oferujemy szereg usług
-                dodatkowych, zapewniających kompleksową obsługę i wsparcie na
-                każdym etapie projektu.
+                Naast onze hoofdinstallatie diensten bieden wij een reeks aanvullende diensten die uitgebreide service en ondersteuning garanderen in elke fase van het project.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -123,49 +118,39 @@ const ServicesPage = () => {
           <div className="mb-16">
             <div className="text-center mb-12">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-                Dlaczego My
+                Waarom Wij
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-                Co Wyróżnia Nasze Usługi
+                Wat Onze Diensten Onderscheidt
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-                Nasza specjalizacja w instalacjach dachowych, doświadczenie i
-                zaangażowanie w jakość sprawiają, że jesteśmy liderem w branży.
+                Onze specialisatie in dakinstallaties, ervaring en toewijding aan kwaliteit maken ons tot marktleider in de branche.
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div>
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold text-secondary-900 mb-3">
-                    Specjalistyczna Wiedza
+                    Gespecialiseerde Kennis
                   </h3>
                   <p className="text-secondary-600">
-                    Nasz zespół posiada unikalne doświadczenie i wiedzę w
-                    zakresie instalacji trawy syntetycznej na dachach, co
-                    pozwala nam realizować nawet najbardziej wymagające projekty
-                    z najwyższą precyzją i bezpieczeństwem.
+                    Ons team heeft unieke ervaring en kennis in kunstgrasinstallaties op daken, waardoor we zelfs de meest veeleisende projecten kunnen realiseren met de hoogste precisie en veiligheid.
                   </p>
                 </div>
                 <div className="mb-6">
                   <h3 className="text-2xl font-bold text-secondary-900 mb-3">
-                    Premium Materiały
+                    Premium Materialen
                   </h3>
                   <p className="text-secondary-600">
-                    Używamy wyłącznie najwyższej jakości trawy syntetycznej i
-                    materiałów instalacyjnych, które są odporne na warunki
-                    atmosferyczne, promieniowanie UV i intensywne użytkowanie,
-                    zapewniając trwałość i estetykę na lata.
+                    Wij gebruiken uitsluitend kunstgras en installatiematerialen van de hoogste kwaliteit, die bestand zijn tegen weersomstandigheden, UV-straling en intensief gebruik, waardoor duurzaamheid en esthetiek voor jaren gegarandeerd zijn.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold text-secondary-900 mb-3">
-                    Kompleksowa Obsługa
+                    Uitgebreide Service
                   </h3>
                   <p className="text-secondary-600">
-                    Od pierwszej konsultacji, przez projekt i instalację, po
-                    obsługę posprzedażową - zapewniamy kompleksowe wsparcie na
-                    każdym etapie realizacji, dbając o najdrobniejsze szczegóły
-                    i pełną satysfakcję klienta.
+                    Van de eerste consultatie, via ontwerp en installatie, tot naverkoop service - wij bieden uitgebreide ondersteuning in elke fase van de realisatie, waarbij we aandacht besteden aan de kleinste details en volledige klanttevredenheid.
                   </p>
                 </div>
               </div>
@@ -179,14 +164,13 @@ const ServicesPage = () => {
           {/* CTA */}
           <div className="text-center">
             <h3 className="text-2xl font-bold text-secondary-900 mb-4">
-              Gotowy na Transformację?
+              Klaar voor Transformatie?
             </h3>
             <p className="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto">
-              Skontaktuj się z nami już dziś, aby omówić swój projekt i otrzymać
-              bezpłatną wycenę.
+              Neem vandaag nog contact met ons op om uw project te bespreken en een gratis offerte te ontvangen.
             </p>
             <Link to="/contact" className="inline-flex items-center px-8 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
-              Otrzymaj Bezpłatną Wycenę
+              Ontvang Gratis Offerte
             </Link>
           </div>
         </div>

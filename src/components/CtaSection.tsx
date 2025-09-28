@@ -15,25 +15,25 @@ const CtaSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
-            Gotowy na Transformację Swojego Dachu?
+            Klaar voor de Transformatie van Uw Dak?
           </h2>
           <p className="text-lg text-white/90 mb-8">
-            Skontaktuj się z nami już dziś, aby uzyskać bezpłatną konsultację i
-            wycenę. Nasz zespół ekspertów jest gotowy pomóc Ci stworzyć idealną
-            zieloną przestrzeń na dachu dzięki naszym najwyższej jakości
-            rozwiązaniom z trawy syntetycznej.
+            Neem vandaag nog contact met ons op voor een gratis consultatie en
+            offerte. Ons team van experts staat klaar om u te helpen bij het
+            creëren van de perfecte groene ruimte op uw dak met onze hoogwaardige
+            kunstgras oplossingen.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link to="/contact" className="px-8 py-4 bg-white text-primary-600 font-medium rounded-md hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center">
-              <MailIcon className="mr-2 h-5 w-5" /> Otrzymaj Bezpłatną Wycenę
+              <MailIcon className="mr-2 h-5 w-5" /> Ontvang Gratis Offerte
             </Link>
             <a href="tel:+11234567890" className="px-8 py-4 bg-primary-700 text-white font-medium rounded-md hover:bg-primary-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center">
-              <PhoneIcon className="mr-2 h-5 w-5" /> Zadzwoń Teraz
+              <PhoneIcon className="mr-2 h-5 w-5" /> Bel Nu
             </a>
           </div>
           <p className="text-white/80 text-sm">
-            Konsultacja bez zobowiązań. Pomożemy Ci znaleźć idealne rozwiązanie
-            dla Twojego dachu.
+            Consultatie zonder verplichtingen. Wij helpen u de ideale oplossing
+            voor uw dak te vinden.
           </p>
         </div>
       </div>

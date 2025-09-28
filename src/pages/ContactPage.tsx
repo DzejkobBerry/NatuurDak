@@ -5,10 +5,10 @@ const ContactPage = () => {
       <div className="bg-primary-600 py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Contact Us
+            Neem Contact Op
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Get in touch for a consultation or quote
+            Neem contact op voor een consultatie of offerte
           </p>
         </div>
       </div>
@@ -18,72 +18,72 @@ const ContactPage = () => {
             {/* Contact Form */}
             <div className="bg-white rounded-lg shadow-lg p-8">
               <h2 className="text-2xl font-bold text-secondary-900 mb-6">
-                Send Us a Message
+                Stuur Ons een Bericht
               </h2>
               <form>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-secondary-700 mb-1">
-                      First Name
+                      Voornaam
                     </label>
                     <input type="text" id="firstName" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500" />
                   </div>
                   <div>
                     <label htmlFor="lastName" className="block text-sm font-medium text-secondary-700 mb-1">
-                      Last Name
+                      Achternaam
                     </label>
                     <input type="text" id="lastName" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500" />
                   </div>
                 </div>
                 <div className="mb-6">
                   <label htmlFor="email" className="block text-sm font-medium text-secondary-700 mb-1">
-                    Email Address
+                    E-mailadres
                   </label>
                   <input type="email" id="email" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500" />
                 </div>
                 <div className="mb-6">
                   <label htmlFor="phone" className="block text-sm font-medium text-secondary-700 mb-1">
-                    Phone Number
+                    Telefoonnummer
                   </label>
                   <input type="tel" id="phone" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500" />
                 </div>
                 <div className="mb-6">
                   <label htmlFor="service" className="block text-sm font-medium text-secondary-700 mb-1">
-                    Service Interested In
+                    Geïnteresseerd in Dienst
                   </label>
                   <select id="service" className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500">
-                    <option value="">Select a service</option>
-                    <option value="rooftop">Rooftop Artificial Grass</option>
-                    <option value="ground">Ground Artificial Grass</option>
-                    <option value="custom">Custom Project</option>
-                    <option value="other">Other/Not Sure</option>
+                    <option value="">Selecteer een dienst</option>
+                    <option value="rooftop">Dak Kunstgras</option>
+                    <option value="ground">Grond Kunstgras</option>
+                    <option value="custom">Maatwerk Project</option>
+                    <option value="other">Anders/Niet Zeker</option>
                   </select>
                 </div>
                 <div className="mb-6">
                   <label htmlFor="message" className="block text-sm font-medium text-secondary-700 mb-1">
-                    Your Message
+                    Uw Bericht
                   </label>
                   <textarea id="message" rows={4} className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-primary-500 focus:border-primary-500"></textarea>
                 </div>
                 <button type="submit" className="w-full px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300">
-                  Send Message
+                  Verstuur Bericht
                 </button>
               </form>
             </div>
             {/* Contact Information */}
             <div>
               <h2 className="text-2xl font-bold text-secondary-900 mb-6">
-                Contact Information
+                Contactinformatie
               </h2>
               <div className="bg-secondary-50 rounded-lg p-8 mb-8">
                 <div className="flex items-start mb-6">
                   <MapPinIcon className="h-6 w-6 text-primary-600 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-secondary-900 mb-1">
-                      Our Address
+                      Ons Adres
                     </h3>
                     <p className="text-secondary-600">
-                      123 Green Street, Eco City, EC 12345
+                      Groene Straat 123, Eco Stad, EC 12345
                     </p>
                   </div>
                 </div>
@@ -91,7 +91,7 @@ const ContactPage = () => {
                   <PhoneIcon className="h-6 w-6 text-primary-600 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-secondary-900 mb-1">
-                      Phone
+                      Telefoon
                     </h3>
                     <p className="text-secondary-600">+1 (123) 456-7890</p>
                   </div>
@@ -109,19 +109,19 @@ const ContactPage = () => {
                   <ClockIcon className="h-6 w-6 text-primary-600 mr-4 mt-1 flex-shrink-0" />
                   <div>
                     <h3 className="font-medium text-secondary-900 mb-1">
-                      Hours
+                      Openingstijden
                     </h3>
                     <p className="text-secondary-600">
-                      Monday - Friday: 9am - 5pm
+                      Maandag - Vrijdag: 9:00 - 17:00
                     </p>
-                    <p className="text-secondary-600">Saturday: 10am - 2pm</p>
-                    <p className="text-secondary-600">Sunday: Closed</p>
+                    <p className="text-secondary-600">Zaterdag: 10:00 - 14:00</p>
+                    <p className="text-secondary-600">Zondag: Gesloten</p>
                   </div>
                 </div>
               </div>
               {/* Map Placeholder */}
               <div className="bg-secondary-200 rounded-lg h-64 flex items-center justify-center">
-                <p className="text-secondary-600">Map will be displayed here</p>
+                <p className="text-secondary-600">Kaart wordt hier weergegeven</p>
               </div>
             </div>
           </div>
