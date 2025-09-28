@@ -2,118 +2,118 @@ import React, { useState } from 'react';
 import CtaSection from '../components/CtaSection';
 import { StarIcon, ThumbsUpIcon, CheckCircleIcon } from 'lucide-react';
 const ReviewsPage = () => {
-  const categories = ['Wszystkie', 'Dachy Płaskie', 'Dachy Skośne', 'Tarasy', 'Ogrody Dachowe', 'Projekty Niestandardowe'];
-  const [activeCategory, setActiveCategory] = useState('Wszystkie');
+  const categories = ['Alle', 'Platte Daken', 'Hellende Daken', 'Terrassen', 'Daktuinen', 'Maatwerk Projecten'];
+  const [activeCategory, setActiveCategory] = useState('Alle');
   const reviews = [{
     id: 1,
     name: 'Anna Kowalska',
-    role: 'Właścicielka Apartamentu',
+    role: 'Appartement Eigenaar',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
     rating: 5,
-    category: 'Dachy Płaskie',
+    category: 'Platte Daken',
     date: '12.06.2023',
-    title: 'Rewelacyjna transformacja mojego dachu!',
-    content: 'Przekształciliśmy nasz dach w niesamowity ogród z trawą syntetyczną GreenTurf. Instalacja była bezbłędna, a dwa lata później nadal wygląda jak nowa pomimo ciągłego użytkowania i ekspozycji na warunki atmosferyczne. Zespół był profesjonalny, punktualny i bardzo pomocny podczas całego procesu. Szczególnie doceniam ich uwagę na szczegóły i gotowość do odpowiedzi na wszystkie moje pytania. Polecam GreenTurf każdemu, kto chce przekształcić swój dach w piękną, zieloną przestrzeń!'
+    title: 'Geweldige transformatie van mijn dak!',
+    content: 'We hebben ons dak getransformeerd in een prachtige tuin met Natuur Dak kunstgras. De installatie was vlekkeloos en twee jaar later ziet het er nog steeds uit als nieuw ondanks constant gebruik en blootstelling aan weersomstandigheden. Het team was professioneel, punctueel en zeer behulpzaam tijdens het hele proces. Ik waardeer vooral hun aandacht voor detail en bereidheid om al mijn vragen te beantwoorden. Ik beveel Natuur Dak aan iedereen die zijn dak wil transformeren in een prachtige, groene ruimte!'
   }, {
     id: 2,
-    name: 'Michał Nowak',
-    role: 'Właściciel Restauracji',
+    name: 'Michiel Nowak',
+    role: 'Restaurant Eigenaar',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
     rating: 5,
-    category: 'Tarasy',
+    category: 'Terrassen',
     date: '03.08.2023',
-    title: 'Doskonała inwestycja dla naszej restauracji',
-    content: 'Strefa wypoczynkowa na dachu naszej restauracji wygląda niesamowicie dzięki instalacji trawy syntetycznej. Nasi klienci uwielbiają atmosferę, a utrzymanie jest znacznie łatwiejsze niż w przypadku prawdziwej trawy w tak uczęszczanym miejscu. Zespół GreenTurf zrozumiał nasze potrzeby dotyczące intensywnego użytkowania przestrzeni i zaproponował idealne rozwiązanie. Instalacja została przeprowadzona szybko i sprawnie, minimalizując zakłócenia w działalności restauracji. Zdecydowanie polecam ich usługi każdemu przedsiębiorcy szukającemu sposobu na uatrakcyjnienie swojej przestrzeni.'
+    title: 'Uitstekende investering voor ons restaurant',
+    content: 'Het ontspanningsgebied op het dak van ons restaurant ziet er fantastisch uit dankzij de kunstgras installatie. Onze klanten houden van de sfeer en het onderhoud is veel gemakkelijker dan echt gras in zo\'n drukke ruimte. Het Natuur Dak team begreep onze behoeften voor intensief gebruik van de ruimte en stelde de perfecte oplossing voor. De installatie werd snel en efficiënt uitgevoerd, waardoor de verstoring van de restaurantactiviteiten tot een minimum werd beperkt. Ik beveel hun diensten zeker aan elke ondernemer die zijn ruimte aantrekkelijker wil maken.'
   }, {
     id: 3,
-    name: 'Ewa Wiśniewska',
-    role: 'Zarządca Nieruchomości',
+    name: 'Eva Wiśniewska',
+    role: 'Vastgoed Beheerder',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3',
     rating: 4,
-    category: 'Dachy Płaskie',
+    category: 'Platte Daken',
     date: '22.05.2023',
-    title: 'Świetne rozwiązanie dla naszego kompleksu apartamentów',
-    content: 'Zainstalowaliśmy trawę syntetyczną na dachu naszego kompleksu apartamentów i mieszkańcy absolutnie ją kochają. Zespół GreenTurf był profesjonalny, wydajny i dostarczył dokładnie to, co obiecał. Jedyny powód, dla którego nie daję pełnych 5 gwiazdek, to niewielkie opóźnienie w harmonogramie, choć było to częściowo spowodowane warunkami pogodowymi. Poza tym, jakość instalacji jest doskonała, a przestrzeń stała się ulubionym miejscem spotkań mieszkańców. Doceniam również szczegółowe instrukcje dotyczące konserwacji, które otrzymaliśmy po zakończeniu prac.'
+    title: 'Geweldige oplossing voor ons appartementencomplex',
+    content: 'We hebben kunstgras geïnstalleerd op het dak van ons appartementencomplex en bewoners zijn er dol op. Het Natuur Dak team was professioneel, efficiënt en leverde precies wat ze beloofden. De enige reden waarom ik geen volle 5 sterren geef is een kleine vertraging in het schema, hoewel dit gedeeltelijk te wijten was aan weersomstandigheden. Verder is de kwaliteit van de installatie uitstekend en is de ruimte een favoriete ontmoetingsplaats voor bewoners geworden. Ik waardeer ook de gedetailleerde onderhoudsinstructies die we na voltooiing van het werk ontvingen.'
   }, {
     id: 4,
     name: 'Jan Kowalczyk',
-    role: 'Architekt Krajobrazu',
+    role: 'Landschapsarchitect',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
     rating: 5,
-    category: 'Ogrody Dachowe',
+    category: 'Daktuinen',
     date: '10.07.2023',
-    title: 'Najwyższa jakość i profesjonalizm',
-    content: 'Jako architekt krajobrazu, współpracowałem z wieloma firmami zajmującymi się trawą syntetyczną, ale GreenTurf wyróżnia się jakością produktów i dbałością o szczegóły, zwłaszcza w instalacjach dachowych. Polecam ich wszystkim moim klientom szukającym rozwiązań bezobsługowych. Ich wiedza techniczna dotycząca drenażu i konstrukcji dachowych jest imponująca, co jest kluczowe dla długotrwałego sukcesu takich instalacji. Współpraca z nimi przy kilku projektach zawsze była płynna i profesjonalna. Doceniam również ich innowacyjne podejście do niestandardowych wyzwań projektowych.'
+    title: 'Hoogste kwaliteit en professionaliteit',
+    content: 'Als landschapsarchitect heb ik met veel kunstgrasbedrijven gewerkt, maar Natuur Dak onderscheidt zich door productkwaliteit en aandacht voor detail, vooral bij dakinstallaties. Ik beveel ze aan al mijn klanten die onderhoudsvrije oplossingen zoeken. Hun technische kennis van drainage en dakconstructies is indrukwekkend, wat cruciaal is voor het langdurige succes van dergelijke installaties. Samenwerking met hen bij verschillende projecten was altijd soepel en professioneel. Ik waardeer ook hun innovatieve benadering van aangepaste ontwerpuitdagingen.'
   }, {
     id: 5,
     name: 'Katarzyna Lewandowska',
-    role: 'Właścicielka Domu',
+    role: 'Huiseigenaar',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=761&ixlib=rb-4.0.3',
     rating: 5,
-    category: 'Dachy Skośne',
+    category: 'Hellende Daken',
     date: '05.09.2023',
-    title: 'Innowacyjne rozwiązanie dla naszego skośnego dachu',
-    content: 'Byliśmy sceptyczni co do możliwości instalacji trawy syntetycznej na naszym skośnym dachu, ale GreenTurf udowodnił, że to możliwe! Ich specjalistyczny system mocowań działa perfekcyjnie, a efekt wizualny przekroczył nasze oczekiwania. Teraz mamy unikalne miejsce wypoczynkowe z pięknym widokiem. Proces od konsultacji do instalacji był bardzo profesjonalny. Szczególnie doceniam cierpliwość zespołu w wyjaśnianiu technicznych aspektów instalacji i odpowiadaniu na nasze liczne pytania. Zdecydowanie polecam GreenTurf każdemu, kto szuka innowacyjnych rozwiązań dla nietypowych przestrzeni.'
+    title: 'Innovatieve oplossing voor ons hellende dak',
+    content: 'We waren sceptisch over de mogelijkheid om kunstgras op ons hellende dak te installeren, maar Natuur Dak bewees dat het mogelijk is! Hun gespecialiseerde bevestigingssysteem werkt perfect en het visuele effect overtrof onze verwachtingen. Nu hebben we een unieke ontspanningsruimte met prachtig uitzicht. Het proces van consultatie tot installatie was zeer professioneel. Ik waardeer vooral het geduld van het team bij het uitleggen van technische aspecten van de installatie en het beantwoorden van onze vele vragen. Ik beveel Natuur Dak zeker aan iedereen die innovatieve oplossingen zoekt voor ongewone ruimtes.'
   }, {
     id: 6,
     name: 'Piotr Zieliński',
-    role: 'Dyrektor Hotelu',
+    role: 'Hotel Directeur',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3',
     rating: 4,
-    category: 'Tarasy',
+    category: 'Terrassen',
     date: '18.07.2023',
-    title: 'Doskonałe rozwiązanie dla naszego tarasu hotelowego',
-    content: 'Zdecydowaliśmy się na instalację trawy syntetycznej na tarasie naszego hotelu i jesteśmy bardzo zadowoleni z rezultatów. Goście uwielbiają nową przestrzeń, a my doceniamy łatwość utrzymania. Zespół GreenTurf był profesjonalny i elastyczny, dostosowując się do naszego napiętego harmonogramu. Jedynym drobnym minusem było lekkie przekroczenie budżetu, ale biorąc pod uwagę jakość wykonania i materiałów, uważamy to za dobrą inwestycję. Szczególnie doceniamy trwałość trawy, która doskonale znosi intensywne użytkowanie przez naszych gości.'
+    title: 'Uitstekende oplossing voor ons hotel terras',
+    content: 'We besloten kunstgras te installeren op het terras van ons hotel en zijn zeer tevreden met de resultaten. Gasten houden van de nieuwe ruimte en wij waarderen het gemakkelijke onderhoud. Het Natuur Dak team was professioneel en flexibel, aangepast aan ons strakke schema. Het enige kleine minpunt was een lichte budgetoverschrijding, maar gezien de kwaliteit van uitvoering en materialen beschouwen we dit als een goede investering. We waarderen vooral de duurzaamheid van het gras, dat intensief gebruik door onze gasten uitstekend doorstaat.'
   }, {
     id: 7,
     name: 'Magdalena Dąbrowska',
-    role: 'Właścicielka Apartamentu',
+    role: 'Appartement Eigenaar',
     image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3',
     rating: 5,
-    category: 'Projekty Niestandardowe',
+    category: 'Maatwerk Projecten',
     date: '30.06.2023',
-    title: 'Kreatywne rozwiązanie dla mojego nietypowego dachu',
-    content: 'Mój dach ma nietypowy kształt i układ, co stanowiło wyzwanie dla wielu firm. GreenTurf nie tylko podjął się tego wyzwania, ale stworzył absolutnie spektakularną przestrzeń, która wykorzystuje każdy centymetr dostępnego miejsca. Ich kreatywne podejście i techniczne know-how są naprawdę imponujące. Proces projektowania był bardzo interaktywny, czułam się zaangażowana na każdym etapie. Instalacja przebiegła sprawnie, a końcowy efekt przekroczył moje oczekiwania. Z przyjemnością pokazuję mój nowy dach znajomym i rodzinie, którzy są pod wrażeniem transformacji.'
+    title: 'Creatieve oplossing voor mijn ongewone dak',
+    content: 'Mijn dak heeft een ongewone vorm en indeling, wat een uitdaging was voor veel bedrijven. Natuur Dak nam niet alleen deze uitdaging aan, maar creëerde een absoluut spectaculaire ruimte die elke centimeter beschikbare ruimte benut. Hun creatieve benadering en technische know-how zijn echt indrukwekkend. Het ontwerpproces was zeer interactief, ik voelde me betrokken bij elke stap. De installatie verliep soepel en het eindresultaat overtrof mijn verwachtingen. Ik laat met plezier mijn nieuwe dak zien aan vrienden en familie, die onder de indruk zijn van de transformatie.'
   }, {
     id: 8,
     name: 'Tomasz Adamski',
-    role: 'Właściciel Firmy',
+    role: 'Bedrijfseigenaar',
     image: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
     rating: 5,
-    category: 'Dachy Płaskie',
+    category: 'Platte Daken',
     date: '15.08.2023',
-    title: 'Profesjonalna realizacja dla naszego biurowca',
-    content: 'Zdecydowaliśmy się na instalację trawy syntetycznej na dachu naszego biurowca, aby stworzyć przestrzeń relaksacyjną dla pracowników. GreenTurf wykonał fantastyczną pracę, od projektu po realizację. Ich zespół był niezwykle profesjonalny, dotrzymał wszystkich terminów i budżetu. Jakość użytych materiałów jest doskonała, a system drenażowy działa perfekcyjnie nawet podczas intensywnych opadów deszczu. Nasi pracownicy uwielbiają nową przestrzeń, co pozytywnie wpłynęło na atmosferę w firmie i produktywność. Zdecydowanie polecam GreenTurf dla projektów komercyjnych.'
+    title: 'Professionele realisatie voor ons kantoorgebouw',
+    content: 'We besloten kunstgras te installeren op het dak van ons kantoorgebouw om een ontspanningsruimte voor werknemers te creëren. Natuur Dak deed fantastisch werk, van ontwerp tot realisatie. Hun team was uiterst professioneel, hield zich aan alle deadlines en budget. De kwaliteit van gebruikte materialen is uitstekend en het drainagesysteem werkt perfect zelfs tijdens intense regenval. Onze werknemers houden van de nieuwe ruimte, wat een positieve invloed heeft gehad op de bedrijfssfeer en productiviteit. Ik beveel Natuur Dak zeker aan voor commerciële projecten.'
   }];
-  const filteredReviews = activeCategory === 'Wszystkie' ? reviews : reviews.filter(review => review.category === activeCategory);
+  const filteredReviews = activeCategory === 'Alle' ? reviews : reviews.filter(review => review.category === activeCategory);
   const renderStars = (rating: number) => {
     return Array(5).fill(0).map((_, index) => <StarIcon key={index} className={`h-5 w-5 ${index < rating ? 'text-yellow-400' : 'text-gray-300'}`} fill={index < rating ? 'currentColor' : 'none'} />);
   };
   const stats = [{
-    label: 'Zadowolonych Klientów',
+    label: 'Tevreden Klanten',
     value: '500+',
     icon: <ThumbsUpIcon className="h-8 w-8 text-primary-600" />
   }, {
-    label: 'Ukończonych Projektów',
+    label: 'Voltooide Projecten',
     value: '650+',
     icon: <CheckCircleIcon className="h-8 w-8 text-primary-600" />
   }, {
-    label: 'Średnia Ocena',
+    label: 'Gemiddelde Beoordeling',
     value: '4.9/5',
     icon: <StarIcon className="h-8 w-8 text-yellow-400" fill="currentColor" />
   }];
   return <div className="w-full">
       <div className="relative bg-primary-600 py-32">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Opinie klientów GreenTurf" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Klantbeoordelingen Natuur Dak" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Opinie Naszych Klientów
+            Beoordelingen van Onze Klanten
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Zobacz, co mówią o nas zadowoleni klienci
+            Zie wat tevreden klanten over ons zeggen
           </p>
         </div>
       </div>
@@ -179,24 +179,24 @@ const ReviewsPage = () => {
           {/* No Reviews Message */}
           {filteredReviews.length === 0 && <div className="text-center py-12">
               <h3 className="text-xl font-bold text-secondary-900 mb-2">
-                Brak opinii w tej kategorii
+                Geen beoordelingen in deze categorie
               </h3>
               <p className="text-secondary-600">
-                Prosimy wybrać inną kategorię lub wrócić później, gdy dodamy
-                więcej opinii.
+                Selecteer een andere categorie of kom later terug wanneer we
+                meer beoordelingen hebben toegevoegd.
               </p>
             </div>}
           {/* CTA */}
           <div className="text-center mt-16">
             <h3 className="text-2xl font-bold text-secondary-900 mb-4">
-              Dołącz do Grona Zadowolonych Klientów
+              Word Onderdeel van Onze Tevreden Klanten
             </h3>
             <p className="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto">
-              Skontaktuj się z nami już dziś, aby omówić swój projekt i dołączyć
-              do setek zadowolonych klientów GreenTurf.
+              Neem vandaag nog contact met ons op om uw project te bespreken en
+              word onderdeel van honderden tevreden Natuur Dak klanten.
             </p>
             <a href="/contact" className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
-              Rozpocznij Swoją Transformację
+              Begin Uw Transformatie
             </a>
           </div>
         </div>

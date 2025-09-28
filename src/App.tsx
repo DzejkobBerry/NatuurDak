@@ -6,7 +6,6 @@ import ServicesPage from './pages/ServicesPage';
 import HowItWorksPage from './pages/HowItWorksPage';
 import GalleryPage from './pages/GalleryPage';
 import ReviewsPage from './pages/ReviewsPage';
-import BlogPage from './pages/BlogPage';
 import ContactPage from './pages/ContactPage';
 import RooftopServicePage from './pages/services/RooftopServicePage';
 import GroundServicePage from './pages/services/GroundServicePage';
@@ -25,7 +24,6 @@ export function App() {
           <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
-          <Route path="/blog" element={<BlogPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </Layout>

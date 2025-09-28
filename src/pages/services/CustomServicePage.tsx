@@ -2,39 +2,44 @@ import React from 'react';
 import CtaSection from '../../components/CtaSection';
 import { CheckCircleIcon } from 'lucide-react';
 const CustomServicePage = () => {
-  const customProjects = [{
-    title: 'Ogrody Dachowe',
-    description: 'Kompleksowe projekty ogrodów na dachach, łączące trawę syntetyczną z roślinami doniczkowymi, elementami małej architektury i systemami nawadniania.',
-    image: 'https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-  }, {
-    title: 'Zielone Tarasy',
-    description: 'Przekształcenie tarasów w zielone, funkcjonalne przestrzenie wypoczynkowe z wykorzystaniem trawy syntetycznej i innych elementów aranżacyjnych.',
-    image: 'https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-  }, {
-    title: 'Powierzchnie Sportowe',
-    description: 'Specjalistyczne instalacje trawy syntetycznej dla mini boisk, stref golfowych i innych powierzchni sportowych na dachach i w przestrzeniach przyziemnych.',
-    image: 'https://images.unsplash.com/photo-1558365849-6ebd8b0454b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
-  }, {
-    title: 'Strefy dla Zwierząt',
-    description: 'Dedykowane przestrzenie z trawy syntetycznej dla zwierząt domowych, zapewniające bezpieczne i higieniczne miejsce do zabawy.',
-    image: 'https://images.unsplash.com/photo-1596491123074-fd69f5daa929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'
-  }];
+  const customProjects = [
+    {
+      title: 'Daktuinen',
+      description: 'Uitgebreide daktuinprojecten die kunstgras combineren met potplanten, elementen van kleine architectuur en irrigatiesystemen.',
+      image: 'https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    },
+    {
+      title: 'Groene Terrassen',
+      description: 'Transformatie van terrassen in groene, functionele recreatieruimtes met gebruik van kunstgras en andere decoratieve elementen.',
+      image: 'https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+    },
+    {
+      title: 'Sportoppervlakken',
+      description: 'Gespecialiseerde kunstgrasinstallaties voor mini-velden, golfzones en andere sportoppervlakken op daken en in grondoppervlakken.',
+      image: 'https://images.unsplash.com/photo-1558365849-6ebd8b0454b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
+    },
+    {
+      title: 'Zones voor Dieren',
+      description: 'Toegewijde kunstgrasruimtes voor huisdieren, die een veilige en hygiënische speelplek bieden.',
+      image: 'https://images.unsplash.com/photo-1596491123074-fd69f5daa929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'
+    }
+  ];
   const clientTypes = [{
-    type: 'Właściciele Domów',
-    description: 'Realizujemy projekty dla właścicieli domów jednorodzinnych i apartamentów, którzy chcą stworzyć wyjątkowe przestrzenie zielone na dachach, tarasach lub w ogrodach.',
-    examples: ['Prywatne tarasy dachowe', 'Ogrody przydomowe', 'Strefy wypoczynkowe']
+    type: 'Huiseigenaren',
+    description: 'Wij realiseren projecten voor eigenaren van eengezinswoningen en appartementen die unieke groene ruimtes willen creëren op daken, terrassen of in tuinen.',
+    examples: ['Privé dakterrassen', 'Huistuinen', 'Recreatiezones']
   }, {
-    type: 'Firmy i Korporacje',
-    description: 'Tworzymy zielone przestrzenie dla firm i korporacji, które chcą zapewnić swoim pracownikom miejsca relaksu i integracji na dachach budynków biurowych.',
-    examples: ['Strefy relaksu dla pracowników', 'Zielone dachy biurowców', 'Przestrzenie eventowe']
+    type: 'Bedrijven en Corporaties',
+    description: 'Wij creëren groene ruimtes voor bedrijven en corporaties die hun werknemers ontspannings- en integratieplekken willen bieden op de daken van kantoorgebouwen.',
+    examples: ['Ontspanningszones voor werknemers', 'Groene daken van kantoorgebouwen', 'Evenementenruimtes']
   }, {
-    type: 'Hotele i Restauracje',
-    description: 'Projektujemy i instalujemy trawę syntetyczną w hotelach i restauracjach, tworząc atrakcyjne przestrzenie dla gości na dachach, tarasach i w ogrodach.',
-    examples: ['Tarasy widokowe', 'Strefy lounge', 'Ogrody restauracyjne']
+    type: 'Hotels en Restaurants',
+    description: 'Wij ontwerpen en installeren kunstgras in hotels en restaurants, waarbij we aantrekkelijke ruimtes voor gasten creëren op daken, terrassen en in tuinen.',
+    examples: ['Uitzichtterrassen', 'Loungezones', 'Restauranttuinen']
   }, {
-    type: 'Deweloperzy',
-    description: 'Współpracujemy z deweloperami przy tworzeniu wartości dodanej dla inwestycji mieszkaniowych i komercyjnych poprzez instalację trawy syntetycznej na dachach i w przestrzeniach wspólnych.',
-    examples: ['Dachy wspólne w budynkach mieszkalnych', 'Tereny rekreacyjne osiedli', 'Strefy wypoczynkowe w kompleksach biurowych']
+    type: 'Ontwikkelaars',
+    description: 'Wij werken samen met ontwikkelaars bij het creëren van toegevoegde waarde voor woon- en commerciële investeringen door kunstgras te installeren op daken en in gemeenschappelijke ruimtes.',
+    examples: ['Gemeenschappelijke daken in woongebouwen', 'Recreatiegebieden van wijken', 'Ontspanningszones in kantoorComplexen']
   }];
   return <div className="w-full">
       <div className="relative bg-primary-600 py-32">
@@ -44,10 +49,10 @@ const CustomServicePage = () => {
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Niestandardowe Projekty z Trawy Syntetycznej
+            Maatwerk Kunstgrasprojecten
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Dostosowane rozwiązania dla Twoich unikalnych potrzeb i wymagań
+            Op maat gemaakte oplossingen voor uw unieke behoeften en vereisten
           </p>
         </div>
       </div>
@@ -55,13 +60,13 @@ const CustomServicePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
-              Nasze Podejście do Projektów Niestandardowych
+              Onze Benadering van Maatwerk Projecten
             </h2>
             <p className="text-lg text-secondary-600 mb-10 max-w-4xl mx-auto text-center">
-              W GreenTurf rozumiemy, że każda przestrzeń jest unikalna i wymaga
-              indywidualnego podejścia. Nasze niestandardowe projekty z trawy
-              syntetycznej są tworzone z myślą o Twoich konkretnych potrzebach,
-              preferencjach estetycznych i ograniczeniach przestrzennych.
+              Bij Natuur Dak begrijpen we dat elke ruimte uniek is en een
+              individuele benadering vereist. Onze maatwerk kunstgrasprojecten
+              worden gecreëerd met uw specifieke behoeften,
+              esthetische voorkeuren en ruimtelijke beperkingen in gedachten.
             </p>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
               <div>
@@ -131,14 +136,14 @@ const CustomServicePage = () => {
               </div>
               <div className="relative">
                 <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img src="https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Proces realizacji projektów niestandardowych" className="w-full h-auto object-cover" />
+                  <img src="https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Proces van realisatie van maatwerk projecten" className="w-full h-auto object-cover" />
                 </div>
               </div>
             </div>
           </div>
           <div className="mb-16">
             <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
-              Przykłady Projektów Niestandardowych
+              Voorbeelden van Maatwerk Projecten
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
               {customProjects.map((project, index) => <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -156,7 +161,7 @@ const CustomServicePage = () => {
           </div>
           <div className="mb-16 bg-secondary-50 py-12 px-6 rounded-xl">
             <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
-              Dla Kogo Realizujemy Projekty
+              Voor Wie Realiseren Wij Projecten
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">
               {clientTypes.map((client, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-md">
@@ -217,15 +222,15 @@ const CustomServicePage = () => {
           </div>
           <div className="text-center">
             <h3 className="text-2xl font-bold text-secondary-900 mb-4">
-              Gotowy na Realizację Swojego Unikalnego Projektu?
+              Klaar om Uw Unieke Project te Realiseren?
             </h3>
             <p className="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto">
-              Skontaktuj się z nami już dziś, aby omówić swoje pomysły i
-              rozpocząć proces tworzenia wyjątkowej przestrzeni z trawą
-              syntetyczną.
+              Neem vandaag nog contact met ons op om uw ideeën te bespreken en
+              het proces van het creëren van een unieke ruimte met kunstgras
+              te starten.
             </p>
             <a href="/contact" className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg text-lg">
-              Umów Bezpłatną Konsultację
+              Plan Gratis Consultatie
             </a>
           </div>
         </div>

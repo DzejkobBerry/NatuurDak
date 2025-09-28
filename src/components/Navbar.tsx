@@ -50,9 +50,6 @@ const Navbar = () => {
     name: 'Beoordelingen',
     path: '/reviews'
   }, {
-    name: 'Blog',
-    path: '/blog'
-  }, {
     name: 'Contact',
     path: '/contact'
   }];

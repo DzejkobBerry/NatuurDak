@@ -2,32 +2,41 @@ import React from 'react';
 import CtaSection from '../../components/CtaSection';
 import { CheckCircleIcon } from 'lucide-react';
 const GroundServicePage = () => {
-  const benefits = ['Eliminacja potrzeby koszenia, podlewania i nawożenia', 'Idealne rozwiązanie dla miejsc zacienionych, gdzie naturalna trawa nie rośnie dobrze', 'Bezpieczna i miękka powierzchnia dla dzieci i zwierząt domowych', 'Brak problemów z błotem, kałużami i nierównościami terenu', 'Odporność na intensywne użytkowanie i trudne warunki atmosferyczne', 'Możliwość korzystania z trawnika przez cały rok, niezależnie od pogody', 'Przyjazna dla alergików - brak pyłków i alergenów', 'Oszczędność wody i eliminacja potrzeby stosowania pestycydów'];
+  const benefits = [
+    'Eliminatie van de noodzaak om te maaien, sproeien en bemesten',
+    'Ideale oplossing voor schaduwrijke plekken waar natuurlijk gras niet goed groeit',
+    'Veilige en zachte ondergrond voor kinderen en huisdieren',
+    'Geen problemen met modder, plassen en ongelijke terreinen',
+    'Bestand tegen intensief gebruik en moeilijke weersomstandigheden',
+    'Mogelijkheid om het gazon het hele jaar door te gebruiken, ongeacht het weer',
+    'Allergievriendelijk - geen pollen en allergenen',
+    'Waterbesparing en eliminatie van de noodzaak voor pesticiden'
+  ];
   const applications = [{
-    title: 'Ogrody Przydomowe',
-    description: 'Zamień swój ogród w idealny, zawsze zielony trawnik, który wygląda świeżo przez cały rok bez wysiłku związanego z pielęgnacją.',
+    title: 'Huistuinen',
+    description: 'Transformeer uw tuin in een perfect, altijd groen gazon dat er het hele jaar door fris uitziet zonder de moeite van onderhoud.',
     image: 'https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'
   }, {
-    title: 'Place Zabaw',
-    description: 'Bezpieczna i miękka powierzchnia dla placów zabaw, zapewniająca amortyzację upadków i eliminująca problem z błotem i kałużami.',
+    title: 'Speelplaatsen',
+    description: 'Veilige en zachte ondergrond voor speelplaatsen, die schokdemping bij vallen biedt en het probleem van modder en plassen elimineert.',
     image: 'https://images.unsplash.com/photo-1596491123074-fd69f5daa929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'
   }, {
-    title: 'Strefy Rekreacyjne',
-    description: 'Idealne rozwiązanie dla stref rekreacyjnych, tarasów, patio i innych przestrzeni, gdzie chcesz cieszyć się zielenią bez konieczności pielęgnacji.',
+    title: 'Recreatiezones',
+    description: 'Ideale oplossing voor recreatiezones, terrassen, patio\'s en andere ruimtes waar u wilt genieten van groen zonder de noodzaak van onderhoud.',
     image: 'https://images.unsplash.com/photo-1598902108854-10e335adac99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80'
   }];
   return <div className="w-full">
       <div className="relative bg-primary-600 py-32">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Trawa syntetyczna na ziemi" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80" alt="Kunstgras op de grond" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Trawa Syntetyczna dla Przestrzeni Przyziemnych
+            Kunstgras voor Grondoppervlakken
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Idealne, bezobsługowe trawniki dla każdej przestrzeni przyziemnej
+            Perfecte, onderhoudsvrije gazons voor elke grondoppervlakte
           </p>
         </div>
       </div>
@@ -35,14 +44,14 @@ const GroundServicePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
-              Dlaczego Warto Wybrać Trawę Syntetyczną?
+              Waarom Kiezen voor Kunstgras?
             </h2>
             <p className="text-lg text-secondary-600 mb-10 max-w-4xl mx-auto text-center">
-              Trawa syntetyczna to nowoczesne, praktyczne i estetyczne
-              rozwiązanie dla osób ceniących piękno naturalnego trawnika bez
-              konieczności jego regularnej pielęgnacji. Nasze wysokiej jakości
-              produkty oferują wiele korzyści w porównaniu do tradycyjnych
-              trawników.
+              Kunstgras is een moderne, praktische en esthetische
+              oplossing voor mensen die de schoonheid van een natuurlijk gazon waarderen zonder
+              de noodzaak van regelmatig onderhoud. Onze hoogwaardige
+              producten bieden vele voordelen in vergelijking met traditionele
+              gazons.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               {benefits.map((benefit, index) => <div key={index} className="flex items-start bg-secondary-50 p-4 rounded-lg">
@@ -53,7 +62,7 @@ const GroundServicePage = () => {
           </div>
           <div className="mb-16">
             <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
-              Popularne Zastosowania
+              Populaire Toepassingen
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
               {applications.map((app, index) => <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -73,12 +82,12 @@ const GroundServicePage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="order-2 lg:order-1">
                 <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6">
-                  Nasz Proces Instalacji
+                  Ons Installatieproces
                 </h2>
                 <p className="text-lg text-secondary-600 mb-6">
-                  Nasza instalacja trawy syntetycznej dla przestrzeni
-                  przyziemnych obejmuje kilka kluczowych etapów, zapewniających
-                  trwały i estetyczny efekt:
+                  Onze installatie van kunstgras voor grondoppervlakken
+                  omvat verschillende belangrijke stappen, die een
+                  duurzaam en esthetisch resultaat garanderen:
                 </p>
                 <ol className="space-y-4 text-secondary-700">
                   <li className="flex items-start">
@@ -86,9 +95,9 @@ const GroundServicePage = () => {
                       1
                     </span>
                     <p>
-                      <strong>Przygotowanie terenu</strong> - usunięcie starej
-                      trawy, wyrównanie powierzchni i zapewnienie odpowiedniego
-                      drenażu
+                      <strong>Terreinvoorbereiding</strong> - verwijdering van oud
+                      gras, egalisatie van het oppervlak en zorgen voor adequate
+                      drainage
                     </p>
                   </li>
                   <li className="flex items-start">
@@ -96,9 +105,9 @@ const GroundServicePage = () => {
                       2
                     </span>
                     <p>
-                      <strong>Instalacja warstwy bazowej</strong> - układanie
-                      geowłókniny i warstwy kruszywa dla zapewnienia stabilności
-                      i drenażu
+                      <strong>Installatie van de basislaag</strong> - leggen van
+                      geotextiel en grindlaag voor stabiliteit
+                      en drainage
                     </p>
                   </li>
                   <li className="flex items-start">
@@ -106,8 +115,8 @@ const GroundServicePage = () => {
                       3
                     </span>
                     <p>
-                      <strong>Układanie trawy</strong> - precyzyjne rozkładanie,
-                      przycinanie i łączenie materiału
+                      <strong>Leggen van het gras</strong> - nauwkeurig uitrollen,
+                      snijden en verbinden van het materiaal
                     </p>
                   </li>
                   <li className="flex items-start">
@@ -115,8 +124,8 @@ const GroundServicePage = () => {
                       4
                     </span>
                     <p>
-                      <strong>Mocowanie i wykończenie</strong> - zabezpieczenie
-                      krawędzi i mocowanie do podłoża
+                      <strong>Bevestiging en afwerking</strong> - beveiligen van
+                      randen en bevestiging aan de ondergrond
                     </p>
                   </li>
                   <li className="flex items-start">
@@ -124,8 +133,8 @@ const GroundServicePage = () => {
                       5
                     </span>
                     <p>
-                      <strong>Zasypywanie piaskiem kwarcowym</strong> - dla
-                      stabilizacji i naturalnego wyglądu
+                      <strong>Opvullen met kwartszand</strong> - voor
+                      stabilisatie en natuurlijke uitstraling
                     </p>
                   </li>
                   <li className="flex items-start">
@@ -133,8 +142,8 @@ const GroundServicePage = () => {
                       6
                     </span>
                     <p>
-                      <strong>Szczotkowanie i końcowa inspekcja</strong> -
-                      nadanie naturalnemu wyglądowi i sprawdzenie jakości
+                      <strong>Borstelen en eindcontrole</strong> -
+                      natuurlijke uitstraling geven en kwaliteitscontrole
                     </p>
                   </li>
                 </ol>
@@ -148,43 +157,43 @@ const GroundServicePage = () => {
           </div>
           <div className="bg-secondary-50 rounded-lg p-8 mb-12">
             <h3 className="text-2xl font-bold text-secondary-900 mb-4">
-              Pielęgnacja i Konserwacja
+              Verzorging en Onderhoud
             </h3>
             <p className="text-secondary-600 mb-6">
-              Choć trawa syntetyczna jest praktycznie bezobsługowa, kilka
-              prostych czynności pomoże utrzymać jej piękny wygląd przez lata:
+              Hoewel kunstgras praktisch onderhoudsvrij is, helpen enkele
+              eenvoudige handelingen om de mooie uitstraling jarenlang te behouden:
             </p>
             <ul className="space-y-3 text-secondary-700">
               <li className="flex items-start">
                 <CheckCircleIcon className="h-6 w-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
                 <p>
-                  Regularne usuwanie liści i innych zanieczyszczeń za pomocą
-                  grabi z miękkimi zębami lub dmuchawy
+                  Regelmatig verwijderen van bladeren en ander vuil met behulp van
+                  een hark met zachte tanden of een bladblazer
                 </p>
               </li>
               <li className="flex items-start">
                 <CheckCircleIcon className="h-6 w-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
                 <p>
-                  Okresowe płukanie wodą dla usunięcia kurzu i drobnych
-                  zabrudzeń
+                  Periodiek spoelen met water om stof en kleine
+                  vervuiling te verwijderen
                 </p>
               </li>
               <li className="flex items-start">
                 <CheckCircleIcon className="h-6 w-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
                 <p>
-                  Szczotkowanie trawy przeciwnie do kierunku ułożenia włókien w
-                  przypadku miejsc o intensywnym ruchu
+                  Borstelen van het gras tegen de richting van de vezels in
+                  bij plaatsen met intensief verkeer
                 </p>
               </li>
               <li className="flex items-start">
                 <CheckCircleIcon className="h-6 w-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
-                <p>Usuwanie plam przy użyciu łagodnych detergentów i wody</p>
+                <p>Vlekken verwijderen met milde detergenten en water</p>
               </li>
             </ul>
           </div>
           <div className="text-center">
             <a href="/contact" className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg text-lg">
-              Umów Bezpłatną Konsultację
+              Plan Gratis Consultatie
             </a>
           </div>
         </div>

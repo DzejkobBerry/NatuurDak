@@ -5,60 +5,60 @@ import { ClipboardIcon, RulerIcon, Shovel, ThumbsUpIcon, PhoneIcon, MailIcon } f
 const HowItWorksPage = () => {
   const processSteps = [{
     number: 1,
-    title: 'Darmowa Konsultacja i Ocena',
-    description: 'Proces rozpoczyna się od bezpłatnej konsultacji, podczas której omawiamy Twoje potrzeby, preferencje i budżet. Przeprowadzamy dokładną ocenę dachu lub innej przestrzeni, analizując nośność, system drenażowy, ekspozycję na słońce i inne kluczowe czynniki.',
+    title: 'Gratis Consultatie en Evaluatie',
+    description: 'Het proces begint met een gratis consultatie waarin we uw behoeften, voorkeuren en budget bespreken. We voeren een grondige evaluatie uit van het dak of andere ruimte, waarbij we de draagkracht, drainagesysteem, zonexpositie en andere belangrijke factoren analyseren.',
     icon: <ClipboardIcon size={40} className="text-primary-600" />,
-    details: ['Analiza potrzeb i oczekiwań klienta', 'Ocena techniczna przestrzeni (nośność, drenaż, ekspozycja)', 'Omówienie dostępnych rodzajów trawy syntetycznej', 'Wstępne oszacowanie kosztów i harmonogramu']
+    details: ['Analyse van klantbehoeften en verwachtingen', 'Technische evaluatie van de ruimte (draagkracht, drainage, expositie)', 'Bespreking van beschikbare kunstgrastypes', 'Voorlopige kostenraming en tijdschema']
   }, {
     number: 2,
-    title: 'Szczegółowy Projekt i Wycena',
-    description: 'Na podstawie konsultacji i pomiarów, nasz zespół projektowy przygotowuje szczegółowy projekt i dokładną wycenę. Prezentujemy różne opcje trawy syntetycznej, materiałów podkładowych i dodatkowych elementów, aby pomóc Ci podjąć najlepszą decyzję.',
+    title: 'Gedetailleerd Ontwerp en Offerte',
+    description: 'Op basis van de consultatie en metingen bereidt ons ontwerpteam een gedetailleerd ontwerp en nauwkeurige offerte voor. We presenteren verschillende opties voor kunstgras, onderlaagmaterialen en extra elementen om u te helpen de beste beslissing te nemen.',
     icon: <RulerIcon size={40} className="text-primary-600" />,
-    details: ['Przygotowanie szczegółowego projektu technicznego', 'Dobór odpowiednich materiałów i akcesoriów', 'Dokładna kalkulacja kosztów z przejrzystym podziałem', 'Ustalenie harmonogramu prac']
+    details: ['Voorbereiding van gedetailleerd technisch ontwerp', 'Selectie van juiste materialen en accessoires', 'Nauwkeurige kostencalculatie met transparante verdeling', 'Vaststelling van werkschema']
   }, {
     number: 3,
-    title: 'Profesjonalna Instalacja',
-    description: 'Po zatwierdzeniu projektu i wyceny, nasz wyspecjalizowany zespół instalacyjny przystępuje do pracy. Proces instalacji obejmuje przygotowanie powierzchni, montaż systemów drenażowych, układanie trawy syntetycznej i precyzyjne wykończenie, zapewniając najwyższą jakość wykonania.',
+    title: 'Professionele Installatie',
+    description: 'Na goedkeuring van het ontwerp en de offerte gaat ons gespecialiseerde installatieteam aan de slag. Het installatieproces omvat voorbereiding van het oppervlak, montage van drainagesystemen, leggen van kunstgras en nauwkeurige afwerking, waarbij de hoogste kwaliteit van uitvoering wordt gegarandeerd.',
     icon: <Shovel size={40} className="text-primary-600" />,
-    details: ['Przygotowanie powierzchni (czyszczenie, wyrównanie)', 'Montaż systemów drenażowych i podkładów', 'Precyzyjne układanie trawy syntetycznej', 'Łączenie i mocowanie materiału', 'Wykończenie krawędzi i detali']
+    details: ['Voorbereiding van het oppervlak (reiniging, egalisatie)', 'Montage van drainagesystemen en onderlagen', 'Nauwkeurig leggen van kunstgras', 'Verbinden en bevestigen van materiaal', 'Afwerking van randen en details']
   }, {
     number: 4,
-    title: 'Odbiór i Wsparcie Posprzedażowe',
-    description: 'Po zakończeniu instalacji, przeprowadzamy szczegółową inspekcję z Twoim udziałem, aby upewnić się, że wszystko spełnia Twoje oczekiwania. Przekazujemy informacje dotyczące pielęgnacji i konserwacji oraz zapewniamy wsparcie posprzedażowe i gwarancję na nasze usługi i materiały.',
+    title: 'Oplevering en Nazorg',
+    description: 'Na voltooiing van de installatie voeren we een gedetailleerde inspectie uit met uw deelname om ervoor te zorgen dat alles aan uw verwachtingen voldoet. We verstrekken informatie over onderhoud en verzorging en bieden nazorg en garantie op onze diensten en materialen.',
     icon: <ThumbsUpIcon size={40} className="text-primary-600" />,
-    details: ['Końcowa inspekcja z udziałem klienta', 'Instrukcje dotyczące pielęgnacji i konserwacji', 'Przekazanie dokumentów gwarancyjnych', 'Zapewnienie wsparcia posprzedażowego']
+    details: ['Eindcontrole met deelname van de klant', 'Instructies voor onderhoud en verzorging', 'Overhandiging van garantiedocumenten', 'Verzekering van nazorg']
   }];
   const faqs = [{
-    question: 'Jak długo trwa proces instalacji trawy syntetycznej na dachu?',
-    answer: 'Czas instalacji zależy od wielkości i złożoności projektu. Typowa instalacja na dachu o powierzchni 50-100 m² zajmuje od 2 do 4 dni. Większe lub bardziej skomplikowane projekty mogą wymagać więcej czasu. Dokładny harmonogram jest ustalany podczas etapu projektowania.'
+    question: 'Hoe lang duurt het installatieproces van kunstgras op het dak?',
+    answer: 'De installatietijd hangt af van de grootte en complexiteit van het project. Een typische installatie op een dak van 50-100 m² duurt 2 tot 4 dagen. Grotere of meer complexe projecten kunnen meer tijd vergen. Het exacte tijdschema wordt vastgesteld tijdens de ontwerpfase.'
   }, {
-    question: 'Czy trawa syntetyczna na dachu wymaga specjalnego systemu drenażowego?',
-    answer: 'Tak, instalacja trawy syntetycznej na dachu wymaga odpowiedniego systemu drenażowego, który zapewnia efektywne odprowadzanie wody i zapobiega jej gromadzeniu się. Nasz zespół projektuje i instaluje specjalistyczne systemy drenażowe dostosowane do specyfiki dachu i lokalnych warunków atmosferycznych.'
+    question: 'Heeft kunstgras op het dak een speciaal drainagesysteem nodig?',
+    answer: 'Ja, installatie van kunstgras op het dak vereist een geschikt drainagesysteem dat zorgt voor efficiënte waterafvoer en voorkomt dat water zich ophoopt. Ons team ontwerpt en installeert gespecialiseerde drainagesystemen aangepast aan de specificaties van het dak en lokale weersomstandigheden.'
   }, {
-    question: 'Jaka jest waga trawy syntetycznej i czy mój dach wytrzyma takie obciążenie?',
-    answer: 'Systemy trawy syntetycznej dla dachów są relatywnie lekkie, zazwyczaj ważą od 15 do 30 kg/m² (włączając podkład i wypełnienie). Podczas konsultacji i oceny technicznej analizujemy nośność dachu, aby upewnić się, że może on bezpiecznie wytrzymać planowaną instalację.'
+    question: 'Wat is het gewicht van kunstgras en kan mijn dak zo\'n belasting aan?',
+    answer: 'Kunstgrassystemen voor daken zijn relatief licht en wegen meestal 15 tot 30 kg/m² (inclusief onderlaag en vulling). Tijdens de consultatie en technische evaluatie analyseren we de draagkracht van het dak om ervoor te zorgen dat het de geplande installatie veilig kan dragen.'
   }, {
-    question: 'Jak długo wytrzyma trawa syntetyczna na dachu?',
-    answer: 'Przy prawidłowej instalacji i minimalnej konserwacji, wysokiej jakości trawa syntetyczna na dachu może wytrzymać 10-15 lat bez utraty koloru i sprężystości. Oferujemy produkty z gwarancją producenta, która zazwyczaj wynosi 8-10 lat, w zależności od wybranego rodzaju trawy.'
+    question: 'Hoe lang gaat kunstgras op het dak mee?',
+    answer: 'Bij juiste installatie en minimaal onderhoud kan hoogwaardig kunstgras op het dak 10-15 jaar meegaan zonder kleur- en veerkrachtverlies. We bieden producten met fabrieksgarantie, die meestal 8-10 jaar bedraagt, afhankelijk van het gekozen grastype.'
   }, {
-    question: 'Czy mogę zainstalować meble i inne elementy na trawie syntetycznej na dachu?',
-    answer: 'Tak, trawa syntetyczna na dachu może wytrzymać meble ogrodowe, donice z roślinami i inne elementy aranżacyjne. Podczas projektowania uwzględniamy planowane obciążenia i w razie potrzeby wzmacniamy podkład w miejscach, gdzie będą stały cięższe elementy.'
+    question: 'Kan ik meubels en andere elementen op kunstgras op het dak plaatsen?',
+    answer: 'Ja, kunstgras op het dak kan tuinmeubels, plantenbakken en andere decoratieve elementen dragen. Tijdens het ontwerp houden we rekening met geplande belastingen en versterken we indien nodig de onderlaag op plaatsen waar zwaardere elementen komen te staan.'
   }, {
-    question: 'Jak wygląda konserwacja trawy syntetycznej na dachu?',
-    answer: 'Trawa syntetyczna na dachu wymaga minimalnej konserwacji. Zalecamy regularne usuwanie liści i innych zanieczyszczeń za pomocą dmuchawy lub grabi z miękkimi zębami oraz okresowe płukanie wodą. W przypadku intensywnie użytkowanych obszarów może być konieczne okazjonalne szczotkowanie, aby utrzymać włókna w pionie.'
+    question: 'Hoe ziet het onderhoud van kunstgras op het dak eruit?',
+    answer: 'Kunstgras op het dak vereist minimaal onderhoud. We raden aan om regelmatig bladeren en ander vuil te verwijderen met een bladblazer of hark met zachte tanden en periodiek te spoelen met water. Bij intensief gebruikte gebieden kan incidenteel borstelen nodig zijn om de vezels rechtop te houden.'
   }];
   return <div className="w-full">
       <div className="relative bg-primary-600 py-32">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Proces instalacji trawy syntetycznej" className="w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Kunstgras installatieproces" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
           <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4">
-            Jak Działamy
+            Hoe Wij Werken
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Nasz usprawniony proces od konsultacji do instalacji
+            Ons gestroomlijnde proces van consultatie tot installatie
           </p>
         </div>
       </div>
@@ -68,15 +68,16 @@ const HowItWorksPage = () => {
           <div className="mb-20">
             <div className="text-center mb-12">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
-                Nasz Proces
+                Ons Proces
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-                Droga do Twojej Zielonej Przestrzeni
+                De Weg naar Uw Groene Ruimte
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-                W GreenTurf stworzyliśmy przejrzysty, efektywny proces, który
-                zapewnia płynne przejście od początkowej konsultacji do finalnej
-                instalacji i zadowolenia z Twojej nowej zielonej przestrzeni.
+                Bij Natuur Dak hebben we een transparant, efficiënt proces
+                gecreëerd dat een soepele overgang garandeert van de eerste
+                consultatie tot de uiteindelijke installatie en tevredenheid
+                met uw nieuwe groene ruimte.
               </p>
             </div>
             {/* Process Steps */}
@@ -100,7 +101,7 @@ const HowItWorksPage = () => {
                       </p>
                       <div className="bg-secondary-50 p-6 rounded-lg">
                         <h4 className="font-bold text-secondary-800 mb-3">
-                          Co obejmuje ten etap:
+                          Wat deze fase omvat:
                         </h4>
                         <ul className="space-y-2">
                           {step.details.map((detail, i) => <li key={i} className="flex items-start">
@@ -123,11 +124,11 @@ const HowItWorksPage = () => {
                 FAQ
               </div>
               <h2 className="text-3xl md:text-4xl font-display font-bold text-secondary-900 mb-6">
-                Często Zadawane Pytania
+                Veelgestelde Vragen
               </h2>
               <p className="max-w-3xl mx-auto text-lg text-secondary-600">
-                Odpowiedzi na najczęściej zadawane pytania dotyczące naszego
-                procesu instalacji trawy syntetycznej na dachach.
+                Antwoorden op de meest gestelde vragen over ons
+                installatieproces van kunstgras op daken.
               </p>
             </div>
             <div className="max-w-4xl mx-auto space-y-6">
@@ -142,20 +143,19 @@ const HowItWorksPage = () => {
           {/* Get Started Section */}
           <div className="text-center mb-12">
             <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6">
-              Gotowy na Rozpoczęcie Procesu?
+              Klaar om het Proces te Starten?
             </h2>
             <p className="max-w-3xl mx-auto text-lg text-secondary-600 mb-8">
-              Skontaktuj się z nami już dziś, aby umówić się na bezpłatną
-              konsultację i rozpocząć drogę do Twojej idealnej zielonej
-              przestrzeni na dachu.
+              Neem vandaag nog contact met ons op om een gratis consultatie in
+              te plannen en begin uw reis naar uw ideale groene ruimte op het
+              dak.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/contact" className="px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center">
-                <MailIcon className="mr-2 h-5 w-5" /> Umów Konsultację Online
+                <MailIcon className="mr-2 h-5 w-5" /> Plan Online Consultatie
               </Link>
               <a href="tel:+11234567890" className="px-8 py-4 bg-secondary-700 text-white font-medium rounded-md hover:bg-secondary-800 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center">
-                <PhoneIcon className="mr-2 h-5 w-5" /> Zadzwoń: +1 (123)
-                456-7890
+                <PhoneIcon className="mr-2 h-5 w-5" /> Bel: +1 (123) 456-7890
               </a>
             </div>
           </div>
