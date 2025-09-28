@@ -57,10 +57,15 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center">
-              <span className="text-primary-600 font-display font-bold text-xl">
-                Natuur Dak B.V.
-              </span>
+            <Link to="/" className="flex items-center group">
+              <div className="flex items-center space-x-2">
+                <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300">
+                  <span className="text-white font-bold text-sm">🌱</span>
+                </div>
+                <span className="text-primary-600 font-display font-bold text-2xl tracking-tight group-hover:text-primary-700 transition-colors duration-300">
+                  Natuur<span className="text-secondary-700">Dak</span>
+                </span>
+              </div>
             </Link>
           </div>
           {/* Desktop Navigation */}
