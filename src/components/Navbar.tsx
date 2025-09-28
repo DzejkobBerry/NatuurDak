@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ChevronDownIcon, MenuIcon, XIcon } from 'lucide-react';
+import { ChevronDownIcon, MenuIcon, XIcon, Mail, Phone } from 'lucide-react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -87,9 +87,23 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:block">
-            <Link to="/contact" className="inline-flex items-center px-6 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200">
-              Offerte Aanvragen
-            </Link>
+            <div className={`text-center mb-1 transition-all duration-500 ease-in-out overflow-hidden ${isScrolled ? 'max-h-6 opacity-100' : 'max-h-0 opacity-0'}`}>
+              <div className="text-xs text-secondary-600 flex items-center justify-center space-x-3">
+                <div className="flex items-center space-x-1">
+                  <Mail className="w-3 h-3" />
+                  <span>info@natuurdak.com</span>
+                </div>
+                <div className="flex items-center space-x-1">
+                  <Phone className="w-3 h-3" />
+                  <span>+31 20 123 4567</span>
+                </div>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <Link to="/contact" className="inline-flex items-center px-6 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 transition-colors duration-200">
+                Offerte Aanvragen
+              </Link>
+            </div>
           </div>
           {/* Mobile menu button */}
           <div className="md:hidden">
