@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroSlider from '../components/HeroSlider';
+import HeroVideo from '../components/HeroSlider';
 import AboutSection from '../components/AboutSection';
 import ServicesSection from '../components/ServicesSection';
 import ProcessSection from '../components/ProcessSection';
@@ -22,7 +22,7 @@ const HomePage = () => {
     description: 'Specjalistyczne systemy drenażowe zapewniają prawidłowy odpływ wody, chroniąc konstrukcję dachu przed wilgocią i uszkodzeniami.'
   }];
   return <div className="w-full">
-      <HeroSlider />
+      <HeroVideo />
       <AboutSection />
       <section className="py-20 bg-secondary-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

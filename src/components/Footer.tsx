@@ -9,10 +9,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <h3 className="text-xl font-display font-bold mb-4">
-              GreenTurf
-              <span className="text-primary-400 font-normal text-sm ml-1">
-                Dachy
-              </span>
+              Natuur Dak B.V.
             </h3>
             <p className="text-gray-300 mb-4">
               Transformujemy dachy w piękne, zielone przestrzenie dzięki
@@ -118,8 +115,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <MailIcon className="h-5 w-5 text-primary-400 mr-3 flex-shrink-0" />
-                <a href="mailto:info@greenturf.com" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  info@greenturf.com
+                <a href="mailto:info@natuurdak.com" className="text-gray-300 hover:text-primary-400 transition-colors">
+                  info@natuurdak.com
                 </a>
               </div>
             </div>
@@ -128,7 +125,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} GreenTurf. All rights reserved.
+              &copy; {currentYear} Natuur Dak B.V. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy-policy" className="text-gray-400 text-sm hover:text-primary-400 transition-colors">

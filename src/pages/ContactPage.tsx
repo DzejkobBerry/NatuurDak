@@ -102,7 +102,7 @@ const ContactPage = () => {
                     <h3 className="font-medium text-secondary-900 mb-1">
                       Email
                     </h3>
-                    <p className="text-secondary-600">info@greenturf.com</p>
+                    <p className="text-secondary-600">info@natuurdak.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
