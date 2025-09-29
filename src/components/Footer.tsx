@@ -120,7 +120,15 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {currentYear} Natuur Dak B.V. Alle rechten voorbehouden.
+              &copy; {currentYear} Natuur Dak B.V. Alle rechten voorbehouden. Ontworpen door{' '}
+              <a 
+                href="https://bloompixel.pl" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-400 hover:text-primary-300 transition-colors underline"
+              >
+                bloompixel.pl
+              </a>
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy-policy" className="text-gray-400 text-sm hover:text-primary-400 transition-colors">
