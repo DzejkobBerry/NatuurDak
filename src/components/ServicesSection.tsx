@@ -30,17 +30,17 @@ const ServicesSection = () => {
   const services = [{
     title: 'Kunstgras op Platte Daken',
     description: 'Transformeer uw platte dak in een groene oase met onze gespecialiseerde kunstgras installaties, ideaal voor stedelijke ruimtes.',
-    image: '/src/assets/images/team.jpg',
+    image: '/src/assets/images/services/Kunstgras-op-Platte-Daken.png',
     link: '/services/rooftop'
   }, {
     title: 'Systemen voor Hellende Daken',
     description: 'Gespecialiseerde oplossingen voor hellende daken, die zorgen voor veilige en duurzame kunstgras installatie met het juiste bevestigingssysteem.',
-    image: 'https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: '/src/assets/images/services/Systemen_voor_Hellende_Daken.png',
     link: '/services/rooftop'
   }, {
     title: 'Maatwerk Projecten',
     description: 'Van dakterrassen tot daktuinen, wij ontwerpen op maat gemaakte kunstgras oplossingen aangepast aan uw unieke behoeften.',
-    image: 'https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: '/src/assets/images/services/Maatwerk-Projecten.png',
     link: '/services/custom'
   }];
   return <section className="py-20 bg-secondary-50">
