@@ -1,6 +1,7 @@
 import React from 'react';
 import CtaSection from '../../components/CtaSection';
 import { CheckCircleIcon } from 'lucide-react';
+
 const CustomServicePage = () => {
   const customProjects = [
     {
@@ -11,7 +12,7 @@ const CustomServicePage = () => {
     {
       title: 'Groene Terrassen',
       description: 'Transformatie van terrassen in groene, functionele recreatieruimtes met gebruik van kunstgras en andere decoratieve elementen.',
-      image: '/src/assets/images/team.jpg'
+      image: '/images/team.jpg'
     },
     {
       title: 'Sportoppervlakken',
