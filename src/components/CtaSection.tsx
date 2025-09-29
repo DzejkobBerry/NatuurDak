@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PhoneIcon, MailIcon } from 'lucide-react';
+import { usePhoneModal } from '../contexts/PhoneModalContext';
+
 const CtaSection = () => {
-  return <section className="py-20 bg-primary-600 relative overflow-hidden">
+  const { openPhoneModal } = usePhoneModal();
+
+  return (
+    <section className="py-20 bg-primary-600 relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <svg className="h-full w-full" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
@@ -27,9 +32,12 @@ const CtaSection = () => {
             <Link to="/contact" className="px-8 py-4 bg-white text-primary-600 font-medium rounded-md hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center">
               <MailIcon className="mr-2 h-5 w-5" /> Ontvang Gratis Offerte
             </Link>
-            <a href="tel:+11234567890" className="px-8 py-4 bg-primary-700 text-white font-medium rounded-md hover:bg-primary-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center">
+            <button 
+              onClick={openPhoneModal}
+              className="px-8 py-4 bg-primary-700 text-white font-medium rounded-md hover:bg-primary-800 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 flex items-center justify-center"
+            >
               <PhoneIcon className="mr-2 h-5 w-5" /> Bel Nu
-            </a>
+            </button>
           </div>
           <p className="text-white/80 text-sm">
             Consultatie zonder verplichtingen. Wij helpen u de ideale oplossing
@@ -37,6 +45,8 @@ const CtaSection = () => {
           </p>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default CtaSection;

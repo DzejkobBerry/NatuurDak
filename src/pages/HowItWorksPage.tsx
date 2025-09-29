@@ -2,7 +2,9 @@ import React from 'react';
 import CtaSection from '../components/CtaSection';
 import { Link } from 'react-router-dom';
 import { ClipboardIcon, RulerIcon, Shovel, ThumbsUpIcon, PhoneIcon, MailIcon } from 'lucide-react';
+import { usePhoneModal } from '../contexts/PhoneModalContext';
 const HowItWorksPage = () => {
+  const { openPhoneModal } = usePhoneModal();
   const processSteps = [{
     number: 1,
     title: 'Gratis Consultatie en Evaluatie',
@@ -154,9 +156,12 @@ const HowItWorksPage = () => {
               <Link to="/contact" className="px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center">
                 <MailIcon className="mr-2 h-5 w-5" /> Plan Online Consultatie
               </Link>
-              <a href="tel:+31616368386" className="px-8 py-4 bg-secondary-700 text-white font-medium rounded-md hover:bg-secondary-800 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center">
-                <PhoneIcon className="mr-2 h-5 w-5" /> Bel: +31 616 368 386
-              </a>
+              <button 
+                onClick={openPhoneModal}
+                className="px-8 py-4 bg-secondary-700 text-white font-medium rounded-md hover:bg-secondary-800 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center"
+              >
+                <PhoneIcon className="mr-2 h-5 w-5" /> Bel Nu
+              </button>
             </div>
           </div>
         </div>
