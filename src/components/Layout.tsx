@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
 import PhoneModal from './PhoneModal';
+import ScrollToTopButton from './ScrollToTopButton';
 import { PhoneModalProvider, usePhoneModal } from '../contexts/PhoneModalContext';
 
 interface LayoutProps {
@@ -17,6 +18,7 @@ const LayoutContent: React.FC<LayoutProps> = ({ children }) => {
       <main className="flex-grow">{children}</main>
       <Footer />
       <PhoneModal isOpen={isPhoneModalOpen} onClose={closePhoneModal} />
+      <ScrollToTopButton />
     </div>
   );
 };
