@@ -1,6 +1,14 @@
 import React, { useState } from 'react';
 import CtaSection from '../components/CtaSection';
 import { XIcon } from 'lucide-react';
+
+// Import placeholder images
+import placeholder1 from '../assets/images/gallery/placeholder-1.svg';
+import placeholder2 from '../assets/images/gallery/placeholder-2.svg';
+import placeholder3 from '../assets/images/gallery/placeholder-3.svg';
+import placeholder4 from '../assets/images/gallery/placeholder-4.svg';
+import placeholder5 from '../assets/images/gallery/placeholder-5.svg';
+import placeholder6 from '../assets/images/gallery/placeholder-6.svg';
 const GalleryPage = () => {
   const categories = ['Alle', 'Platte Daken', 'Hellende Daken', 'Terrassen', 'Daktuinen', 'Maatwerk Projecten'];
   const [activeCategory, setActiveCategory] = useState('Alle');
@@ -10,63 +18,63 @@ const GalleryPage = () => {
     title: 'Modern Dakterras',
     category: 'Platte Daken',
     location: 'Amsterdam',
-    image: '/src/assets/images/team.jpg',
+    image: placeholder1,
     description: 'Transformatie van een plat dak van een appartementencomplex in een groene recreatieruimte met kunstgras en elementen van kleine architectuur.'
   }, {
     id: 2,
     title: 'Groen Hellend Dak',
     category: 'Hellende Daken',
     location: 'Rotterdam',
-    image: 'https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: placeholder2,
     description: 'Innovatieve installatie van kunstgras op een hellend dak van een eengezinswoning, met gebruik van een speciaal bevestigingssysteem.'
   }, {
     id: 3,
     title: 'Terras met Uitzicht',
     category: 'Terrassen',
     location: 'Den Haag',
-    image: 'https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+    image: placeholder3,
     description: 'Elegant terras met kunstgras, ontworpen voor een restaurant met uitzicht op zee.'
   }, {
     id: 4,
     title: 'Uitgebreide Daktuin',
     category: 'Daktuinen',
     location: 'Utrecht',
-    image: 'https://images.unsplash.com/photo-1598902108854-10e335adac99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+    image: placeholder4,
     description: 'Uitgebreid daktuinproject op een kantoorgebouw, dat kunstgras combineert met groenelementen en recreatiezones.'
   }, {
     id: 5,
     title: 'Mini Voetbalveld op Dak',
     category: 'Maatwerk Projecten',
     location: 'Eindhoven',
-    image: 'https://images.unsplash.com/photo-1558365849-6ebd8b0454b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80',
+    image: placeholder5,
     description: 'Maatwerk project van een mini voetbalveld op het dak van een school, met gebruik van gespecialiseerd kunstgras.'
   }, {
     id: 6,
     title: 'Groen Hotel Terras',
     category: 'Terrassen',
     location: 'Maastricht',
-    image: 'https://images.unsplash.com/photo-1582650401294-dd3878f57dc1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+    image: placeholder6,
     description: 'Elegant hotelterras met kunstgras, ontworpen als ontspanningsruimte voor gasten.'
   }, {
     id: 7,
     title: 'Dak Appartementencomplex',
     category: 'Platte Daken',
     location: 'Groningen',
-    image: 'https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+    image: placeholder1,
     description: 'Transformatie van het dak van een appartementencomplex in een gemeenschappelijke ruimte voor bewoners, met kunstgras en recreatiezones.'
   }, {
     id: 8,
     title: 'Privé Hellend Dak',
     category: 'Hellende Daken',
     location: 'Tilburg',
-    image: 'https://images.unsplash.com/photo-1596491123074-fd69f5daa929?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+    image: placeholder2,
     description: 'Installatie van kunstgras op het hellende dak van een eengezinswoning, waardoor een unieke recreatieruimte ontstaat.'
   }, {
     id: 9,
     title: 'Tuin op Kantoorgebouw Dak',
     category: 'Daktuinen',
     location: 'Breda',
-    image: 'https://images.unsplash.com/photo-1582650401294-dd3878f57dc1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
+    image: placeholder4,
     description: 'Uitgebreid tuinproject op het dak van een kantoorgebouw, met kunstgras, ontspanningszones en groenelementen.'
   }];
   const filteredProjects = activeCategory === 'Alle' ? projects : projects.filter(project => project.category === activeCategory);
