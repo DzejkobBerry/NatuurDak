@@ -11,7 +11,7 @@ const CustomServicePage = () => {
     {
       title: 'Groene Terrassen',
       description: 'Transformatie van terrassen in groene, functionele recreatieruimtes met gebruik van kunstgras en andere decoratieve elementen.',
-      image: 'https://images.unsplash.com/photo-1623227473930-40a5c5d7b2d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: '/src/assets/images/team.jpg'
     },
     {
       title: 'Sportoppervlakken',
