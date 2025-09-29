@@ -8,7 +8,7 @@ const AboutSection = () => {
           {/* Image */}
           <div className="relative">
             <div className="relative rounded-lg overflow-hidden shadow-xl">
-              <img src="/src/assets/images/team.jpg" alt="Kunstgras installatie op dak" className="w-full h-auto object-cover" />
+              <img src="/images/team.jpg" alt="Kunstgras installatie op dak" className="w-full h-auto object-cover" />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
               <p className="text-3xl font-bold">10+</p>

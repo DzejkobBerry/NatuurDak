@@ -1,14 +1,6 @@
 import React, { useState } from 'react';
 import CtaSection from '../components/CtaSection';
 import { XIcon } from 'lucide-react';
-
-// Import placeholder images
-import placeholder1 from '../assets/images/gallery/placeholder-1.svg';
-import placeholder2 from '../assets/images/gallery/placeholder-2.svg';
-import placeholder3 from '../assets/images/gallery/placeholder-3.svg';
-import placeholder4 from '../assets/images/gallery/placeholder-4.svg';
-import placeholder5 from '../assets/images/gallery/placeholder-5.svg';
-import placeholder6 from '../assets/images/gallery/placeholder-6.svg';
 const GalleryPage = () => {
   const categories = ['Alle', 'Platte Daken', 'Hellende Daken', 'Terrassen', 'Daktuinen', 'Maatwerk Projecten'];
   const [activeCategory, setActiveCategory] = useState('Alle');
@@ -18,70 +10,70 @@ const GalleryPage = () => {
     title: 'Modern Dakterras',
     category: 'Platte Daken',
     location: 'Amsterdam',
-    image: placeholder1,
+    image: '/images/gallery/placeholder-1.svg',
     description: 'Transformatie van een plat dak van een appartementencomplex in een groene recreatieruimte met kunstgras en elementen van kleine architectuur.'
   }, {
     id: 2,
     title: 'Groen Hellend Dak',
     category: 'Hellende Daken',
     location: 'Rotterdam',
-    image: placeholder2,
+    image: '/images/gallery/placeholder-2.svg',
     description: 'Innovatieve installatie van kunstgras op een hellend dak van een eengezinswoning, met gebruik van een speciaal bevestigingssysteem.'
   }, {
     id: 3,
     title: 'Terras met Uitzicht',
     category: 'Terrassen',
     location: 'Den Haag',
-    image: placeholder3,
+    image: '/images/gallery/placeholder-3.svg',
     description: 'Elegant terras met kunstgras, ontworpen voor een restaurant met uitzicht op zee.'
   }, {
     id: 4,
     title: 'Uitgebreide Daktuin',
     category: 'Daktuinen',
     location: 'Utrecht',
-    image: placeholder4,
+    image: '/images/gallery/placeholder-4.svg',
     description: 'Uitgebreid daktuinproject op een kantoorgebouw, dat kunstgras combineert met groenelementen en recreatiezones.'
   }, {
     id: 5,
     title: 'Mini Voetbalveld op Dak',
     category: 'Maatwerk Projecten',
     location: 'Eindhoven',
-    image: placeholder5,
+    image: '/images/gallery/placeholder-5.svg',
     description: 'Maatwerk project van een mini voetbalveld op het dak van een school, met gebruik van gespecialiseerd kunstgras.'
   }, {
     id: 6,
     title: 'Groen Hotel Terras',
     category: 'Terrassen',
     location: 'Maastricht',
-    image: placeholder6,
+    image: '/images/gallery/placeholder-6.svg',
     description: 'Elegant hotelterras met kunstgras, ontworpen als ontspanningsruimte voor gasten.'
   }, {
     id: 7,
     title: 'Dak Appartementencomplex',
     category: 'Platte Daken',
     location: 'Groningen',
-    image: placeholder1,
+    image: '/images/gallery/placeholder-1.svg',
     description: 'Transformatie van het dak van een appartementencomplex in een gemeenschappelijke ruimte voor bewoners, met kunstgras en recreatiezones.'
   }, {
     id: 8,
     title: 'Privé Hellend Dak',
     category: 'Hellende Daken',
     location: 'Tilburg',
-    image: placeholder2,
+    image: '/images/gallery/placeholder-2.svg',
     description: 'Installatie van kunstgras op het hellende dak van een eengezinswoning, waardoor een unieke recreatieruimte ontstaat.'
   }, {
     id: 9,
     title: 'Tuin op Kantoorgebouw Dak',
     category: 'Daktuinen',
     location: 'Breda',
-    image: placeholder4,
+    image: '/images/gallery/placeholder-4.svg',
     description: 'Uitgebreid tuinproject op het dak van een kantoorgebouw, met kunstgras, ontspanningszones en groenelementen.'
   }];
   const filteredProjects = activeCategory === 'Alle' ? projects : projects.filter(project => project.category === activeCategory);
   return <div className="w-full">
       <div className="relative bg-primary-600 py-32">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="/src/assets/images/team.jpg" alt="Galerij projecten Natuur Dak" className="w-full h-full object-cover" />
+          <img src="/images/team.jpg" alt="Galerij projecten Natuur Dak" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">

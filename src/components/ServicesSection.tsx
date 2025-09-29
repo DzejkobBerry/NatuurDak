@@ -30,17 +30,17 @@ const ServicesSection = () => {
   const services = [{
     title: 'Kunstgras op Platte Daken',
     description: 'Transformeer uw platte dak in een groene oase met onze gespecialiseerde kunstgras installaties, ideaal voor stedelijke ruimtes.',
-    image: '/src/assets/images/services/Kunstgras-op-Platte-Daken.png',
+    image: '/images/services/Kunstgras-op-Platte-Daken.png',
     link: '/services/rooftop'
   }, {
     title: 'Systemen voor Hellende Daken',
     description: 'Gespecialiseerde oplossingen voor hellende daken, die zorgen voor veilige en duurzame kunstgras installatie met het juiste bevestigingssysteem.',
-    image: '/src/assets/images/services/Systemen_voor_Hellende_Daken.png',
+    image: '/images/services/Systemen_voor_Hellende_Daken.png',
     link: '/services/rooftop'
   }, {
     title: 'Maatwerk Projecten',
     description: 'Van dakterrassen tot daktuinen, wij ontwerpen op maat gemaakte kunstgras oplossingen aangepast aan uw unieke behoeften.',
-    image: '/src/assets/images/services/Maatwerk-Projecten.png',
+    image: '/images/services/Maatwerk-Projecten.png',
     link: '/services/custom'
   }];
   return <section className="py-20 bg-secondary-50">

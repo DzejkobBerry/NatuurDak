@@ -67,7 +67,7 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
                 <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img src="/src/assets/images/team.jpg" alt="Geschiedenis Natuur Dak" className="w-full h-auto object-cover" />
+                  <img src="/images/team.jpg" alt="Geschiedenis Natuur Dak" className="w-full h-auto object-cover" />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-primary-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
                   <p className="text-3xl font-bold">2013</p>

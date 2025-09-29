@@ -6,7 +6,7 @@ const ServicesPage = () => {
   const mainServices = [{
     title: 'Kunstgras op Platte Daken',
     description: 'Wij specialiseren ons in het transformeren van platte daken in groene, functionele ruimtes met behulp van hoogwaardig kunstgras, juiste isolatie en drainagesystemen.',
-    image: '/src/assets/images/team.jpg',
+    image: '/images/team.jpg',
     link: '/services/rooftop'
   }, {
     title: 'Systemen voor Hellende Daken',
@@ -44,7 +44,7 @@ const ServicesPage = () => {
   return <div className="w-full">
       <div className="relative bg-primary-600 py-32">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="/src/assets/images/team.jpg" alt="Usługi GreenTurf" className="w-full h-full object-cover" />
+          <img src="/images/team.jpg" alt="Usługi GreenTurf" className="w-full h-full object-cover" />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
