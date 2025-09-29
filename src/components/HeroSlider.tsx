@@ -12,21 +12,21 @@ interface Slide {
 }
 const slides: Slide[] = [{
   id: 1,
-  title: 'Experts in Dakgras',
-  subtitle: 'Gespecialiseerde kunstgras oplossingen voor dakruimtes',
-  ctaText: 'Ontdek Onze Oplossingen',
+  title: 'Netherlands Natuur Dak',
+  subtitle: 'Uw specialist in kunstgras dakterrassen door heel Nederland. Wij transformeren uw dak in een groene oase met hoogwaardige, duurzame kunstgrasoplossingen die het hele jaar door genieten mogelijk maken.',
+  ctaText: 'Ontdek Onze Expertise',
   ctaLink: '/services/rooftop'
 }, {
   id: 2,
-  title: 'Verander Uw Dak in een Groene Oase',
-  subtitle: 'Duurzaam, onderhoudsvrij kunstgras voor elk dak',
-  ctaText: 'Bekijk Mogelijkheden',
+  title: 'Verander Uw Dak in een Luxe Groene Oase',
+  subtitle: 'Geniet van een onderhoudsvrij, weerbestendig kunstgras dakterras dat uw wooncomfort verhoogt, energie bespaart door isolatie en de waarde van uw eigendom significant verhoogt. Perfect voor ontspanning, entertainment en het creëren van extra leefruimte.',
+  ctaText: 'Bekijk Voordelen & Mogelijkheden',
   ctaLink: '/services/rooftop'
 }, {
   id: 3,
-  title: 'Innovatieve Dakoplossingen',
-  subtitle: 'Op maat gemaakte kunstgras installaties voor unieke dakprojecten',
-  ctaText: 'Bekijk Realisaties',
+  title: 'Innovatieve Dakoplossingen op Maat',
+  subtitle: 'Van complexe hellende daken tot uitgebreide daktuinen - onze ervaren specialisten realiseren unieke kunstgrasprojecten met geavanceerde bevestigings- en drainagesystemen. Elke installatie wordt aangepast aan uw specifieke wensen en dakconstructie.',
+  ctaText: 'Bekijk Onze Realisaties',
   ctaLink: '/gallery'
 }];
 

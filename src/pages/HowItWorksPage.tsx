@@ -154,8 +154,8 @@ const HowItWorksPage = () => {
               <Link to="/contact" className="px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center">
                 <MailIcon className="mr-2 h-5 w-5" /> Plan Online Consultatie
               </Link>
-              <a href="tel:+11234567890" className="px-8 py-4 bg-secondary-700 text-white font-medium rounded-md hover:bg-secondary-800 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center">
-                <PhoneIcon className="mr-2 h-5 w-5" /> Bel: +1 (123) 456-7890
+              <a href="tel:+31616368386" className="px-8 py-4 bg-secondary-700 text-white font-medium rounded-md hover:bg-secondary-800 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center">
+                <PhoneIcon className="mr-2 h-5 w-5" /> Bel: +31 616 368 386
               </a>
             </div>
           </div>

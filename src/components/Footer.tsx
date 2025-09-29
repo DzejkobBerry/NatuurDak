@@ -104,14 +104,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <PhoneIcon className="h-5 w-5 text-primary-400 mr-3 flex-shrink-0" />
-                <a href="tel:+31123456789" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  +31 (12) 345-6789
+                <a href="tel:+31616368386" className="text-gray-300 hover:text-primary-400 transition-colors">
+                  +31 616 368 386
                 </a>
               </div>
               <div className="flex items-center">
                 <MailIcon className="h-5 w-5 text-primary-400 mr-3 flex-shrink-0" />
-                <a href="mailto:info@natuurdak.com" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  info@natuurdak.com
+                <a href="mailto:Info@netherlandsnatuurdak.com" className="text-gray-300 hover:text-primary-400 transition-colors">
+                  Info@netherlandsnatuurdak.com
                 </a>
               </div>
             </div>

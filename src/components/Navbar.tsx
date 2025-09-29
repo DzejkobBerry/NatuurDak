@@ -91,11 +91,11 @@ const Navbar = () => {
               <div className="text-xs text-secondary-600 flex items-center justify-center space-x-3">
                 <div className="flex items-center space-x-1">
                   <Mail className="w-3 h-3" />
-                  <span>info@natuurdak.com</span>
+                  <span>Info@netherlandsnatuurdak.com</span>
                 </div>
                 <div className="flex items-center space-x-1">
                   <Phone className="w-3 h-3" />
-                  <span>+31 20 123 4567</span>
+                  <span>+31 616 368 386</span>
                 </div>
               </div>
             </div>

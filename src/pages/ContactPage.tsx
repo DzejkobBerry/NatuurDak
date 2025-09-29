@@ -93,7 +93,7 @@ const ContactPage = () => {
                     <h3 className="font-medium text-secondary-900 mb-1">
                       Telefoon
                     </h3>
-                    <p className="text-secondary-600">+1 (123) 456-7890</p>
+                    <p className="text-secondary-600">+31 616 368 386</p>
                   </div>
                 </div>
                 <div className="flex items-start mb-6">
@@ -102,7 +102,7 @@ const ContactPage = () => {
                     <h3 className="font-medium text-secondary-900 mb-1">
                       Email
                     </h3>
-                    <p className="text-secondary-600">info@natuurdak.com</p>
+                    <p className="text-secondary-600">Info@netherlandsnatuurdak.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
