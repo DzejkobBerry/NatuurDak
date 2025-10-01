@@ -1633,24 +1633,18 @@ const RooftopServicePage = () => {
                         <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100/50">
                           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             <div className="order-2 lg:order-1">
-                              <h3 className="text-2xl font-bold text-green-700 mb-4">Kantavslut SS50/SS120</h3>
-                              <p className="text-lg text-secondary-700 leading-relaxed">
-                                Kantavslut skyddar vegetationen mot vindupplyft. Kantavslut kan även användas vid takets gavlar om sarg saknas.
-                              </p>
+                              <h3 className="text-2xl font-bold text-green-700 mb-4">Kantafwerking SS50/SS120</h3>
+                             <p className="text-lg text-secondary-700 leading-relaxed">
+                               Kantafwerking beschermt de vegetatie tegen windopheffing. Het kan ook worden gebruikt bij de gevels van het dak wanneer een opstaande rand ontbreekt.
+                             </p>
                             </div>
                             <div className="order-1 lg:order-2">
-                              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 flex justify-center items-center h-64">
-                                <svg className="w-48 h-32 text-green-600" viewBox="0 0 200 100" fill="none">
-                                  <rect x="20" y="60" width="160" height="20" fill="currentColor" opacity="0.3" rx="2"/>
-                                  <rect x="30" y="50" width="140" height="8" fill="currentColor" opacity="0.5" rx="1"/>
-                                  <rect x="40" y="40" width="120" height="6" fill="currentColor" opacity="0.7" rx="1"/>
-                                  <path d="M50 30 L150 30 L160 40 L40 40 Z" fill="currentColor"/>
-                                  <circle cx="60" cy="25" r="2" fill="currentColor" opacity="0.6"/>
-                                  <circle cx="80" cy="25" r="2" fill="currentColor" opacity="0.6"/>
-                                  <circle cx="100" cy="25" r="2" fill="currentColor" opacity="0.6"/>
-                                  <circle cx="120" cy="25" r="2" fill="currentColor" opacity="0.6"/>
-                                  <circle cx="140" cy="25" r="2" fill="currentColor" opacity="0.6"/>
-                                </svg>
+                              <div className="bg-gradient-to-br from-green-200 to-blue-200 rounded-xl p-6 flex justify-center items-center h-64 border border-green-300">
+                                <img 
+                                  src="https://i.imgur.com/BIxmHsd.png" 
+                                  alt="Kantafwerking SS50/SS120" 
+                                  className="max-w-full max-h-full object-contain rounded-lg shadow-sm transition-transform duration-300 hover:scale-105"
+                                />
                               </div>
                             </div>
                           </div>
