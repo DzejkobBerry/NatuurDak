@@ -32,7 +32,8 @@ const RooftopServicePage = () => {
 
   const currentContent = tabsContent[activeTab];
    
-   return <div className="w-full">
+  return (
+    <div className="w-full">
       <div className="relative bg-primary-600 py-32">
         <div className="absolute inset-0 z-0 opacity-30">
           <img src="/images/team.jpg" alt="Kunstgras op het dak" className="w-full h-full object-cover" />
@@ -450,8 +451,11 @@ const RooftopServicePage = () => {
                         </div>
                         
                         <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
-                          <span className="text-green-700 font-semibold">Droge weiden op daken</span> bieden een natuurlijke en duurzame oplossing voor groene dakbedekking.
-                        </p>
+                           De Sedunas <span className="text-green-700 font-semibold">droogweidemat</span> wordt geproduceerd in Zweden en is bij levering goed ontwikkeld en wortelt snel. De mat bevat meer dan 20 robuuste soorten, waaronder sedum en kruiden.
+                         </p>
+                         <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium mt-4">
+                           De droogweidemat zorgt voor een rijke bloei en heeft een hoge soortenrijkdom. Het droogdak past zich aan de lokale omstandigheden op de locatie aan. Het uiterlijk en de samenstelling variëren per seizoen en afhankelijk van de klimaatzone waarin de weide zich bevindt.
+                         </p>
                         
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                           <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
@@ -507,37 +511,43 @@ const RooftopServicePage = () => {
                         VOORDELEN
                       </h3>
                       <div className="space-y-3">
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Verhoogt de biodiversiteit met inheemse plantensoorten
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Minimaal onderhoud door droogtebestendige eigenschappen
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Geschikt voor verschillende daktypen en hellingen
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Natuurlijke habitat voor insecten en kleine dieren
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Seizoensgebonden kleurveranderingen voor visuele aantrekkingskracht
-                          </p>
-                        </div>
-                      </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Aanzienlijk kortere vestigingstijd dan ingezaaide weiden
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Hoge biodiversiteit met een groot aantal soorten
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Bevordert fauna, mensen en milieu
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Flexibele opbouw, omdat de hoeveelheid substraat kan worden aangepast aan de gewenste bouwhoogte
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Hoge wateropslagcapaciteit die kan worden aangepast met de hoeveelheid substraat, &gt;70 liter/m²
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Verbetert de score in milieucertificeringsprogramma's zoals LEED & BREEAM
+                           </p>
+                         </div>
+                       </div>
                     </div>
                   </div>
                   
@@ -615,6 +625,7 @@ const RooftopServicePage = () => {
         </div>
       </div>
       <CtaSection />
-    </div>;
+    </div>
+  );
 };
 export default RooftopServicePage;
