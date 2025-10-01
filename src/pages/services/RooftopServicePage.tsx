@@ -607,13 +607,10 @@ const RooftopServicePage = () => {
                               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
                             </svg>
                           </div>
-                          <h3 className="text-xl font-bold text-green-800">Natuurlijke & Duurzame Oplossing</h3>
+                          <h3 className="text-xl font-bold text-green-800">Dakvloerconstructies</h3>
                         </div>
                         <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
-                          De Sedunas <span className="text-green-700 font-semibold">droogweidemat</span> wordt geproduceerd in Zweden en is bij levering goed ontwikkeld en wortelt snel. De mat bevat meer dan 20 robuuste soorten, waaronder sedum en kruiden.
-                        </p>
-                        <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium mt-4">
-                          De droogweidemat zorgt voor een rijke bloei en heeft een hoge soortenrijkdom. Het droogdak past zich aan de lokale omstandigheden op de locatie aan. Het uiterlijk en de samenstelling variëren per seizoen en afhankelijk van de klimaatzone waarin de weide zich bevindt.
+                          De Sedunas <span className="text-green-700 font-semibold">dakvloerconstructies</span> hebben een grote wateropslagcapaciteit, oftewel veldcapaciteit, met de juiste verhouding tussen lucht, water en substraat dankzij speciaal geselecteerde bouwcomponenten.
                         </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                           <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
