@@ -187,48 +187,54 @@ const GroeneGevelsServicePage = () => {
                   </div>
                   
                   {/* Second section with reversed layout */}
-                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                     <div className="bg-green-50 rounded-lg p-6">
-                       <h3 className="text-xl font-display font-bold text-green-700 mb-4">
-                         ENERGIEVOORDELEN
-                       </h3>
-                       <div className="space-y-3">
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Vermindert de koelbehoefte tot 25% in vergelijking met conventionele daken
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Kan de binnentemperatuur in de zomermaanden met 3-4 °C verlagen
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             In de wintermaanden beperkt een groendak de warmtestroom door het dak en fungeert het als extra isolatie
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Groene daken verminderen de concentratie van de vier belangrijkste verontreinigende stoffen: O₃, SO₂, PM en NOₓ
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Geeft hogere scores in milieucertificeringsprogramma's zoals LEED en BREEAM
-                           </p>
-                         </div>
-                       </div>
-                     </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                      <div className="bg-green-50 rounded-lg p-6">
+                        <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                          VOORDELEN VAN GEVELKLIMPLANTEN
+                        </h3>
+                        <div className="space-y-3">
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Vermindert opname van zonnewarmte tot 90% en temperatuurschommelingen tot 50%
+                            </p>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Beschermt gevels tegen vocht, vorst en UV-straling
+                            </p>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Werkt als winddemper en vermindert windtunnels in stedelijke gebieden
+                            </p>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Helpt organische verontreinigingen zoals formaldehyde en koolmonoxide te verminderen (Hedera Helix is zeer effectief)
+                            </p>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Biedt uitstekende graffiti-bescherming
+                            </p>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Eenvoudig aan te passen met losse eindterminals
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     
                     <div className="flex justify-center">
                       <img 
-                        src="https://i.imgur.com/LqJc2No.png" 
+                        src="https://i.imgur.com/0mDQ1ih.png" 
                         alt="Energievoordelen plantenstaven" 
                         className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
                       />
