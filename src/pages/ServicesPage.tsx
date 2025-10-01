@@ -12,7 +12,7 @@ const ServicesPage = () => {
     title: 'Groene Gevels',
     description: 'Onze innovatieve oplossingen maken groene gevelinstallatie mogelijk, met behulp van speciale bevestigingssystemen en plantenselectie voor optimale groei.',
     image: 'https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    link: '/services/rooftop'
+    link: '/services/groene-gevels'
   }, {
     title: 'Groene landbedekking',
     description: 'Naast onze specialisatie in dakinstallaties bieden wij ook groene landbedekkingsoplossingen voor tuinen, parken en andere openbare ruimtes.',
