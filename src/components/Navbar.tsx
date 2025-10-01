@@ -38,7 +38,7 @@ const Navbar = () => {
         path: '/services/groene-gevels'
     }, {
       name: 'Groene Landbedekking',
-      path: '/services/custom'
+      path: '/services/groene-landbedekking'
     }]
   }, {
     name: 'Hoe Het Werkt',

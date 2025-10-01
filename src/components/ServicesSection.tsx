@@ -41,7 +41,7 @@ const ServicesSection = () => {
     title: 'Groene Landbedekking',
     description: 'Duurzame groene landbedekkingsoplossingen voor tuinen, parken en openbare ruimtes, aangepast aan uw specifieke behoeften.',
     image: '/images/services/Maatwerk-Projecten.png',
-    link: '/services/custom'
+    link: '/services/groene-landbedekking'
   }];
   return <section className="py-20 bg-secondary-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

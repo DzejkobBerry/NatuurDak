@@ -17,7 +17,7 @@ const ServicesPage = () => {
     title: 'Groene Landbedekking',
     description: 'Naast onze specialisatie in dakinstallaties bieden wij ook groene landbedekkingsoplossingen voor tuinen, parken en andere openbare ruimtes.',
     image: 'https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
-    link: '/services/ground'
+    link: '/services/groene-landbedekking'
   }];
   const additionalServices = [{
     icon: <ShieldIcon className="h-12 w-12 text-primary-600" />,

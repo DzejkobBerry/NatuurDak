@@ -11,6 +11,7 @@ import RooftopServicePage from './pages/services/RooftopServicePage';
 import GroundServicePage from './pages/services/GroundServicePage';
 import CustomServicePage from './pages/services/CustomServicePage';
 import GroeneGevelsServicePage from './pages/services/GroeneGevelsServicePage';
+import GroeneLandbedekkingServicePage from './pages/services/GroeneLandbedekkingServicePage';
 import Layout from './components/Layout';
 export function App() {
   return <Router>
@@ -23,6 +24,7 @@ export function App() {
           <Route path="/services/ground" element={<GroundServicePage />} />
           <Route path="/services/custom" element={<CustomServicePage />} />
           <Route path="/services/groene-gevels" element={<GroeneGevelsServicePage />} />
+          <Route path="/services/groene-landbedekking" element={<GroeneLandbedekkingServicePage />} />
           <Route path="/how-it-works" element={<HowItWorksPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/reviews" element={<ReviewsPage />} />
