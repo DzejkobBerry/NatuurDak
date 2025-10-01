@@ -1627,7 +1627,168 @@ const RooftopServicePage = () => {
                       </div>
                     </div>
                   </div>
+                    {/* Nowa sekcja tekstowa ze zdjęciami */}
+                      <div className="mt-12 space-y-8">
+                        {/* Kantavslut SS50/SS120 */}
+                        <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100/50">
+                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div className="order-2 lg:order-1">
+                              <h3 className="text-2xl font-bold text-green-700 mb-4">Kantavslut SS50/SS120</h3>
+                              <p className="text-lg text-secondary-700 leading-relaxed">
+                                Kantavslut skyddar vegetationen mot vindupplyft. Kantavslut kan även användas vid takets gavlar om sarg saknas.
+                              </p>
+                            </div>
+                            <div className="order-1 lg:order-2">
+                              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 flex justify-center items-center h-64">
+                                <svg className="w-48 h-32 text-green-600" viewBox="0 0 200 100" fill="none">
+                                  <rect x="20" y="60" width="160" height="20" fill="currentColor" opacity="0.3" rx="2"/>
+                                  <rect x="30" y="50" width="140" height="8" fill="currentColor" opacity="0.5" rx="1"/>
+                                  <rect x="40" y="40" width="120" height="6" fill="currentColor" opacity="0.7" rx="1"/>
+                                  <path d="M50 30 L150 30 L160 40 L40 40 Z" fill="currentColor"/>
+                                  <circle cx="60" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                                  <circle cx="80" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                                  <circle cx="100" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                                  <circle cx="120" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                                  <circle cx="140" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                                </svg>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+ 
+                        {/* Perforerad fotplåt */}
+                        <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100/50">
+                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                            <div>
+                              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 flex justify-center items-center h-64">
+                                <svg className="w-48 h-32 text-green-600" viewBox="0 0 200 100" fill="none">
+                                  <rect x="30" y="30" width="140" height="40" fill="currentColor" opacity="0.2" rx="4"/>
+                                  <rect x="35" y="35" width="130" height="30" fill="currentColor" opacity="0.4" rx="2"/>
+                                  {/* Perforacje */}
+                                  <circle cx="50" cy="45" r="2" fill="white"/>
+                                  <circle cx="60" cy="45" r="2" fill="white"/>
+                                  <circle cx="70" cy="45" r="2" fill="white"/>
+                                  <circle cx="80" cy="45" r="2" fill="white"/>
+                                  <circle cx="90" cy="45" r="2" fill="white"/>
+                                  <circle cx="100" cy="45" r="2" fill="white"/>
+                                  <circle cx="110" cy="45" r="2" fill="white"/>
+                                  <circle cx="120" cy="45" r="2" fill="white"/>
+                                  <circle cx="130" cy="45" r="2" fill="white"/>
+                                  <circle cx="140" cy="45" r="2" fill="white"/>
+                                  <circle cx="150" cy="45" r="2" fill="white"/>
+ 
+                                  <circle cx="50" cy="55" r="2" fill="white"/>
+                                  <circle cx="60" cy="55" r="2" fill="white"/>
+                                  <circle cx="70" cy="55" r="2" fill="white"/>
+                                  <circle cx="80" cy="55" r="2" fill="white"/>
+                                  <circle cx="90" cy="55" r="2" fill="white"/>
+                                  <circle cx="100" cy="55" r="2" fill="white"/>
+                                  <circle cx="110" cy="55" r="2" fill="white"/>
+                                  <circle cx="120" cy="55" r="2" fill="white"/>
+                                  <circle cx="130" cy="55" r="2" fill="white"/>
+                                  <circle cx="140" cy="55" r="2" fill="white"/>
+                                  <circle cx="150" cy="55" r="2" fill="white"/>
+ 
+                                  {/* Zagięcie */}
+                                  <path d="M170 35 L180 45 L180 65 L170 65 Z" fill="currentColor" opacity="0.6"/>
+                                </svg>
+                              </div>
+                            </div>
+                            <div>
+                              <h3 className="text-2xl font-bold text-green-700 mb-4">Perforerad fotplåt</h3>
+                              <p className="text-lg text-secondary-700 leading-relaxed">
+                                Fotplåten förhindrar att vatten rinner bakom hängrännnan, vilket kan ge skador på takfot och fasad.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Element 1 - Kantavslut SS50/SS120 */}
+                      <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100/50">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                          <div className="order-2 lg:order-1">
+                            <h3 className="text-2xl font-bold text-green-700 mb-4">Kantavslut SS50/SS120</h3>
+                            <p className="text-lg text-secondary-700 leading-relaxed">
+                              Kantavslut skyddar vegetationen mot vindupplyft. Kantavslut kan även användas vid takets gavlar om sarg saknas.
+                            </p>
+                          </div>
+                          <div className="order-1 lg:order-2">
+                            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 flex justify-center items-center h-64">
+                              <svg className="w-48 h-32 text-green-600" viewBox="0 0 200 100" fill="none">
+                                <rect x="20" y="60" width="160" height="20" fill="currentColor" opacity="0.3" rx="2"/>
+                                <rect x="30" y="50" width="140" height="8" fill="currentColor" opacity="0.5" rx="1"/>
+                                <rect x="40" y="40" width="120" height="6" fill="currentColor" opacity="0.7" rx="1"/>
+                                <path d="M50 30 L150 30 L160 40 L40 40 Z" fill="currentColor"/>
+                                <circle cx="60" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                                <circle cx="80" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                                <circle cx="100" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                                <circle cx="120" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                                <circle cx="140" cy="25" r="2" fill="currentColor" opacity="0.6"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Element 2 - Alternating layout (image left, text right) */}
+                      <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100/50">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                          <div className="order-1 lg:order-1">
+                            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 flex justify-center items-center h-64">
+                              <svg className="w-48 h-32 text-green-600" viewBox="0 0 200 100" fill="none">
+                                <rect x="30" y="70" width="140" height="15" fill="currentColor" opacity="0.4" rx="2"/>
+                                <rect x="40" y="55" width="120" height="10" fill="currentColor" opacity="0.6" rx="1"/>
+                                <path d="M50 35 L150 35 L155 45 L45 45 Z" fill="currentColor"/>
+                                <rect x="60" y="25" width="80" height="8" fill="currentColor" opacity="0.8" rx="1"/>
+                                <circle cx="70" cy="20" r="1.5" fill="currentColor" opacity="0.7"/>
+                                <circle cx="85" cy="20" r="1.5" fill="currentColor" opacity="0.7"/>
+                                <circle cx="100" cy="20" r="1.5" fill="currentColor" opacity="0.7"/>
+                                <circle cx="115" cy="20" r="1.5" fill="currentColor" opacity="0.7"/>
+                                <circle cx="130" cy="20" r="1.5" fill="currentColor" opacity="0.7"/>
+                              </svg>
+                            </div>
+                          </div>
+                          <div className="order-2 lg:order-2">
+                            <h3 className="text-2xl font-bold text-green-700 mb-4">Takavvattning System</h3>
+                            <p className="text-lg text-secondary-700 leading-relaxed">
+                              Effektiv takavvattning är avgörande för att förhindra vattensamling och säkerställa långsiktig hållbarhet för ditt gröna tak.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      {/* Element 3 - Original layout (text left, image right) */}
+                      <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100/50">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                          <div className="order-2 lg:order-1">
+                            <h3 className="text-2xl font-bold text-green-700 mb-4">Växtsubstrat Premium</h3>
+                            <p className="text-lg text-secondary-700 leading-relaxed">
+                              Specialanpassat substrat som ger optimal näring och dränering för takvegetation, utvecklat för nordiska klimatförhållanden.
+                            </p>
+                          </div>
+                          <div className="order-1 lg:order-2">
+                            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 flex justify-center items-center h-64">
+                              <svg className="w-48 h-32 text-green-600" viewBox="0 0 200 100" fill="none">
+                                <rect x="25" y="65" width="150" height="20" fill="currentColor" opacity="0.3" rx="3"/>
+                                <rect x="35" y="50" width="130" height="12" fill="currentColor" opacity="0.5" rx="2"/>
+                                <rect x="45" y="35" width="110" height="10" fill="currentColor" opacity="0.7" rx="1"/>
+                                <path d="M55 20 L145 20 L150 30 L50 30 Z" fill="currentColor"/>
+                                <circle cx="65" cy="15" r="2" fill="currentColor" opacity="0.6"/>
+                                <circle cx="80" cy="15" r="2" fill="currentColor" opacity="0.6"/>
+                                <circle cx="95" cy="15" r="2" fill="currentColor" opacity="0.6"/>
+                                <circle cx="110" cy="15" r="2" fill="currentColor" opacity="0.6"/>
+                                <circle cx="125" cy="15" r="2" fill="currentColor" opacity="0.6"/>
+                                <path d="M70 10 L75 5 L80 10" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.8"/>
+                                <path d="M90 10 L95 5 L100 10" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.8"/>
+                                <path d="M110 10 L115 5 L120 10" stroke="currentColor" strokeWidth="1" fill="none" opacity="0.8"/>
+                              </svg>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
+                
               ) : (
                 /* Default layout for other tabs */
                 <div className="text-center">
