@@ -1032,19 +1032,19 @@ const RooftopServicePage = () => {
                               <tbody className="divide-y divide-gray-200">
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Theoretisch droog gewicht</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">56–125 kg/m²</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">150–160 kg/m²</td>
                                 </tr>
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Gewicht bij verzadiging met water</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">260–300 kg/m²</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">320–360 kg/m²</td>
                                 </tr>
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Wateropslagcapaciteit bij 0° helling</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">140–180 liter/m²</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">165–200 liter/m²</td>
                                 </tr>
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Bouwhoogte</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">200–240 mm</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">250–290 mm</td>
                                 </tr>
                               </tbody>
                             </table>
