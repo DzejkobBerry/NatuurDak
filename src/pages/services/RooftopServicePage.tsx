@@ -500,7 +500,7 @@ const RooftopServicePage = () => {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                     <div className="flex justify-center">
                       <img 
-                        src="https://i.imgur.com/kFwyAT0.png" 
+                        src="https://i.imgur.com/BX5BiZo.png" 
                         alt="Droge weiden systeem" 
                         className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
                       />
@@ -555,37 +555,25 @@ const RooftopServicePage = () => {
                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                      <div className="bg-green-50 rounded-lg p-6">
                        <h3 className="text-xl font-display font-bold text-green-700 mb-4">
-                         MILIEUVOORDELEN
+                         GELUIDSDEMPING
                        </h3>
                        <div className="space-y-3">
                          <div className="flex items-start space-x-3">
                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                            <p className="text-secondary-700 text-sm">
-                             Ondersteunt lokale ecosystemen en biodiversiteit
+                             Groene daken verminderen stress, verlagen de bloeddruk, ontspannen de spieren en verhogen ons gevoel van welzijn.
                            </p>
                          </div>
                          <div className="flex items-start space-x-3">
                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                            <p className="text-secondary-700 text-sm">
-                             Vermindert de stedelijke hitte-eiland effecten
+                             Ze verlagen de windsnelheid in onze steden, waardoor stof, deeltjes en vervuiling door de vegetatie kunnen worden opgenomen.
                            </p>
                          </div>
                          <div className="flex items-start space-x-3">
                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                            <p className="text-secondary-700 text-sm">
-                             Verbetert de luchtkwaliteit door natuurlijke filtering
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Lagere CO2-voetafdruk door gebruik van lokale plantensoorten
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Natuurlijke regenwater opvang en filtering
+                             Groene daken verlagen de concentratie van de vier belangrijkste verontreinigende stoffen: O₃, SO₂, PM en NOₓ.
                            </p>
                          </div>
                        </div>
@@ -593,7 +581,7 @@ const RooftopServicePage = () => {
                     
                     <div className="flex justify-center">
                       <img 
-                        src="https://i.imgur.com/43UAd2i.png" 
+                        src="https://i.imgur.com/LqJc2No.png" 
                         alt="Milieuvoordelen droge weiden" 
                         className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
                       />
