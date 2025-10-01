@@ -472,12 +472,12 @@ const GroeneGevelsServicePage = () => {
                           <table className="w-full">
                             <tbody className="divide-y divide-gray-200">
                               <tr className="hover:bg-green-50/50 transition-colors duration-200">
-                                <td className="px-6 py-4 font-semibold text-secondary-800 bg-green-100">SGS-stolpfäste</td>
-                                <td className="px-6 py-4 text-secondary-700">Skruvas i trästolpar för upphängning av växtskärm. Stolpar ingår ej.</td>
+                                <td className="px-6 py-4 font-semibold text-secondary-800 bg-green-100">SGS-paalmontage</td>
+                                <td className="px-6 py-4 text-secondary-700">Wordt in houten palen geschroefd om plantenschermen op te hangen. Palen niet inbegrepen.</td>
                               </tr>
                               <tr className="hover:bg-green-50/50 transition-colors duration-200">
-                                <td className="px-6 py-4 font-semibold text-secondary-800 bg-green-100">SGS-fasadfäste</td>
-                                <td className="px-6 py-4 text-secondary-700">Skruvas i fasad när växtskärm monteras längs fasad.</td>
+                                <td className="px-6 py-4 font-semibold text-secondary-800 bg-green-100">SGS gevelbeugel</td>
+                                <td className="px-6 py-4 text-secondary-700">Wordt in de gevel geschroefd wanneer het plantenscherm langs de gevel wordt gemonteerd.</td>
                               </tr>
                             </tbody>
                           </table>
