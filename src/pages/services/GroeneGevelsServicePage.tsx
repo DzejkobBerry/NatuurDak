@@ -6,18 +6,18 @@ const GroeneGevelsServicePage = () => {
   
   const tabsContent = {
     installatiedraden: {
-      title: 'Installatiedraden',
-      description: 'Professionele installatiedraden voor groene gevels - inhoud wordt binnenkort toegevoegd.'
+      title: 'Plantenstaven',
+      description: 'Het SGW-draadsysteem van Seduna bestaat uit onderdelen van hoogwaardig roestvrij staal om de gevel te beschermen tegen de krachten die klimmende en slingervormende planten uitoefenen op het draadsysteem. Met dit draadsysteem ontstaat een veilige groene gevel met een lange levensduur. Het draadsysteem is een flexibele oplossing die kan worden aangepast aan het uiterlijk en de vorm van de gevel.'
     },
     plantenpanelen: {
-      title: 'Plantenpanelen',
-      description: 'Innovatieve plantenpanelen voor verticale tuinen - inhoud wordt binnenkort toegevoegd.'
+      title: 'Planten Panelen',
+      description: 'Professionele installatiedraden voor groene gevels - inhoud wordt binnenkort toegevoegd.'
     }
   };
 
   const tabs = [
-    { id: 'installatiedraden', label: 'Installatiedraden' },
-    { id: 'plantenpanelen', label: 'Plantenpanelen' }
+    { id: 'installatiedraden', label: 'Plantenstaven' },
+    { id: 'plantenpanelen', label: 'Planten Panelen' }
   ];
 
   const currentContent = tabsContent[activeTab];
@@ -60,46 +60,124 @@ const GroeneGevelsServicePage = () => {
               ))}
             </div>
             
-            {/* Tab Content */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
-                {currentContent.title}
-              </h2>
-              
-              {/* Placeholder content for both tabs */}
-              <div className="text-center">
-                <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
-                  <div className="flex items-center justify-center mb-6">
-                    <div className="flex space-x-2">
-                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                      <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
-                      <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
-                    </div>
-                  </div>
+              {/* Tab Content */}
+              {activeTab === 'installatiedraden' ? (
+                // Plantendraad content
+                <div className="bg-white rounded-lg shadow-lg p-8">
+                  <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
+                    {currentContent.title}
+                  </h2>
                   
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-center space-x-3 mb-4">
-                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
-                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+                  {/* Enhanced Description with Visual Elements */}
+                  <div className="text-center mb-12">
+                    <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                      <div className="flex items-center justify-center mb-6">
+                        <div className="flex space-x-2">
+                          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                          <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                          <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+                        </div>
                       </div>
-                      <h3 className="text-xl font-bold text-green-800">Binnenkort Beschikbaar</h3>
-                    </div>
-                    
-                    <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto">
-                      {currentContent.description}
-                    </p>
-                    
-                    <div className="mt-8 p-6 bg-white/70 rounded-xl border border-green-200">
-                      <p className="text-secondary-600 italic">
-                        Deze sectie wordt momenteel ontwikkeld. Neem contact met ons op voor meer informatie over onze {currentContent.title.toLowerCase()} oplossingen.
-                      </p>
+                      
+                      <div className="space-y-4">
+                        <div className="flex items-center justify-center space-x-3 mb-4">
+                          <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <h3 className="text-xl font-bold text-green-800">Hoogwaardig SGW-draadsysteem</h3>
+                        </div>
+                        
+                        <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                          Het <span className="text-green-700 font-semibold">SGW-draadsysteem van Seduna</span> bestaat uit onderdelen van hoogwaardig roestvrij staal om de gevel te beschermen tegen de krachten die klimmende en slingervormende planten uitoefenen op het draadsysteem.
+                        </p>
+                        <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium mt-4">
+                          Met dit draadsysteem ontstaat een veilige groene gevel met een lange levensduur. Het draadsysteem is een flexibele oplossing die kan worden aangepast aan het uiterlijk en de vorm van de gevel.
+                        </p>
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                          <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                            <div className="flex items-center space-x-2 mb-2">
+                              <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                                </svg>
+                              </div>
+                              <span className="font-semibold text-blue-700">Roestvrij Staal</span>
+                            </div>
+                            <p className="text-sm text-secondary-600">Hoogwaardige materialen voor lange levensduur</p>
+                          </div>
+                          
+                          <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                            <div className="flex items-center space-x-2 mb-2">
+                              <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                </svg>
+                              </div>
+                              <span className="font-semibold text-green-700">Flexibele Oplossing</span>
+                            </div>
+                            <p className="text-sm text-secondary-600">Aanpasbaar aan elke gevelvorm en -stijl</p>
+                          </div>
+                          
+                          <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                            <div className="flex items-center space-x-2 mb-2">
+                              <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center">
+                                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
+                                </svg>
+                              </div>
+                              <span className="font-semibold text-green-700">Veilige Gevel</span>
+                            </div>
+                            <p className="text-sm text-secondary-600">Bescherming tegen plantenkrachten</p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              ) : (
+                // Plantenpanelen placeholder content
+                <div className="bg-white rounded-lg shadow-lg p-8">
+                  <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
+                    {currentContent.title}
+                  </h2>
+                  
+                  <div className="text-center">
+                    <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                      <div className="flex items-center justify-center mb-6">
+                        <div className="flex space-x-2">
+                          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                          <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                          <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+                        </div>
+                      </div>
+                      
+                      <div className="space-y-4">
+                        <div className="flex items-center justify-center space-x-3 mb-4">
+                          <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <h3 className="text-xl font-bold text-green-800">Binnenkort Beschikbaar</h3>
+                        </div>
+                        
+                        <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto">
+                          {currentContent.description}
+                        </p>
+                        
+                        <div className="mt-8 p-6 bg-white/70 rounded-xl border border-green-200">
+                          <p className="text-secondary-600 italic">
+                            Deze sectie wordt momenteel ontwikkeld. Neem contact met ons op voor meer informatie over onze {currentContent.title.toLowerCase()} oplossingen.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
           </div>
         </div>
       </div>
