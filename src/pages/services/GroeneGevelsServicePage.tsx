@@ -136,6 +136,104 @@ const GroeneGevelsServicePage = () => {
                       </div>
                     </div>
                   </div>
+                  
+                  {/* New section with image and benefits list */}
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div className="flex justify-center">
+                      <img 
+                        src="https://i.imgur.com/BX5BiZo.png" 
+                        alt="Plantenstaven systeem" 
+                        className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
+                      />
+                    </div>
+                    
+                    <div className="bg-green-50 rounded-lg p-6">
+                      <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                        VOORDELEN
+                      </h3>
+                      <div className="space-y-3">
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Staal regenwater op en vermindert de afvoer naar regenwaterstemen
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Dempt de maximale waterstroom met 30% tot 60% gedurende de eerste 10-20 minuten
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Bestand tegen windopwaartse druk
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Dempt geluid in het frequentiebereik van 500-4000 Hz
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Bestrijdt hitte-eilanden in onze steden
+                           </p>
+                         </div>
+                       </div>
+                    </div>
+                  </div>
+                  
+                  {/* Second section with reversed layout */}
+                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                     <div className="bg-green-50 rounded-lg p-6">
+                       <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                         ENERGIEVOORDELEN
+                       </h3>
+                       <div className="space-y-3">
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Vermindert de koelbehoefte tot 25% in vergelijking met conventionele daken
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Kan de binnentemperatuur in de zomermaanden met 3-4 °C verlagen
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             In de wintermaanden beperkt een groendak de warmtestroom door het dak en fungeert het als extra isolatie
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Groene daken verminderen de concentratie van de vier belangrijkste verontreinigende stoffen: O₃, SO₂, PM en NOₓ
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Geeft hogere scores in milieucertificeringsprogramma's zoals LEED en BREEAM
+                           </p>
+                         </div>
+                       </div>
+                     </div>
+                    
+                    <div className="flex justify-center">
+                      <img 
+                        src="https://i.imgur.com/LqJc2No.png" 
+                        alt="Energievoordelen plantenstaven" 
+                        className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
+                      />
+                    </div>
+                  </div>
                 </div>
               ) : (
                 // Plantenpanelen placeholder content
