@@ -866,6 +866,7 @@ const RooftopServicePage = () => {
                   </div>
 
                   {/* Third SDB Section - Another Duplicate */}
+                  {/* PIERWSZA SEKCJA - Groene binnenplaatsen */}
                   <div className="mt-16">
                     <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
                       <div className="text-center mb-8">
@@ -984,7 +985,7 @@ const RooftopServicePage = () => {
                     </div>
                   </div>
 
-                  {/* Fourth Section - Duplicate with Different Content */}
+                  {/* DRUGA SEKCJA - Groene binnenplaatsen */}
                   <div className="mt-16">
                     <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
                       <div className="text-center mb-8">
