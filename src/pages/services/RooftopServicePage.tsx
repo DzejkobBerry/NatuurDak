@@ -1148,19 +1148,19 @@ const RooftopServicePage = () => {
                               <tbody className="divide-y divide-gray-200">
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Theoretisch droog gewicht</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">80–120 kg/m²</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">190–195 kg/m²</td>
                                 </tr>
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Gewicht bij verzadiging met water</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">180–220 kg/m²</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">375–420 kg/m²</td>
                                 </tr>
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Wateropslagcapaciteit bij 0° helling</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">100–120 liter/m²</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">190–225 liter/m²</td>
                                 </tr>
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Bouwhoogte</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">120–160 mm</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">340–380 mm</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -1171,7 +1171,7 @@ const RooftopServicePage = () => {
                             <div className="flex items-start space-x-3">
                               <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                               <p className="text-secondary-700 text-sm font-medium">
-                                Extensieve beplanting vereist minimaal onderhoud en is ideaal voor grote oppervlaktes met beperkte toegankelijkheid.
+                                De draagkracht van het onderliggende dak/de vloerconstructie bepaalt hoe zwaar en dik de beplantingsopbouw kan zijn.
                               </p>
                             </div>
                           </div>
