@@ -650,6 +650,78 @@ const RooftopServicePage = () => {
                       </div>
                     </div>
                   </div>
+                  
+                  {/* SMB 40 Seduna Mineral Board Section */}
+                  <div className="mt-16">
+                    <h2 className="text-3xl font-display font-bold text-green-600 mb-6">
+                      SMB 40- Seduna Mineral Board
+                    </h2>
+                    
+                    <div className="space-y-4 mb-8">
+                      <p className="text-lg text-secondary-700 leading-relaxed">
+                        SMB 40 används som vattenhållande lager vid bjälklagsuppbyggnad.
+                      </p>
+                      <p className="text-lg text-secondary-700 leading-relaxed">
+                        SMB 40 har en oslagbar vattenhållande förmåga i förhållande till sin vikt och volym.
+                      </p>
+                    </div>
+                    
+                    {/* Properties and Benefits Table */}
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                      <div className="grid grid-cols-2">
+                        <div className="bg-green-500 text-white p-4">
+                          <h3 className="text-xl font-bold">Egenskaper</h3>
+                        </div>
+                        <div className="bg-green-500 text-white p-4">
+                          <h3 className="text-xl font-bold">Fördelar</h3>
+                        </div>
+                      </div>
+                      
+                      <div className="grid grid-cols-2 divide-x divide-gray-200">
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Låg densitet, 158 kg/m³.</p>
+                        </div>
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Minimal vikt jämfört med löst substrat.</p>
+                        </div>
+                        
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Stabil struktur. Behåller.</p>
+                        </div>
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Behåller sin funktion, kompakteras inte.</p>
+                        </div>
+                        
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Levereras i skivor 1200 x 600 x 40</p>
+                        </div>
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Lätt hantering och installation.</p>
+                        </div>
+                        
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Filtereffekt.</p>
+                        </div>
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Förlänger livslängden på draneringslager.</p>
+                        </div>
+                        
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Består av stenull.</p>
+                        </div>
+                        <div className="p-4 border-b border-gray-200">
+                          <p className="text-secondary-700">Obrännbart material, minskad brandrisk.</p>
+                        </div>
+                        
+                        <div className="p-4">
+                          <p className="text-secondary-700">Vattenhållande förmåga 37 l/m².</p>
+                        </div>
+                        <div className="p-4">
+                          <p className="text-secondary-700">Mycket hög vattenhållning jämfört med jord.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               ) : (
                 /* Default layout for other tabs */
