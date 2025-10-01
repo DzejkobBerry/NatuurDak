@@ -28,18 +28,18 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 };
 const ServicesSection = () => {
   const services = [{
-    title: 'Kunstgras op Platte Daken',
-    description: 'Transformeer uw platte dak in een groene oase met onze gespecialiseerde kunstgras installaties, ideaal voor stedelijke ruimtes.',
+    title: 'Groene Daken',
+    description: 'Transformeer uw dak in een groene oase met onze duurzame groene dakoplossingen, ideaal voor stedelijke ruimtes en milieuvriendelijke bouw.',
     image: '/images/services/Kunstgras-op-Platte-Daken.png',
     link: '/services/rooftop'
   }, {
-    title: 'Systemen voor Hellende Daken',
-    description: 'Gespecialiseerde oplossingen voor hellende daken, die zorgen voor veilige en duurzame kunstgras installatie met het juiste bevestigingssysteem.',
+    title: 'Groene gevels',
+    description: 'Gespecialiseerde oplossingen voor groene gevels die zorgen voor een natuurlijke uitstraling en verbetering van het binnenklimaat.',
     image: '/images/services/Systemen_voor_Hellende_Daken.png',
     link: '/services/rooftop'
   }, {
-    title: 'Maatwerk Projecten',
-    description: 'Van dakterrassen tot daktuinen, wij ontwerpen op maat gemaakte kunstgras oplossingen aangepast aan uw unieke behoeften.',
+    title: 'Groene landbedekking',
+    description: 'Duurzame groene landbedekkingsoplossingen voor tuinen, parken en openbare ruimtes, aangepast aan uw specifieke behoeften.',
     image: '/images/services/Maatwerk-Projecten.png',
     link: '/services/custom'
   }];

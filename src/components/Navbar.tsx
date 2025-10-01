@@ -31,13 +31,13 @@ const Navbar = () => {
     name: 'Diensten',
     path: '/services',
     subLinks: [{
-      name: 'Dakgras',
+      name: 'Groene Daken',
       path: '/services/rooftop'
     }, {
-      name: 'Grondgras',
+      name: 'Groene gevels',
       path: '/services/ground'
     }, {
-      name: 'Maatwerk Projecten',
+      name: 'Groene landbedekking',
       path: '/services/custom'
     }]
   }, {

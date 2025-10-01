@@ -67,17 +67,17 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link to="/services/rooftop" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Dakgras Installatie
+                  Groene Daken
                 </Link>
               </li>
               <li>
                 <Link to="/services/ground" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Grondgras Installatie
+                  Groene gevels
                 </Link>
               </li>
               <li>
                 <Link to="/services/custom" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Maatwerk Projecten
+                  Groene landbedekking
                 </Link>
               </li>
               <li>

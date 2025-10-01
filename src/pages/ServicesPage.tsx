@@ -4,25 +4,20 @@ import { Link } from 'react-router-dom';
 import { ArrowRightIcon, ShieldIcon, LeafIcon, SunIcon, DropletIcon } from 'lucide-react';
 const ServicesPage = () => {
   const mainServices = [{
-    title: 'Kunstgras op Platte Daken',
-    description: 'Wij specialiseren ons in het transformeren van platte daken in groene, functionele ruimtes met behulp van hoogwaardig kunstgras, juiste isolatie en drainagesystemen.',
+    title: 'Groene Daken',
+    description: 'Wij specialiseren ons in het transformeren van daken in groene, functionele ruimtes met behulp van duurzame groene dakoplossingen, juiste isolatie en drainagesystemen.',
     image: '/images/team.jpg',
     link: '/services/rooftop'
   }, {
-    title: 'Systemen voor Hellende Daken',
-    description: 'Onze innovatieve oplossingen maken kunstgrasinstallatie mogelijk, zelfs op hellende daken, met behulp van speciale bevestigingssystemen en beveiligingen.',
+    title: 'Groene gevels',
+    description: 'Onze innovatieve oplossingen maken groene gevelinstallatie mogelijk, met behulp van speciale bevestigingssystemen en plantenselectie voor optimale groei.',
     image: 'https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
     link: '/services/rooftop'
   }, {
-    title: 'Kunstgras voor Grondruimtes',
-    description: 'Naast onze specialisatie in dakinstallaties bieden wij ook kunstgrasoplossingen voor tuinen, terrassen en andere grondruimtes.',
+    title: 'Groene landbedekking',
+    description: 'Naast onze specialisatie in dakinstallaties bieden wij ook groene landbedekkingsoplossingen voor tuinen, parken en andere openbare ruimtes.',
     image: 'https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80',
     link: '/services/ground'
-  }, {
-    title: 'Maatwerk Projecten',
-    description: 'Wij realiseren maatwerk projecten, aangepast aan de unieke behoeften en vereisten van onze klanten, van kleine terrassen tot uitgebreide daktuinen.',
-    image: 'https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-    link: '/services/custom'
   }];
   const additionalServices = [{
     icon: <ShieldIcon className="h-12 w-12 text-primary-600" />,
