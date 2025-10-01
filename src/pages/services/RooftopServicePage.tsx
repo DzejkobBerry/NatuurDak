@@ -1105,11 +1105,11 @@ const RooftopServicePage = () => {
                   <div className="mt-16">
                     <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
                       <div className="text-center mb-8">
-                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">Groene binnenplaatsen – Extensieve beplanting</h2>
+                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">Groene binnenplaatsen – Kleine heesters en vaste planten</h2>
                         
                         <div className="space-y-4 mb-8">
                           <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
-                            <span className="text-green-700 font-semibold">Groene binnenplaatsen</span> met extensieve beplanting bieden een onderhoudsarme en duurzame oplossing voor stedelijke groene ruimtes.
+                            <span className="text-green-700 font-semibold">Groene binnenplaatsen</span> – Kleine heesters en vaste planten.
                           </p>
                         </div>
                       </div>
