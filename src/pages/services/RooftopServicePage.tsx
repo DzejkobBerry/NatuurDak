@@ -1650,48 +1650,22 @@ const RooftopServicePage = () => {
                           </div>
                         </div>
  
-                        {/* Perforerad fotplåt */}
+                        {/* Geperforeerde voetplaat */}
                         <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100/50">
                           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                             <div>
-                              <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 flex justify-center items-center h-64">
-                                <svg className="w-48 h-32 text-green-600" viewBox="0 0 200 100" fill="none">
-                                  <rect x="30" y="30" width="140" height="40" fill="currentColor" opacity="0.2" rx="4"/>
-                                  <rect x="35" y="35" width="130" height="30" fill="currentColor" opacity="0.4" rx="2"/>
-                                  {/* Perforacje */}
-                                  <circle cx="50" cy="45" r="2" fill="white"/>
-                                  <circle cx="60" cy="45" r="2" fill="white"/>
-                                  <circle cx="70" cy="45" r="2" fill="white"/>
-                                  <circle cx="80" cy="45" r="2" fill="white"/>
-                                  <circle cx="90" cy="45" r="2" fill="white"/>
-                                  <circle cx="100" cy="45" r="2" fill="white"/>
-                                  <circle cx="110" cy="45" r="2" fill="white"/>
-                                  <circle cx="120" cy="45" r="2" fill="white"/>
-                                  <circle cx="130" cy="45" r="2" fill="white"/>
-                                  <circle cx="140" cy="45" r="2" fill="white"/>
-                                  <circle cx="150" cy="45" r="2" fill="white"/>
- 
-                                  <circle cx="50" cy="55" r="2" fill="white"/>
-                                  <circle cx="60" cy="55" r="2" fill="white"/>
-                                  <circle cx="70" cy="55" r="2" fill="white"/>
-                                  <circle cx="80" cy="55" r="2" fill="white"/>
-                                  <circle cx="90" cy="55" r="2" fill="white"/>
-                                  <circle cx="100" cy="55" r="2" fill="white"/>
-                                  <circle cx="110" cy="55" r="2" fill="white"/>
-                                  <circle cx="120" cy="55" r="2" fill="white"/>
-                                  <circle cx="130" cy="55" r="2" fill="white"/>
-                                  <circle cx="140" cy="55" r="2" fill="white"/>
-                                  <circle cx="150" cy="55" r="2" fill="white"/>
- 
-                                  {/* Zagięcie */}
-                                  <path d="M170 35 L180 45 L180 65 L170 65 Z" fill="currentColor" opacity="0.6"/>
-                                </svg>
+                              <div className="bg-gradient-to-br from-green-200 to-blue-200 rounded-xl p-6 flex justify-center items-center h-64 border border-green-300">
+                                <img 
+                                  src="https://i.imgur.com/ftnALlK.png" 
+                                  alt="Geperforeerde voetplaat detail" 
+                                  className="max-w-full max-h-full object-contain rounded-lg shadow-sm transition-transform duration-300 hover:scale-105"
+                                />
                               </div>
                             </div>
                             <div>
-                              <h3 className="text-2xl font-bold text-green-700 mb-4">Perforerad fotplåt</h3>
+                              <h3 className="text-2xl font-bold text-green-700 mb-4">Geperforeerde voetplaat</h3>
                               <p className="text-lg text-secondary-700 leading-relaxed">
-                                Fotplåten förhindrar att vatten rinner bakom hängrännnan, vilket kan ge skador på takfot och fasad.
+                                De voetplaat voorkomt dat water achter de goot stroomt, wat schade aan dakrand en gevel kan veroorzaken.
                               </p>
                             </div>
                           </div>
@@ -1729,8 +1703,8 @@ const RooftopServicePage = () => {
                       <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100/50">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                           <div className="order-1 lg:order-1">
-                            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 flex justify-center items-center h-64">
-                              <svg className="w-48 h-32 text-green-600" viewBox="0 0 200 100" fill="none">
+                            <div className="bg-gradient-to-br from-green-200 to-blue-200 rounded-xl p-6 flex justify-center items-center h-64 border border-green-300">
+                              <svg className="w-48 h-32 text-green-600 transition-transform duration-300 hover:scale-105" viewBox="0 0 200 100" fill="none">
                                 <rect x="30" y="70" width="140" height="15" fill="currentColor" opacity="0.4" rx="2"/>
                                 <rect x="40" y="55" width="120" height="10" fill="currentColor" opacity="0.6" rx="1"/>
                                 <path d="M50 35 L150 35 L155 45 L45 45 Z" fill="currentColor"/>
@@ -1762,8 +1736,8 @@ const RooftopServicePage = () => {
                             </p>
                           </div>
                           <div className="order-1 lg:order-2">
-                            <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-6 flex justify-center items-center h-64">
-                              <svg className="w-48 h-32 text-green-600" viewBox="0 0 200 100" fill="none">
+                            <div className="bg-gradient-to-br from-green-200 to-blue-200 rounded-xl p-6 flex justify-center items-center h-64 border border-green-300">
+                              <svg className="w-48 h-32 text-green-600 transition-transform duration-300 hover:scale-105" viewBox="0 0 200 100" fill="none">
                                 <rect x="25" y="65" width="150" height="20" fill="currentColor" opacity="0.3" rx="3"/>
                                 <rect x="35" y="50" width="130" height="12" fill="currentColor" opacity="0.5" rx="2"/>
                                 <rect x="45" y="35" width="110" height="10" fill="currentColor" opacity="0.7" rx="1"/>
