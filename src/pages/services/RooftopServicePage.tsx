@@ -211,44 +211,44 @@ const RooftopServicePage = () => {
                           </div>
                           
                           {/* Technical specifications table */}
-                          <div className="bg-green-50 rounded-lg overflow-hidden">
-                            <table className="w-full">
-                              <tbody>
-                                <tr className="border-b border-green-200">
-                                  <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
-                                    Bouwhoogte (mm)
-                                  </td>
-                                  <td className="px-4 py-3 text-secondary-700 text-right">
-                                    50
-                                  </td>
-                                </tr>
-                                <tr className="border-b border-green-200">
-                                  <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
-                                    Drooggewicht, kg/m²
-                                  </td>
-                                  <td className="px-4 py-3 text-secondary-700 text-right">
-                                    19,3
-                                  </td>
-                                </tr>
-                                <tr className="border-b border-green-200">
-                                  <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
-                                    Waterverzadigd gewicht bij 0° helling, kg/m²
-                                  </td>
-                                  <td className="px-4 py-3 text-secondary-700 text-right">
-                                    51,1
-                                  </td>
-                                </tr>
-                                <tr>
-                                  <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
-                                    Waterhoudend vermogen 30 min na verzadiging bij 0° helling
-                                  </td>
-                                  <td className="px-4 py-3 text-secondary-700 text-right">
-                                    3
-                                  </td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
+                           <div className="bg-green-50 rounded-lg overflow-hidden">
+                             <table className="w-full">
+                               <tbody>
+                                 <tr className="border-b border-green-200">
+                                   <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
+                                     Bouwhoogte (mm):
+                                   </td>
+                                   <td className="px-4 py-3 text-secondary-700 text-right">
+                                     50
+                                   </td>
+                                 </tr>
+                                 <tr className="border-b border-green-200">
+                                   <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
+                                     Droog gewicht, kg/m²:
+                                   </td>
+                                   <td className="px-4 py-3 text-secondary-700 text-right">
+                                     19,3
+                                   </td>
+                                 </tr>
+                                 <tr className="border-b border-green-200">
+                                   <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
+                                     Gewicht bij verzadiging met water bij 0° helling, kg/m²:
+                                   </td>
+                                   <td className="px-4 py-3 text-secondary-700 text-right">
+                                     51,1
+                                   </td>
+                                 </tr>
+                                 <tr>
+                                   <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
+                                     Wateropnamecapaciteit 30 min na verzadiging bij 0° helling:
+                                   </td>
+                                   <td className="px-4 py-3 text-secondary-700 text-right">
+                                     31,8
+                                   </td>
+                                 </tr>
+                               </tbody>
+                             </table>
+                           </div>
                        </div>
                      </div>
                    </div>
