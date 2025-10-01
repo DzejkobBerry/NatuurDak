@@ -6,8 +6,8 @@ const RooftopServicePage = () => {
   
   const tabsContent = {
     sedumtak: {
-      title: 'Sedumdak',
-      description: 'Sedunas sedumdaken zijn professionele sedum matten gekweekt in Zuid-Zweden met 10 verschillende plantensoorten. Deze matten zijn speciaal afgestemd op ons Noordse klimaat voor optimale groei en lange levensduur, met gegarandeerde goede bedekking in de meeste klimaatzones dankzij zorgvuldige soortkeuze.'
+      title: 'Sedumtak',
+      description: 'Sedunas sedumtakken zijn goed getest en uitgebreid gedocumenteerd. Onze matten worden gekweekt in Zuid-Zweden. De soortenkeuze en opbouw zijn aangepast om een lange levensduur te garanderen in ons noordelijke klimaat. Onze opbouw bevat 10 verschillende plantensoorten om een goede dekking te verzekeren in de meeste klimaatzones.'
     },
     droge_weiden: {
       title: 'Droge weiden op daken',
@@ -77,18 +77,107 @@ const RooftopServicePage = () => {
               {/* Special layout for Sedumtak */}
               {activeTab === 'sedumtak' ? (
                 <div>
-                  {/* Description and Image Section */}
+                  {/* Centered Description */}
+                  <div className="text-center mb-12">
+                    <p className="text-lg text-secondary-600 leading-relaxed max-w-4xl mx-auto">
+                      Sedunas sedumtakken zijn goed getest en uitgebreid gedocumenteerd. Onze matten worden gekweekt in Zuid-Zweden. De soortenkeuze en opbouw zijn aangepast om een lange levensduur te garanderen in ons noordelijke klimaat. Onze opbouw bevat 10 verschillende plantensoorten om een goede dekking te verzekeren in de meeste klimaatzones.
+                    </p>
+                  </div>
+                  
+                  {/* Image and VOORDELEN in one line */}
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                    <div className="flex flex-col justify-center">
-                      <p className="text-lg text-secondary-600 leading-relaxed">
-                        {currentContent.description}
-                      </p>
-                    </div>
                     <div className="flex justify-center">
                       <img 
-                        src="/images/team.jpg" 
-                        alt="Sedumdak" 
-                        className="w-full max-w-md h-64 object-cover rounded-lg shadow-lg"
+                        src="https://i.imgur.com/kFwyAT0.png" 
+                        alt="Sedumtak systeem" 
+                        className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
+                      />
+                    </div>
+                    
+                    <div className="bg-green-50 rounded-lg p-6">
+                      <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                        VOORDELEN
+                      </h3>
+                      <div className="space-y-3">
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Slaat regenwater op en vermindert de afvoer naar regenwatersystemen
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Dempt de maximale waterstroom met 30% tot 60% gedurende de eerste 10-20 minuten
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Bestand tegen windopwaartse druk
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Dempt geluid in het frequentiebereik van 500-4000 Hz
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Bestrijdt hitte-eilanden in onze steden
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Reversed layout - Description on left, Image on right */}
+                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                     <div className="bg-green-50 rounded-lg p-6">
+                       <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                         ENERGIEVOORDELEN
+                       </h3>
+                       <div className="space-y-3">
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Vermindert de koelbehoefte tot 25% in vergelijking met conventionele daken
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Kan de binnentemperatuur in de zomermaanden met 3-4 °C verlagen
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             In de wintermaanden beperkt een groendak de warmtestroom door het dak en fungeert het als extra isolatie
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Groene daken verminderen de concentratie van de vier belangrijkste verontreinigende stoffen: O3, SO2, PM en NOX
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Geeft hogere scores in milieucertificeringsprogramma's zoals LEED en BREEAM
+                           </p>
+                         </div>
+                       </div>
+                     </div>
+                    
+                    <div className="flex justify-center">
+                      <img 
+                        src="https://i.imgur.com/43UAd2i.png" 
+                        alt="Energievoordelen groendak" 
+                        className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
                       />
                     </div>
                   </div>
