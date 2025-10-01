@@ -1508,6 +1508,66 @@ const RooftopServicePage = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* SIÓDMA SEKCJA - Duplikat z innym tekstem */}
+                  <div className="mt-16">
+                    <div className="bg-white rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                      {/* Important Note */}
+                      <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+                        <div className="flex items-start space-x-3">
+                          <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-secondary-700 text-sm font-medium">
+                             Groene binnenplaatsen – Omgekeerde daken
+                           </p>
+                        </div>
+                      </div>
+                      
+                      {/* Layered Construction Diagram */}
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4">
+                        {/* Left side - Layer descriptions */}
+                        <div className="space-y-2">
+                          <h4 className="text-base font-semibold text-secondary-800 mb-2">Opbouw van de lagen:</h4>
+                          <div className="space-y-2">
+                            <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                              <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
+                              <p className="text-secondary-700 text-sm font-medium">SDB 10 – voetgangersverkeer / SDB 12 – voertuigverkeer</p>
+                            </div>
+                            <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                              <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
+                              <p className="text-secondary-700 text-sm font-medium">Isolatie met drainerende functie</p>
+                            </div>
+                            <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                              <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                              <p className="text-secondary-700 text-sm font-medium">SDB 10 / SDB 12</p>
+                            </div>
+                            <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                              <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
+                              <p className="text-secondary-700 text-sm font-medium">SRB 50 – wortelbescherming</p>
+                            </div>
+                            <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                              <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">5</div>
+                              <p className="text-secondary-700 text-sm font-medium">SDB 10 is bestand tegen 400 kN/m²</p>
+                            </div>
+                            <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                              <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">6</div>
+                              <p className="text-secondary-700 text-sm font-medium">SDB 12 is bestand tegen 1600 kN/m²</p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        {/* Right side - Diagram image */}
+                        <div className="flex items-center justify-center">
+                          <div className="w-full max-w-xs">
+                            <img 
+                              src="https://i.imgur.com/Lg9s2P4.png" 
+                              alt="Opbouw van intensief groendak lagen diagram" 
+                              className="w-full h-auto rounded-lg opacity-90 hover:scale-105 transition-transform duration-300 ease-out"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               ) : (
                 /* Default layout for other tabs */
