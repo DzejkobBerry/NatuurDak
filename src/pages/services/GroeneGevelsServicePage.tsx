@@ -398,10 +398,10 @@ const GroeneGevelsServicePage = () => {
                             <thead>
                               <tr className="bg-gradient-to-r from-green-500 to-green-600 text-white">
                                 <th className="px-6 py-4 text-left font-bold">Seduna Green Screen</th>
-                                <th className="px-6 py-4 text-center font-bold">Höjd, m</th>
-                                <th className="px-6 py-4 text-center font-bold">Bredd, m</th>
-                                <th className="px-6 py-4 text-center font-bold">Tjocklek, mm</th>
-                                <th className="px-6 py-4 text-center font-bold">Antal fästen/skärm</th>
+                                <th className="px-6 py-4 text-center font-bold">Hoogte, m</th>
+                                <th className="px-6 py-4 text-center font-bold">Breedte, m</th>
+                                <th className="px-6 py-4 text-center font-bold">Dikte, mm</th>
+                                <th className="px-6 py-4 text-center font-bold">Aantal beugels/scherm</th>
                               </tr>
                             </thead>
                             <tbody className="divide-y divide-gray-200">
@@ -448,10 +448,10 @@ const GroeneGevelsServicePage = () => {
                         <div className="bg-green-50 p-6 border-t border-green-200">
                           <div className="text-center">
                             <p className="text-secondary-700 font-medium text-lg">
-                              "Bottenkruka 1.2 m x 0.2 m
+                              "Onderste pot 1.2 m x 0.2 m
                             </p>
                             <p className="text-secondary-700 font-medium text-lg">
-                              C/C-avstånd mellan stolpar: 130-132 cm"
+                              C/C-afstand tussen palen: 130-132 cm"
                             </p>
                           </div>
                         </div>
@@ -459,11 +459,11 @@ const GroeneGevelsServicePage = () => {
                     </div>
                   </div>
 
-                  {/* New Tillbehör Table Section */}
+                  {/* New Accessoires Table Section */}
                   <div className="mt-16">
                     <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
                       <div className="text-center mb-8">
-                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">Tillbehör</h2>
+                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">Accessoires</h2>
                       </div>
                       
                       {/* Accessories Table */}
