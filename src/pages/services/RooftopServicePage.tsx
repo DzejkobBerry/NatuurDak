@@ -1184,19 +1184,19 @@ const RooftopServicePage = () => {
                               <div className="space-y-2">
                                 <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
                                   <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
-                                  <p className="text-secondary-700 text-sm font-medium">Extensief substraat 80-120 mm</p>
+                                  <p className="text-secondary-700 text-sm font-medium">Plantenbodem C 250 mm</p>
                                 </div>
                                 <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
                                   <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
-                                  <p className="text-secondary-700 text-sm font-medium">Filterdoek – 1 laag</p>
+                                  <p className="text-secondary-700 text-sm font-medium">SMB 40 – 2–3 platen, 80–120 mm</p>
                                 </div>
                                 <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
                                   <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
-                                  <p className="text-secondary-700 text-sm font-medium">Drainagelaag – 20-40 mm</p>
+                                  <p className="text-secondary-700 text-sm font-medium">SDB 10/12 – drainagelaag, 10/12 mm</p>
                                 </div>
                                 <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
                                   <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
-                                  <p className="text-secondary-700 text-sm font-medium">Wortelbescherming – 0,5 mm</p>
+                                  <p className="text-secondary-700 text-sm font-medium">SRB 50 – wortelbescherming, 0,5 mm</p>
                                 </div>
                               </div>
                             </div>
@@ -1205,7 +1205,7 @@ const RooftopServicePage = () => {
                             <div className="flex items-center justify-center">
                               <div className="w-full max-w-xs">
                                 <img 
-                                  src="https://i.imgur.com/YQqlitz.png" 
+                                  src="https://i.imgur.com/3RmlcgY.png" 
                                   alt="Opbouw van groendak lagen diagram" 
                                   className="w-full h-auto rounded-lg opacity-90 hover:scale-105 transition-transform duration-300 ease-out"
                                 />
