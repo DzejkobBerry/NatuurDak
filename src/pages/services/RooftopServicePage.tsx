@@ -309,7 +309,6 @@ const RooftopServicePage = () => {
                              </div>
                            </div>
                        </div>
-                     </div>
                    </div>
                    
                    {/* Fourth section - New SRS section with image */}
@@ -375,8 +374,7 @@ const RooftopServicePage = () => {
                        SRS 0–15°
                      </h3>
                      
-                     <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-                       <div className="grid md:grid-cols-2 gap-8 items-start">
+                     <div className="grid md:grid-cols-2 gap-8 items-start">
                          <div className="flex justify-center items-center mt-48">
                            <img 
                              src="https://i.imgur.com/ZSGDdQb.png" 
