@@ -256,15 +256,15 @@ const RooftopServicePage = () => {
                        
                        <div className="space-y-6">
                          <div>
-                            <p className="text-secondary-700 leading-relaxed mb-4">
-                              Sedunas SRS 1-27° bestaat av prefabricerade element som är lätta att montera. Systemet har låg bygghöjd vilket hämmar ogräs och minimerar skötsel av takytan. Den låga bygghöjden ger systemet minimal vikt vilket ökar användningsområdet.
-                            </p>
-                            <p className="text-secondary-700 leading-relaxed mb-4">
-                              SRS 1-27° har en god vattenhållande förmåga. Systemet är brandklassat enligt BROOF<sub>(T2)</sub> vilket möjliggör anläggning på de flesta takytor.
-                            </p>
-                            <p className="text-secondary-700 leading-relaxed mb-6">
-                              SRS 1-27° är baserad på en miljövänlig stomme med minimal andel plast som läggs ovanpå ett vattenhållande lager med dränerande egenskaper.
-                            </p>
+                            <p className="text-lg text-secondary-600 leading-relaxed mb-4">
+                               Sedunas SRS 1–27° bestaat uit prefab-elementen die eenvoudig te monteren zijn. Het systeem heeft een lage bouwhoogte, wat onkruidgroei beperkt en het onderhoud van het dak minimaliseert. De lage bouwhoogte zorgt voor een minimaal gewicht van het systeem, waardoor het toepassingsgebied groter wordt.
+                             </p>
+                             <p className="text-lg text-secondary-600 leading-relaxed mb-4">
+                               SRS 1–27° heeft een goede wateropslagcapaciteit. Het systeem is brandgeclassificeerd volgens BROOF<sub>(T2)</sub>, wat installatie op de meeste dakoppervlakken mogelijk maakt.
+                             </p>
+                             <p className="text-lg text-secondary-600 leading-relaxed mb-6">
+                               SRS 1–27° is gebaseerd op een milieuvriendelijke constructie met een minimaal plasticgehalte, die wordt aangebracht bovenop een waterhoudende laag met drainerende eigenschappen.
+                             </p>
                           </div>
                           
                           {/* Technical specifications table */}
@@ -321,13 +321,13 @@ const RooftopServicePage = () => {
                       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                         <div className="space-y-6">
                           <div>
-                             <p className="text-secondary-700 leading-relaxed mb-4">
+                             <p className="text-lg text-secondary-600 leading-relaxed mb-4">
                                Sedunas SRS 1–3° bestaat uit prefab-elementen die eenvoudig te monteren zijn. Het systeem heeft een lage bouwhoogte, wat onkruidgroei beperkt en het onderhoud van het dak minimaliseert.
                              </p>
-                             <p className="text-secondary-700 leading-relaxed mb-4">
+                             <p className="text-lg text-secondary-600 leading-relaxed mb-4">
                                De lage bouwhoogte geeft het systeem een minimaal gewicht, waardoor het toepassingsgebied groter wordt. SRS 1–3° heeft een goede wateropslagcapaciteit.
                              </p>
-                             <p className="text-secondary-700 leading-relaxed mb-6">
+                             <p className="text-lg text-secondary-600 leading-relaxed mb-6">
                                Het systeem is brandgeclassificeerd volgens BROOF(T2), wat installatie op de meeste dakoppervlakken mogelijk maakt. SRS 1–3° wordt aangelegd bovenop een filter- en drainagelaag. Het systeem is geschikt voor zogenaamde omgekeerde dakconstructies, waarbij de waterdichte laag onder de isolatie ligt.
                              </p>
                            </div>
