@@ -1332,6 +1332,126 @@ const RooftopServicePage = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* PIĄTA SEKCJA - Groene binnenplaatsen - Duża beplanting */}
+                  <div className="mt-16">
+                    <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                      <div className="text-center mb-8">
+                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">Groene binnenplaatsen – Grote bomen</h2>
+                        
+                        <div className="space-y-4 mb-8">
+                          <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                            <span className="text-green-700 font-semibold">Groene binnenplaatsen</span> – Grote bomen.
+                          </p>
+                        </div>
+                      </div>
+                      
+                      {/* Properties and Benefits Table with Enhanced Design */}
+                      <div className="bg-white/80 rounded-xl shadow-lg overflow-hidden border border-gray-200/50">
+                        <div className="grid grid-cols-2">
+                          <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-6">
+                            <div className="flex items-center space-x-3">
+                              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"></path>
+                              </svg>
+                              <h3 className="text-xl font-bold">Eigenschappen</h3>
+                            </div>
+                          </div>
+                          <div className="bg-gradient-to-r from-green-600 to-green-500 text-white p-6">
+                            <div className="flex items-center space-x-3">
+                              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                              </svg>
+                              <h3 className="text-xl font-bold">Voordelen</h3>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div className="overflow-hidden">
+                          {/* Technical Specifications Table */}
+                          <div className="bg-white border border-gray-200 rounded-lg overflow-hidden mb-6">
+                            <table className="w-full">
+                              <thead className="bg-green-50">
+                                <tr>
+                                  <th className="px-6 py-4 text-left text-sm font-semibold text-secondary-800 border-b border-gray-200">Eigenschappen</th>
+                                  <th className="px-6 py-4 text-left text-sm font-semibold text-secondary-800 border-b border-gray-200">Eenheid</th>
+                                </tr>
+                              </thead>
+                              <tbody className="divide-y divide-gray-200">
+                                <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                  <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Theoretisch droog gewicht</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">470–475 kg/m²</td>
+                                </tr>
+                                <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                  <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Gewicht bij verzadiging met water</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">435–480 kg/m²</td>
+                                </tr>
+                                <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                  <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Wateropslagcapaciteit bij 0° helling</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">370–405 kg/m²</td>
+                                </tr>
+                                <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                  <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Bouwhoogte</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">740–785 mm</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                          
+                          {/* Important Note */}
+                          <div className="bg-green-50 border border-green-200 rounded-lg p-4 mb-6">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 text-sm font-medium">
+                                De draagkracht van het onderliggende dak/de vloerconstructie bepaalt hoe zwaar en dik de beplantingsopbouw kan zijn.
+                              </p>
+                            </div>
+                          </div>
+                          
+                          {/* Layered Construction Diagram */}
+                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4">
+                            {/* Left side - Layer descriptions */}
+                            <div className="space-y-2">
+                              <h4 className="text-base font-semibold text-secondary-800 mb-2">Opbouw van de lagen:</h4>
+                              <div className="space-y-2">
+                                <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                                  <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
+                                  <p className="text-secondary-700 text-sm font-medium">Boomverankering</p>
+                                </div>
+                                <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                                  <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
+                                  <p className="text-secondary-700 text-sm font-medium">Plantenbodem C 650 mm</p>
+                                </div>
+                                <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                                  <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                                  <p className="text-secondary-700 text-sm font-medium">SMB 40 – 2–3 platen, 80–120 mm</p>
+                                </div>
+                                <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                                  <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
+                                  <p className="text-secondary-700 text-sm font-medium">SDB 10/12 – drainagelaag, 10/12 mm</p>
+                                </div>
+                                <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                                  <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">5</div>
+                                  <p className="text-secondary-700 text-sm font-medium">SRB 50 – wortelbescherming, 0,5 mm</p>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            {/* Right side - Diagram image */}
+                            <div className="flex items-center justify-center">
+                              <div className="w-full max-w-xs">
+                                <img 
+                                  src="https://i.imgur.com/H0dB6Em.png" 
+                                  alt="Opbouw van intensief groendak lagen diagram" 
+                                  className="w-full h-auto rounded-lg opacity-90 hover:scale-105 transition-transform duration-300 ease-out"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               ) : (
                 /* Default layout for other tabs */
