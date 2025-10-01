@@ -370,18 +370,22 @@ const RooftopServicePage = () => {
                    </div>
 
                    {/* New SRS 0-15° Section */}
-                   <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-                     <div className="grid md:grid-cols-2 gap-8 items-start">
-                       <div className="flex justify-center items-center mt-48">
-                         <img 
-                           src="https://i.imgur.com/ZSGDdQb.png" 
-                           alt="SRS 0-15°" 
-                           className="w-full max-w-md h-80 object-contain"
-                         />
-                       </div>
-                       
-                       <div>
-                         <h3 className="text-3xl font-bold text-primary-600 mb-6 text-center">SRS 0–15°</h3>
+                   <div className="mt-16">
+                     <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">
+                       SRS 0–15°
+                     </h3>
+                     
+                     <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+                       <div className="grid md:grid-cols-2 gap-8 items-start">
+                         <div className="flex justify-center items-center mt-48">
+                           <img 
+                             src="https://i.imgur.com/ZSGDdQb.png" 
+                             alt="SRS 0-15°" 
+                             className="w-full max-w-md h-80 object-contain"
+                           />
+                         </div>
+                         
+                         <div>
                          
                          <p className="text-lg text-secondary-600 leading-relaxed mb-4">
                            Sedunas SRS 0–15° maakt een grotere variatie aan vegetatietypes op daken mogelijk, wat bijdraagt aan een hoge biodiversiteit.
@@ -422,6 +426,7 @@ const RooftopServicePage = () => {
                        </div>
                      </div>
                    </div>
+                 </div>
                 </div>
               ) : (
                 /* Default layout for other tabs */
