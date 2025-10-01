@@ -944,40 +944,38 @@ const RooftopServicePage = () => {
                           </div>
                           
                           {/* Layered Construction Diagram */}
-                          <div className="bg-white border border-gray-200 rounded-lg overflow-hidden">
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4">
-                              {/* Left side - Layer descriptions */}
+                          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 p-4">
+                            {/* Left side - Layer descriptions */}
+                            <div className="space-y-2">
+                              <h4 className="text-base font-semibold text-secondary-800 mb-2">Opbouw van de lagen:</h4>
                               <div className="space-y-2">
-                                <h4 className="text-base font-semibold text-secondary-800 mb-2">Opbouw van de lagen:</h4>
-                                <div className="space-y-2">
-                                  <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
-                                    <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
-                                    <p className="text-secondary-700 text-sm font-medium">Plantenbodem C 200 mm</p>
-                                  </div>
-                                  <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
-                                    <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
-                                    <p className="text-secondary-700 text-sm font-medium">SMB 40 – 1–2 platen, 40–80 mm</p>
-                                  </div>
-                                  <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
-                                    <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
-                                    <p className="text-secondary-700 text-sm font-medium">SDB 10/12 – drainage, 10/12 mm</p>
-                                  </div>
-                                  <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
-                                    <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
-                                    <p className="text-secondary-700 text-sm font-medium">SRB 50 – wortelbescherming, 0,5 mm</p>
-                                  </div>
+                                <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                                  <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
+                                  <p className="text-secondary-700 text-sm font-medium">Plantenbodem C 200 mm</p>
+                                </div>
+                                <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                                  <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
+                                  <p className="text-secondary-700 text-sm font-medium">SMB 40 – 1–2 platen, 40–80 mm</p>
+                                </div>
+                                <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                                  <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
+                                  <p className="text-secondary-700 text-sm font-medium">SDB 10/12 – drainage, 10/12 mm</p>
+                                </div>
+                                <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
+                                  <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
+                                  <p className="text-secondary-700 text-sm font-medium">SRB 50 – wortelbescherming, 0,5 mm</p>
                                 </div>
                               </div>
-                              
-                              {/* Right side - Diagram image */}
-                              <div className="flex items-center justify-center">
-                                <div className="w-full max-w-xs">
-                                  <img 
-                                    src="https://i.imgur.com/YQqlitz.png" 
-                                    alt="Opbouw van groendak lagen diagram" 
-                                    className="w-full h-auto rounded shadow-sm hover:shadow-lg transition-all duration-500 ease-in-out"
-                                  />
-                                </div>
+                            </div>
+                            
+                            {/* Right side - Diagram image */}
+                            <div className="flex items-center justify-center">
+                              <div className="w-full max-w-xs">
+                                <img 
+                                  src="https://i.imgur.com/YQqlitz.png" 
+                                  alt="Opbouw van groendak lagen diagram" 
+                                  className="w-full h-auto rounded-lg opacity-90 hover:scale-105 transition-transform duration-300 ease-out"
+                                />
                               </div>
                             </div>
                           </div>
