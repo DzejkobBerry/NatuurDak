@@ -141,7 +141,7 @@ const GroeneGevelsServicePage = () => {
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                     <div className="flex justify-center">
                       <img 
-                        src="https://i.imgur.com/BX5BiZo.png" 
+                        src="https://i.imgur.com/7E5H3AT.png" 
                         alt="Plantenstaven systeem" 
                         className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
                       />
@@ -152,37 +152,37 @@ const GroeneGevelsServicePage = () => {
                         VOORDELEN
                       </h3>
                       <div className="space-y-3">
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Staal regenwater op en vermindert de afvoer naar regenwaterstemen
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Dempt de maximale waterstroom met 30% tot 60% gedurende de eerste 10-20 minuten
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Bestand tegen windopwaartse druk
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Dempt geluid in het frequentiebereik van 500-4000 Hz
-                           </p>
-                         </div>
-                         <div className="flex items-start space-x-3">
-                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                           <p className="text-secondary-700 text-sm">
-                             Bestrijdt hitte-eilanden in onze steden
-                           </p>
-                         </div>
-                       </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Robuuste constructie met een lange levensduur
+                            </p>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Klimplanten krijgen een stevige grip rond de draad
+                            </p>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Minder belasting op de gevel vergeleken met kassetsystemen dankzij minimaal eigen gewicht
+                            </p>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Discreet, de aandacht ligt op de planten en niet op de bevestiging
+                            </p>
+                          </div>
+                          <div className="flex items-start space-x-3">
+                            <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                            <p className="text-secondary-700 text-sm">
+                              Esthetisch aantrekkelijk, ook tijdens de koude maanden wanneer de planten hun bladeren verliezen
+                            </p>
+                          </div>
+                        </div>
                     </div>
                   </div>
                   
