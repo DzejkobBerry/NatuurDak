@@ -33,7 +33,7 @@ const ServicesSection = () => {
     image: '/images/services/Kunstgras-op-Platte-Daken.png',
     link: '/services/rooftop'
   }, {
-    title: 'Groene gevels',
+    title: 'Groene Gevels',
     description: 'Gespecialiseerde oplossingen voor groene gevels die zorgen voor een natuurlijke uitstraling en verbetering van het binnenklimaat.',
     image: '/images/services/Systemen_voor_Hellende_Daken.png',
     link: '/services/rooftop'

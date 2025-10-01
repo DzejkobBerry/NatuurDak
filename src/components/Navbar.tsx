@@ -34,7 +34,7 @@ const Navbar = () => {
       name: 'Groene Daken',
       path: '/services/rooftop'
     }, {
-      name: 'Groene gevels',
+      name: 'Groene Gevels',
       path: '/services/ground'
     }, {
       name: 'Groene landbedekking',
