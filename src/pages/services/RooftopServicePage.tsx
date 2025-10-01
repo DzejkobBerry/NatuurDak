@@ -252,6 +252,115 @@ const RooftopServicePage = () => {
                        </div>
                      </div>
                    </div>
+                   
+                   {/* Fourth section - New SRS section with image */}
+                    <div className="mt-16">
+                      <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">
+                        SRS 1–3°
+                      </h3>
+                      
+                      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                        <div className="space-y-6">
+                          <div>
+                             <p className="text-secondary-700 leading-relaxed mb-4">
+                               Sedunas SRS 1–3° bestaat uit prefab-elementen die eenvoudig te monteren zijn. Het systeem heeft een lage bouwhoogte, wat onkruidgroei beperkt en het onderhoud van het dak minimaliseert.
+                             </p>
+                             <p className="text-secondary-700 leading-relaxed mb-4">
+                               De lage bouwhoogte geeft het systeem een minimaal gewicht, waardoor het toepassingsgebied groter wordt. SRS 1–3° heeft een goede wateropslagcapaciteit.
+                             </p>
+                             <p className="text-secondary-700 leading-relaxed mb-6">
+                               Het systeem is brandgeclassificeerd volgens BROOF(T2), wat installatie op de meeste dakoppervlakken mogelijk maakt. SRS 1–3° wordt aangelegd bovenop een filter- en drainagelaag. Het systeem is geschikt voor zogenaamde omgekeerde dakconstructies, waarbij de waterdichte laag onder de isolatie ligt.
+                             </p>
+                           </div>
+                           
+                           {/* Technical specifications table */}
+                              <div className="bg-green-50 rounded-lg overflow-hidden">
+                                <table className="w-full">
+                                  <tbody>
+                                    <tr className="border-b border-green-200">
+                                      <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">Bouwhoogte (mm):</td>
+                                      <td className="px-4 py-3 text-secondary-700 text-right">50–60</td>
+                                    </tr>
+                                    <tr className="border-b border-green-200">
+                                      <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">Droog gewicht, kg/m²:</td>
+                                      <td className="px-4 py-3 text-secondary-700 text-right">19,3</td>
+                                    </tr>
+                                    <tr className="border-b border-green-200">
+                                      <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">Gewicht bij verzadiging met water bij 0° helling, kg/m²:</td>
+                                      <td className="px-4 py-3 text-secondary-700 text-right">51,9</td>
+                                    </tr>
+                                    <tr>
+                                      <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">Wateropnamecapaciteit 30 min na verzadiging bij 0° helling:</td>
+                                      <td className="px-4 py-3 text-secondary-700 text-right">32,1</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                        </div>
+                       
+                       <div className="flex justify-center items-center mt-24">
+                         <img 
+                           src="https://i.imgur.com/5eVLe6b.png" 
+                           alt="SRS Extensiv System" 
+                           className="w-full max-w-md h-80 object-contain"
+                         />
+                       </div>
+                     </div>
+                   </div>
+
+                   {/* New SRS 0-15° Section */}
+                   <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
+                     <div className="grid md:grid-cols-2 gap-8 items-start">
+                       <div className="flex justify-center items-center mt-48">
+                         <img 
+                           src="https://i.imgur.com/ZSGDdQb.png" 
+                           alt="SRS 0-15°" 
+                           className="w-full max-w-md h-80 object-contain"
+                         />
+                       </div>
+                       
+                       <div>
+                         <h3 className="text-3xl font-bold text-primary-600 mb-6 text-center">SRS 0–15°</h3>
+                         
+                         <p className="text-lg text-secondary-600 leading-relaxed mb-4">
+                           Sedunas SRS 0–15° maakt een grotere variatie aan vegetatietypes op daken mogelijk, wat bijdraagt aan een hoge biodiversiteit.
+                         </p>
+                         
+                         <p className="text-lg text-secondary-600 leading-relaxed mb-4">
+                           SRS 0–15° kan worden aangelegd met verschillende vegetatiedragers, zoals sedummatten of bloemenweidematten, gecombineerd met kruiden.
+                         </p>
+                         
+                         <p className="text-lg text-secondary-600 leading-relaxed mb-6">
+                           Het systeem heeft een hoge wateropslagcapaciteit voor regenwater. De waterhoudende capaciteit kan worden vergroot door de bouwhoogte te verhogen met extra substraat.
+                         </p>
+
+                         <div className="bg-green-50 rounded-lg p-6">
+                           <div className="overflow-x-auto">
+                             <table className="w-full">
+                               <tbody>
+                                 <tr className="bg-green-100">
+                                   <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Bouwhoogte (mm)</td>
+                                   <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">140–180</td>
+                                 </tr>
+                                 <tr>
+                                   <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Droog gewicht, kg/m²</td>
+                                   <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">70–105</td>
+                                 </tr>
+                                 <tr className="bg-green-100">
+                                   <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Gewicht bij verzadiging met water bij 0° helling, kg/m²</td>
+                                   <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">145–200</td>
+                                 </tr>
+                                 <tr>
+                                   <td className="px-4 py-3 font-semibold text-green-800">Wateropnamecapaciteit 30 min na verzadiging bij 0° helling</td>
+                                   <td className="px-4 py-3 text-right font-medium text-green-800">82–110</td>
+                                 </tr>
+                               </tbody>
+                             </table>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
                 </div>
               ) : (
                 /* Default layout for other tabs */
