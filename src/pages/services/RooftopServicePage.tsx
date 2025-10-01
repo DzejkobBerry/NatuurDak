@@ -1089,7 +1089,7 @@ const RooftopServicePage = () => {
                             <div className="flex items-center justify-center">
                               <div className="w-full max-w-xs">
                                 <img 
-                                  src="https://i.imgur.com/YQqlitz.png" 
+                                  src="https://i.imgur.com/oua5lbw.png" 
                                   alt="Opbouw van groendak lagen diagram" 
                                   className="w-full h-auto rounded-lg opacity-90 hover:scale-105 transition-transform duration-300 ease-out"
                                 />
