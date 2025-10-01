@@ -1221,11 +1221,11 @@ const RooftopServicePage = () => {
                   <div className="mt-16">
                     <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
                       <div className="text-center mb-8">
-                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">Groene binnenplaatsen – Intensieve beplanting</h2>
+                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">Groene binnenplaatsen – Kleine bomen en heesters</h2>
                         
                         <div className="space-y-4 mb-8">
                           <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
-                            <span className="text-green-700 font-semibold">Groene binnenplaatsen</span> met intensieve beplanting bieden uitgebreide mogelijkheden voor diverse plantensoorten en creëren een rijke, gevarieerde groene omgeving.
+                            <span className="text-green-700 font-semibold">Groene binnenplaatsen</span> – Kleine bomen en heesters.
                           </p>
                         </div>
                       </div>
@@ -1264,19 +1264,19 @@ const RooftopServicePage = () => {
                               <tbody className="divide-y divide-gray-200">
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Theoretisch droog gewicht</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">280–320 kg/m²</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">330–335 kg/m²</td>
                                 </tr>
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Gewicht bij verzadiging met water</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">520–580 kg/m²</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">605–650 kg/m²</td>
                                 </tr>
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Wateropslagcapaciteit bij 0° helling</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">240–260 liter/m²</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">280–315 liter/m²</td>
                                 </tr>
                                 <tr className="hover:bg-green-50/50 transition-colors duration-200">
                                   <td className="px-6 py-4 text-sm text-secondary-700 font-medium">Bouwhoogte</td>
-                                  <td className="px-6 py-4 text-sm text-secondary-600">450–500 mm</td>
+                                  <td className="px-6 py-4 text-sm text-secondary-600">540–580 mm</td>
                                 </tr>
                               </tbody>
                             </table>
@@ -1287,7 +1287,7 @@ const RooftopServicePage = () => {
                             <div className="flex items-start space-x-3">
                               <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
                               <p className="text-secondary-700 text-sm font-medium">
-                                Intensieve beplanting vereist meer onderhoud maar biedt uitgebreide mogelijkheden voor diverse plantensoorten en een rijkere biodiversiteit.
+                                De draagkracht van het onderliggende dak/de vloerconstructie bepaalt hoe zwaar en dik de beplantingsopbouw kan zijn.
                               </p>
                             </div>
                           </div>
@@ -1300,19 +1300,19 @@ const RooftopServicePage = () => {
                               <div className="space-y-2">
                                 <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
                                   <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">1</div>
-                                  <p className="text-secondary-700 text-sm font-medium">Intensief substraat 400-450 mm</p>
+                                  <p className="text-secondary-700 text-sm font-medium">Plantenbodem C 450 mm</p>
                                 </div>
                                 <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
                                   <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">2</div>
-                                  <p className="text-secondary-700 text-sm font-medium">Filterdoek – geotextiel, 300 g/m²</p>
+                                  <p className="text-secondary-700 text-sm font-medium">SMB 40 – 2–3 platen, 80–120 mm</p>
                                 </div>
                                 <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
                                   <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">3</div>
-                                  <p className="text-secondary-700 text-sm font-medium">Drainagelaag – grind 16/32 mm, 50 mm</p>
+                                  <p className="text-secondary-700 text-sm font-medium">SDB 10/12 – drainagelaag, 10/12 mm</p>
                                 </div>
                                 <div className="flex items-center space-x-2 p-2 bg-green-50 rounded hover:bg-green-100 transition-colors duration-200">
                                   <div className="w-5 h-5 bg-green-600 text-white rounded-full flex items-center justify-center text-xs font-bold">4</div>
-                                  <p className="text-secondary-700 text-sm font-medium">Wortelbescherming – EPDM, 1,2 mm</p>
+                                  <p className="text-secondary-700 text-sm font-medium">SRB 50 – wortelbescherming, 0,5 mm</p>
                                 </div>
                               </div>
                             </div>
@@ -1321,7 +1321,7 @@ const RooftopServicePage = () => {
                             <div className="flex items-center justify-center">
                               <div className="w-full max-w-xs">
                                 <img 
-                                  src="https://i.imgur.com/oua5lbw.png" 
+                                  src="https://i.imgur.com/1b9fubu.png" 
                                   alt="Opbouw van intensief groendak lagen diagram" 
                                   className="w-full h-auto rounded-lg opacity-90 hover:scale-105 transition-transform duration-300 ease-out"
                                 />
