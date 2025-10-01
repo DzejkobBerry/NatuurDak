@@ -77,7 +77,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link to="/services/custom" className="text-gray-300 hover:text-primary-400 transition-colors">
-                  Groene landbedekking
+                  Groene Landbedekking
                 </Link>
               </li>
               <li>

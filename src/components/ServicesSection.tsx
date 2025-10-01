@@ -38,7 +38,7 @@ const ServicesSection = () => {
     image: '/images/services/Systemen_voor_Hellende_Daken.png',
     link: '/services/rooftop'
   }, {
-    title: 'Groene landbedekking',
+    title: 'Groene Landbedekking',
     description: 'Duurzame groene landbedekkingsoplossingen voor tuinen, parken en openbare ruimtes, aangepast aan uw specifieke behoeften.',
     image: '/images/services/Maatwerk-Projecten.png',
     link: '/services/custom'
