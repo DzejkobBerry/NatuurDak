@@ -602,16 +602,16 @@ const RooftopServicePage = () => {
                       </div>
                       <div className="space-y-4">
                         <div className="flex items-center justify-center space-x-3 mb-4">
-                          <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
-                            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
-                            </svg>
-                          </div>
-                          <h3 className="text-xl font-bold text-green-800">Dakvloerconstructies</h3>
-                        </div>
-                        <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
-                          De Sedunas <span className="text-green-700 font-semibold">dakvloerconstructies</span> hebben een grote wateropslagcapaciteit, oftewel veldcapaciteit, met de juiste verhouding tussen lucht, water en substraat dankzij speciaal geselecteerde bouwcomponenten.
-                        </p>
+                         <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                           <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                           </svg>
+                         </div>
+                         <h3 className="text-xl font-bold text-green-800">Dakvloerconstructies</h3>
+                       </div>
+                       <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                         De Sedunas <span className="text-green-700 font-semibold">dakvloerconstructies</span> hebben een grote wateropslagcapaciteit, oftewel veldcapaciteit, met de juiste verhouding tussen lucht, water en substraat dankzij speciaal geselecteerde bouwcomponenten.
+                       </p>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                           <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
                             <div className="flex items-center space-x-2 mb-2">
@@ -1564,6 +1564,65 @@ const RooftopServicePage = () => {
                               className="w-full h-auto rounded-lg opacity-90 hover:scale-105 transition-transform duration-300 ease-out"
                             />
                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ) : activeTab === 'accessoires' ? (
+                /* Accessoires & Aanvullingen layout */
+                <div className="text-center mb-12">
+                  <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                    <div className="flex items-center justify-center mb-6">
+                      <div className="flex space-x-2">
+                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                        <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+                      </div>
+                    </div>
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-center space-x-3 mb-4">
+                        <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path>
+                          </svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-green-800">Ontworpen door Seduna</h3>
+                      </div>
+                      <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                        De accessoires van Seduna voor groene daken zijn ontworpen door Seduna zelf. Met meer dan 30 jaar ervaring hebben we een serie accessoires ontwikkeld voor groene daken die zorgen voor een efficiënte afvoer en de vegetatie en opbouw beschermen tegen windopheffing. Onze accessoires zijn goedgekeurd volgens de industrienormen.
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd"></path>
+                              </svg>
+                            </div>
+                            <span className="font-semibold text-blue-700">Inheemse Planten</span>
+                          </div>
+                          <p className="text-sm text-secondary-600">Gebruik van inheemse plantensoorten</p>
+                        </div>
+                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                              </svg>
+                            </div>
+                            <span className="font-semibold text-green-700">Droogtebestendig</span>
+                          </div>
+                          <p className="text-sm text-secondary-600">Bestand tegen droogte en extreme weersomstandigheden</p>
+                        </div>
+                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center">
+                              <span className="text-xs font-bold text-white">EX</span>
+                            </div>
+                            <span className="font-semibold text-green-700">Extensieve Daken</span>
+                          </div>
+                          <p className="text-sm text-secondary-600">Ideaal voor extensieve groene daken</p>
                         </div>
                       </div>
                     </div>
