@@ -426,6 +426,170 @@ const RooftopServicePage = () => {
                    </div>
                  </div>
                 </div>
+              ) : activeTab === 'droge_weiden' ? (
+                <div>
+                  {/* Enhanced Description with Visual Elements */}
+                  <div className="text-center mb-12">
+                    <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                      <div className="flex items-center justify-center mb-6">
+                        <div className="flex space-x-2">
+                          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                          <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                          <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+                        </div>
+                      </div>
+                      
+                      <div className="space-y-4">
+                        <div className="flex items-center justify-center space-x-3 mb-4">
+                          <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                            <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <h3 className="text-xl font-bold text-green-800">Natuurlijke & Duurzame Oplossing</h3>
+                        </div>
+                        
+                        <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                          <span className="text-green-700 font-semibold">Droge weiden op daken</span> bieden een natuurlijke en duurzame oplossing voor groene dakbedekking.
+                        </p>
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                          <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                            <div className="flex items-center space-x-2 mb-2">
+                              <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                                </svg>
+                              </div>
+                              <span className="font-semibold text-blue-700">Inheemse Planten</span>
+                            </div>
+                            <p className="text-sm text-secondary-600">Gebruik van inheemse plantensoorten</p>
+                          </div>
+                          
+                          <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                            <div className="flex items-center space-x-2 mb-2">
+                              <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                                </svg>
+                              </div>
+                              <span className="font-semibold text-green-700">Droogtebestendig</span>
+                            </div>
+                            <p className="text-sm text-secondary-600">Bestand tegen droogte en extreme weersomstandigheden</p>
+                          </div>
+                          
+                          <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                            <div className="flex items-center space-x-2 mb-2">
+                              <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center">
+                                <span className="text-xs font-bold text-white">EX</span>
+                              </div>
+                              <span className="font-semibold text-green-700">Extensieve Daken</span>
+                            </div>
+                            <p className="text-sm text-secondary-600">Ideaal voor extensieve groene daken</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Image and VOORDELEN in one line */}
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                    <div className="flex justify-center">
+                      <img 
+                        src="https://i.imgur.com/kFwyAT0.png" 
+                        alt="Droge weiden systeem" 
+                        className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
+                      />
+                    </div>
+                    
+                    <div className="bg-green-50 rounded-lg p-6">
+                      <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                        VOORDELEN
+                      </h3>
+                      <div className="space-y-3">
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Verhoogt de biodiversiteit met inheemse plantensoorten
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Minimaal onderhoud door droogtebestendige eigenschappen
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Geschikt voor verschillende daktypen en hellingen
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Natuurlijke habitat voor insecten en kleine dieren
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Seizoensgebonden kleurveranderingen voor visuele aantrekkingskracht
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Reversed layout - Description on left, Image on right */}
+                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                     <div className="bg-green-50 rounded-lg p-6">
+                       <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                         MILIEUVOORDELEN
+                       </h3>
+                       <div className="space-y-3">
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Ondersteunt lokale ecosystemen en biodiversiteit
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Vermindert de stedelijke hitte-eiland effecten
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Verbetert de luchtkwaliteit door natuurlijke filtering
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Lagere CO2-voetafdruk door gebruik van lokale plantensoorten
+                           </p>
+                         </div>
+                         <div className="flex items-start space-x-3">
+                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                           <p className="text-secondary-700 text-sm">
+                             Natuurlijke regenwater opvang en filtering
+                           </p>
+                         </div>
+                       </div>
+                     </div>
+                    
+                    <div className="flex justify-center">
+                      <img 
+                        src="https://i.imgur.com/43UAd2i.png" 
+                        alt="Milieuvoordelen droge weiden" 
+                        className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
+                      />
+                    </div>
+                  </div>
+                </div>
               ) : (
                 /* Default layout for other tabs */
                 <div className="text-center">
