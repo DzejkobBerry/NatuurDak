@@ -312,6 +312,126 @@ const GroeneGevelsServicePage = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* New Table Section for Planten Panelen */}
+                  <div className="mt-16">
+                    <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                      <div className="text-center mb-8">
+                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">GPP 25 – Green Plant Panels</h2>
+                        
+                        <div className="space-y-4 mb-8">
+                          <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                            <span className="text-green-700 font-semibold">GPP 25</span> wordt gebruikt als modulaire plantendrager bij gevelconstructies.
+                          </p>
+                          <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                            GPP 25 heeft een <span className="text-green-700 font-semibold">uitstekende plantenondersteuning</span> in verhouding tot zijn gewicht en installatiegemak.
+                          </p>
+                        </div>
+                      </div>
+                      
+                      {/* Properties and Benefits Table with Enhanced Design */}
+                      <div className="bg-white/80 rounded-xl shadow-lg overflow-hidden border border-gray-200/50">
+                        <div className="grid grid-cols-2">
+                          <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-6">
+                            <div className="flex items-center space-x-3">
+                              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"></path>
+                              </svg>
+                              <h3 className="text-xl font-bold">Eigenschappen</h3>
+                            </div>
+                          </div>
+                          <div className="bg-gradient-to-r from-green-600 to-green-500 text-white p-6">
+                            <div className="flex items-center space-x-3">
+                              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                              </svg>
+                              <h3 className="text-xl font-bold">Voordelen</h3>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div className="grid grid-cols-2 divide-x divide-gray-200">
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Lichtgewicht constructie, 45 kg/m²</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Eenvoudige montage aan bestaande gevels.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Modulaire opbouw. Flexibele configuratie</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Uitstekende ventilatie en drainage eigenschappen.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Wordt geleverd in panelen 800 x 600 x 25 mm</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Snelle installatie en onderhoudsvriendelijk.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Geïntegreerd irrigatiesysteem</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Vermindert onderhoudstijd en waterverbruik.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Duurzame kunststof constructie</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">UV-bestendig en weerbestendig materiaal.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Plantencapaciteit 12 planten/m²</p>
+                            </div>
+                          </div>
+                          <div className="p-5 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Optimale plantendichtheid voor groene gevels.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
           </div>
