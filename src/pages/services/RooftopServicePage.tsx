@@ -181,6 +181,77 @@ const RooftopServicePage = () => {
                       />
                     </div>
                   </div>
+                  
+                  {/* Third section - SRS 1-27° with technical specifications */}
+                   <div className="mt-16">
+                     <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">
+                       SRS 1-27°
+                     </h3>
+                     
+                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                        <div className="flex justify-center items-center">
+                                 <img 
+                                   src="https://i.imgur.com/VEFA8T3.png" 
+                                   alt="SRS 1-27° systeem" 
+                                   className="w-full max-w-md h-80 object-contain mt-16"
+                                 />
+                               </div>
+                       
+                       <div className="space-y-6">
+                         <div>
+                            <p className="text-secondary-700 leading-relaxed mb-4">
+                              Sedunas SRS 1-27° bestaat av prefabricerade element som är lätta att montera. Systemet har låg bygghöjd vilket hämmar ogräs och minimerar skötsel av takytan. Den låga bygghöjden ger systemet minimal vikt vilket ökar användningsområdet.
+                            </p>
+                            <p className="text-secondary-700 leading-relaxed mb-4">
+                              SRS 1-27° har en god vattenhållande förmåga. Systemet är brandklassat enligt BROOF<sub>(T2)</sub> vilket möjliggör anläggning på de flesta takytor.
+                            </p>
+                            <p className="text-secondary-700 leading-relaxed mb-6">
+                              SRS 1-27° är baserad på en miljövänlig stomme med minimal andel plast som läggs ovanpå ett vattenhållande lager med dränerande egenskaper.
+                            </p>
+                          </div>
+                          
+                          {/* Technical specifications table */}
+                          <div className="bg-green-50 rounded-lg overflow-hidden">
+                            <table className="w-full">
+                              <tbody>
+                                <tr className="border-b border-green-200">
+                                  <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
+                                    Bouwhoogte (mm)
+                                  </td>
+                                  <td className="px-4 py-3 text-secondary-700 text-right">
+                                    50
+                                  </td>
+                                </tr>
+                                <tr className="border-b border-green-200">
+                                  <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
+                                    Drooggewicht, kg/m²
+                                  </td>
+                                  <td className="px-4 py-3 text-secondary-700 text-right">
+                                    19,3
+                                  </td>
+                                </tr>
+                                <tr className="border-b border-green-200">
+                                  <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
+                                    Waterverzadigd gewicht bij 0° helling, kg/m²
+                                  </td>
+                                  <td className="px-4 py-3 text-secondary-700 text-right">
+                                    51,1
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td className="px-4 py-3 text-secondary-700 font-medium bg-green-100">
+                                    Waterhoudend vermogen 30 min na verzadiging bij 0° helling
+                                  </td>
+                                  <td className="px-4 py-3 text-secondary-700 text-right">
+                                    3
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                       </div>
+                     </div>
+                   </div>
                 </div>
               ) : (
                 /* Default layout for other tabs */
