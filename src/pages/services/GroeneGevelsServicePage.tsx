@@ -383,6 +383,108 @@ const GroeneGevelsServicePage = () => {
                       </div>
                     </div>
                   </div>
+
+                  {/* New Seduna Green Screen Table Section */}
+                  <div className="mt-16">
+                    <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                      <div className="text-center mb-8">
+                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">Seduna Green Screen</h2>
+                      </div>
+                      
+                      {/* Specifications Table */}
+                      <div className="bg-white/80 rounded-xl shadow-lg overflow-hidden border border-gray-200/50">
+                        <div className="overflow-x-auto">
+                          <table className="w-full">
+                            <thead>
+                              <tr className="bg-gradient-to-r from-green-500 to-green-600 text-white">
+                                <th className="px-6 py-4 text-left font-bold">Seduna Green Screen</th>
+                                <th className="px-6 py-4 text-center font-bold">Höjd, m</th>
+                                <th className="px-6 py-4 text-center font-bold">Bredd, m</th>
+                                <th className="px-6 py-4 text-center font-bold">Tjocklek, mm</th>
+                                <th className="px-6 py-4 text-center font-bold">Antal fästen/skärm</th>
+                              </tr>
+                            </thead>
+                            <tbody className="divide-y divide-gray-200">
+                              <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                <td className="px-6 py-4 font-semibold text-secondary-800">SGS-1000</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">1.0</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">-</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">4</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">4</td>
+                              </tr>
+                              <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                <td className="px-6 py-4 font-semibold text-secondary-800">SGS-1800</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">1.8</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">-</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">5</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">4</td>
+                              </tr>
+                              <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                <td className="px-6 py-4 font-semibold text-secondary-800">SGS-2000</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">2.0</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">1.2</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">5</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">4</td>
+                              </tr>
+                              <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                <td className="px-6 py-4 font-semibold text-secondary-800">SGS-2200</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">2.2</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">-</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">5</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">6</td>
+                              </tr>
+                              <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                <td className="px-6 py-4 font-semibold text-secondary-800">SGS-3000</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">3.0</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">-</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">5</td>
+                                <td className="px-6 py-4 text-center text-secondary-700">6</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        
+                        {/* Additional Information */}
+                        <div className="bg-green-50 p-6 border-t border-green-200">
+                          <div className="text-center">
+                            <p className="text-secondary-700 font-medium text-lg">
+                              "Bottenkruka 1.2 m x 0.2 m
+                            </p>
+                            <p className="text-secondary-700 font-medium text-lg">
+                              C/C-avstånd mellan stolpar: 130-132 cm"
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* New Tillbehör Table Section */}
+                  <div className="mt-16">
+                    <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                      <div className="text-center mb-8">
+                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">Tillbehör</h2>
+                      </div>
+                      
+                      {/* Accessories Table */}
+                      <div className="bg-white/80 rounded-xl shadow-lg overflow-hidden border border-gray-200/50">
+                        <div className="overflow-x-auto">
+                          <table className="w-full">
+                            <tbody className="divide-y divide-gray-200">
+                              <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                <td className="px-6 py-4 font-semibold text-secondary-800 bg-green-100">SGS-stolpfäste</td>
+                                <td className="px-6 py-4 text-secondary-700">Skruvas i trästolpar för upphängning av växtskärm. Stolpar ingår ej.</td>
+                              </tr>
+                              <tr className="hover:bg-green-50/50 transition-colors duration-200">
+                                <td className="px-6 py-4 font-semibold text-secondary-800 bg-green-100">SGS-fasadfäste</td>
+                                <td className="px-6 py-4 text-secondary-700">Skruvas i fasad när växtskärm monteras längs fasad.</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               )}
           </div>
