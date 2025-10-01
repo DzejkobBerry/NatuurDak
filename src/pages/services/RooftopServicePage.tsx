@@ -653,71 +653,119 @@ const RooftopServicePage = () => {
                   
                   {/* SMB 40 Seduna Mineral Board Section */}
                   <div className="mt-16">
-                    <h2 className="text-3xl font-display font-bold text-green-600 mb-6">
-                      SMB 40- Seduna Mineral Board
-                    </h2>
-                    
-                    <div className="space-y-4 mb-8">
-                      <p className="text-lg text-secondary-700 leading-relaxed">
-                        SMB 40 används som vattenhållande lager vid bjälklagsuppbyggnad.
-                      </p>
-                      <p className="text-lg text-secondary-700 leading-relaxed">
-                        SMB 40 har en oslagbar vattenhållande förmåga i förhållande till sin vikt och volym.
-                      </p>
-                    </div>
-                    
-                    {/* Properties and Benefits Table */}
-                    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-                      <div className="grid grid-cols-2">
-                        <div className="bg-green-500 text-white p-4">
-                          <h3 className="text-xl font-bold">Egenskaper</h3>
-                        </div>
-                        <div className="bg-green-500 text-white p-4">
-                          <h3 className="text-xl font-bold">Fördelar</h3>
+                    <div className="bg-gradient-to-r from-green-50 via-green-100 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                      <div className="text-center mb-8">
+                        <h2 className="text-3xl font-display font-bold text-green-800 mb-4">SMB 40 – Seduna Mineral Board</h2>
+                        
+                        <div className="space-y-4 mb-8">
+                          <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                            <span className="text-green-700 font-semibold">SMB 40</span> wordt gebruikt als waterhoudende laag bij dakvloerconstructies.
+                          </p>
+                          <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                            SMB 40 heeft een <span className="text-green-700 font-semibold">ongeëvenaarde wateropslagcapaciteit</span> in verhouding tot zijn gewicht en volume.
+                          </p>
                         </div>
                       </div>
                       
-                      <div className="grid grid-cols-2 divide-x divide-gray-200">
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Låg densitet, 158 kg/m³.</p>
-                        </div>
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Minimal vikt jämfört med löst substrat.</p>
-                        </div>
-                        
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Stabil struktur. Behåller.</p>
-                        </div>
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Behåller sin funktion, kompakteras inte.</p>
-                        </div>
-                        
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Levereras i skivor 1200 x 600 x 40</p>
-                        </div>
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Lätt hantering och installation.</p>
-                        </div>
-                        
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Filtereffekt.</p>
-                        </div>
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Förlänger livslängden på draneringslager.</p>
+                      {/* Properties and Benefits Table with Enhanced Design */}
+                      <div className="bg-white/80 rounded-xl shadow-lg overflow-hidden border border-gray-200/50">
+                        <div className="grid grid-cols-2">
+                          <div className="bg-gradient-to-r from-green-500 to-green-600 text-white p-6">
+                            <div className="flex items-center space-x-3">
+                              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd"></path>
+                              </svg>
+                              <h3 className="text-xl font-bold">Eigenschappen</h3>
+                            </div>
+                          </div>
+                          <div className="bg-gradient-to-r from-green-600 to-green-500 text-white p-6">
+                            <div className="flex items-center space-x-3">
+                              <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                              </svg>
+                              <h3 className="text-xl font-bold">Voordelen</h3>
+                            </div>
+                          </div>
                         </div>
                         
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Består av stenull.</p>
-                        </div>
-                        <div className="p-4 border-b border-gray-200">
-                          <p className="text-secondary-700">Obrännbart material, minskad brandrisk.</p>
-                        </div>
-                        
-                        <div className="p-4">
-                          <p className="text-secondary-700">Vattenhållande förmåga 37 l/m².</p>
-                        </div>
-                        <div className="p-4">
-                          <p className="text-secondary-700">Mycket hög vattenhållning jämfört med jord.</p>
+                        <div className="grid grid-cols-2 divide-x divide-gray-200">
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Lage dichtheid, 158 kg/m³</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Minimale gewicht in vergelijking met los substraat.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Stabiele structuur. Behoudt zijn functie</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Behoudt zijn functionaliteit, wordt niet samengeperst.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Wordt geleverd in platen 1200 x 600 x 40 mm</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Eenvoudige handling en installatie.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Filtereffect</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Verhoogt de levensduur van de drainagelaag.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Bestaat uit steenwol</p>
+                            </div>
+                          </div>
+                          <div className="p-5 border-b border-gray-200 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Onbrandbaar materiaal, verminderde brandrisico.</p>
+                            </div>
+                          </div>
+                          
+                          <div className="p-5 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Wateropslagcapaciteit 37 l/m²</p>
+                            </div>
+                          </div>
+                          <div className="p-5 hover:bg-green-50/50 transition-colors duration-200">
+                            <div className="flex items-start space-x-3">
+                              <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                              <p className="text-secondary-700 font-medium">Zeer hoge wateropslag in vergelijking met aarde.</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
