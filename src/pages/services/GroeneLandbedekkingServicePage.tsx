@@ -7,7 +7,7 @@ const GroeneLandbedekkingServicePage = () => {
   const tabsContent = {
     sedum: {
       title: 'Sedum op de grond',
-      description: 'Sedum op de grond biedt een onderhoudsarme en duurzame oplossing voor groene landbedekkingen. Deze vetplanten zijn perfect geschikt voor droge omstandigheden en creëren een prachtig tapijt van groen dat het hele jaar door mooi blijft.'
+      description: 'Sedumbeplanting is zeer droogtetolerant en geschikt voor aanleg op de grond en op muren. Sedum is bijzonder geschikt voor verkeersomgevingen, zoals rotondes en middenbermen, waar de beplanting wordt blootgesteld aan zware omstandigheden zoals droogte, zout en vervuiling.'
     },
     weide: {
       title: '"Weide" matten',
