@@ -3,39 +3,14 @@ import CtaSection from '../../components/CtaSection';
 
 const GroeneLandbedekkingServicePage = () => {
   const [activeTab, setActiveTab] = useState('sedum');
-  
-  const tabsContent = {
-    sedum: {
-      title: 'Sedum op de grond',
-      description: 'Sedumbeplanting is zeer droogtetolerant en geschikt voor aanleg op de grond en op muren. Sedum is bijzonder geschikt voor verkeersomgevingen, zoals rotondes en middenbermen, waar de beplanting wordt blootgesteld aan zware omstandigheden zoals droogte, zout en vervuiling.'
-    },
-    weide: {
-      title: '"Weide" matten',
-      description: 'Weide matten bieden een natuurlijke graslanduitstraling met een mix van grassen en wilde bloemen. Deze matten creëren een biodiverse omgeving die insecten en kleine dieren aantrekt.'
-    },
-    waterplanten: {
-      title: 'Matten met waterplanten',
-      description: 'Matten met waterplanten zijn speciaal ontworpen voor vochtige gebieden en waterpartijen. Ze helpen bij natuurlijke waterzuivering en creëren een unieke aquatische omgeving.'
-    },
-    bos: {
-      title: 'Bos matten',
-      description: 'Bos matten simuleren de natuurlijke bosbodem met een mix van schaduwminnende planten, mossen en varens. Perfect voor schaduwrijke gebieden waar traditioneel gras niet goed groeit.'
-    },
-    vasteplanten: {
-      title: 'Vaste plantenmatten',
-      description: 'Vaste plantenmatten bevatten een zorgvuldig geselecteerde mix van meerjarige planten die seizoen na seizoen terugkeren. Ze bieden kleur, textuur en structuur gedurende het hele jaar.'
-    }
-  };
 
   const tabs = [
     { id: 'sedum', label: 'Sedum op de grond' },
     { id: 'weide', label: '"Weide" matten' },
     { id: 'waterplanten', label: 'Matten met waterplanten' },
     { id: 'bos', label: 'Bos matten' },
-    { id: 'vasteplanten', label: 'Vaste plantenmatten' }
+    { id: 'vaste', label: 'Vaste plantenmatten' }
   ];
-
-  const currentContent = tabsContent[activeTab];
    
   return (
     <div className="w-full">
@@ -49,14 +24,13 @@ const GroeneLandbedekkingServicePage = () => {
             Groene Landbedekking
           </h1>
           <p className="text-xl text-white/90 max-w-3xl mx-auto">
-            Duurzame groene landbedekkingsoplossingen voor tuinen, parken en openbare ruimtes
+            Duurzame en onderhoudsarme groene oplossingen voor elke omgeving
           </p>
         </div>
       </div>
-      
+
       <div className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Mini Navigation Tabs */}
           <div className="mb-12">
             <div className="flex flex-wrap justify-center gap-2 mb-8 overflow-x-auto">
               {tabs.map((tab) => (
@@ -75,38 +49,36 @@ const GroeneLandbedekkingServicePage = () => {
             </div>
             
             {/* Tab Content */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
-                {currentContent.title}
-              </h2>
-              
-              {/* Enhanced Description with Visual Elements */}
-              <div className="text-center mb-12">
-                <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
-                  <div className="flex items-center justify-center mb-6">
-                    <div className="flex space-x-2">
-                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                      <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
-                      <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
-                    </div>
-                  </div>
-                  
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-center space-x-3 mb-4">
-                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
-                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                        </svg>
+            {activeTab === 'sedum' && (
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
+                  Sedum op de grond
+                </h2>
+                
+                <div className="text-center mb-12">
+                  <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                    <div className="flex items-center justify-center mb-6">
+                      <div className="flex space-x-2">
+                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                        <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
                       </div>
-                      <h3 className="text-xl font-bold text-green-800">{currentContent.title}</h3>
                     </div>
                     
-                    <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
-                      {currentContent.description}
-                    </p>
-                    
-                    {/* Tab-specific content */}
-                    {activeTab === 'sedum' && (
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-center space-x-3 mb-4">
+                        <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-green-800">Sedum op de grond</h3>
+                      </div>
+                      
+                      <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                        Sedumbeplanting is zeer droogtetolerant en geschikt voor aanleg op de grond en op muren. Sedum is bijzonder geschikt voor verkeersomgevingen, zoals rotondes en middenbermen, waar de beplanting wordt blootgesteld aan zware omstandigheden zoals droogte, zout en vervuiling.
+                      </p>
+                      
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                         <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
                           <div className="flex items-center space-x-2 mb-2">
@@ -144,171 +116,291 @@ const GroeneLandbedekkingServicePage = () => {
                           <p className="text-sm text-secondary-600">Behoudt kleur in alle seizoenen</p>
                         </div>
                       </div>
-                    )}
-
-                    {activeTab === 'weide' && (
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-yellow-700">Biodiversiteit</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Trekt bijen, vlinders en andere insecten aan</p>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* New section with image and benefits list */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                  <div className="flex justify-center">
+                    <img 
+                      src="https://i.imgur.com/sedum1.png" 
+                      alt="Sedum beplanting systeem" 
+                      className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
+                    />
+                  </div>
+                  
+                  <div className="bg-green-50 rounded-lg p-6">
+                    <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                      VOORDELEN VAN SEDUM
+                    </h3>
+                    <div className="space-y-3">
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Extreem droogteresistent, overleeft lange periodes zonder water
+                          </p>
                         </div>
-                        
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-green-700">Natuurlijke Uitstraling</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Creëert een authentieke weidegevoeling</p>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Zeer weinig onderhoud nodig, ideaal voor extensieve beplanting
+                          </p>
                         </div>
-                        
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-purple-700">Seizoenskleur</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Verschillende kleuren door het jaar heen</p>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Behoudt groene kleur gedurende het hele jaar
+                          </p>
                         </div>
-                      </div>
-                    )}
-
-                    {activeTab === 'waterplanten' && (
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-blue-700">Waterzuivering</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Helpt bij natuurlijke waterzuivering</p>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Perfect geschikt voor moeilijke groeiomstandigheden
+                          </p>
                         </div>
-                        
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-cyan-700">Aquatische Omgeving</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Perfect voor vijvers en waterpartijen</p>
-                        </div>
-                        
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-teal-500 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-teal-700">Vochtregulatie</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Reguleert vochtniveaus in de omgeving</p>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm">
+                            Bestand tegen vervuiling en zoutspray in verkeersomgevingen
+                          </p>
                         </div>
                       </div>
-                    )}
+                   </div>
+                 </div>
+                 
+                 {/* Second section with reversed layout */}
+                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                   <div className="bg-green-50 rounded-lg p-6">
+                     <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                       VOORDELEN VAN SEDUM BEPLANTING
+                     </h3>
+                     <div className="space-y-3">
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm">
+                           Vermindert hitte-eiland effect in stedelijke gebieden
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm">
+                           Verbetert luchtkwaliteit door CO2-absorptie en zuurstofproductie
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm">
+                           Biedt habitat voor insecten en kleine dieren
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm">
+                           Helpt bij regenwateropvang en -filtering
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm">
+                           Kosteneffectieve oplossing voor grote oppervlakken
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm">
+                           Geschikt voor extensieve begroening zonder irrigatie
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+                 
+                   <div className="flex justify-center">
+                      <img 
+                        src="https://i.imgur.com/sedum2.png" 
+                        alt="Sedum voordelen voor milieu" 
+                        className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
+                      />
+                    </div>
+                 </div>
+                </div>
+              )}
 
-                    {activeTab === 'bos' && (
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-green-700">Schaduwminnend</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Perfect voor schaduwrijke gebieden</p>
-                        </div>
-                        
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-amber-600 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-amber-700">Natuurlijke Bosbodem</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Simuleert authentieke bosomgeving</p>
-                        </div>
-                        
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-emerald-600 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-emerald-700">Mossen & Varens</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Bevat diverse bosplanten en mossen</p>
-                        </div>
+            {activeTab === 'weide' && (
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
+                  "Weide" matten
+                </h2>
+                
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                  <div className="flex justify-center">
+                    <img 
+                      src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                      alt="Weide matten" 
+                      className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
+                    />
+                  </div>
+                  
+                  <div className="bg-green-50 rounded-lg p-6">
+                    <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                      VOORDELEN VAN WEIDE MATTEN
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Natuurlijke graslanduitstraling met wilde bloemen
+                        </p>
                       </div>
-                    )}
-
-                    {activeTab === 'vasteplanten' && (
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-purple-700">Meerjarig</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Komen elk jaar terug</p>
-                        </div>
-                        
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-pink-500 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-pink-700">Kleur & Textuur</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Diverse kleuren en texturen</p>
-                        </div>
-                        
-                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
-                          <div className="flex items-center space-x-2 mb-2">
-                            <div className="w-6 h-6 bg-indigo-500 rounded-full flex items-center justify-center">
-                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
-                                <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
-                              </svg>
-                            </div>
-                            <span className="font-semibold text-indigo-700">Jaarrond Structuur</span>
-                          </div>
-                          <p className="text-sm text-secondary-600">Structuur in alle seizoenen</p>
-                        </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Biodiverse omgeving die insecten aantrekt
+                        </p>
                       </div>
-                    )}
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Seizoensgebonden kleurveranderingen
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            )}
+
+            {activeTab === 'waterplanten' && (
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
+                  Matten met waterplanten
+                </h2>
+                
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                  <div className="flex justify-center">
+                    <img 
+                      src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                      alt="Waterplanten matten" 
+                      className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
+                    />
+                  </div>
+                  
+                  <div className="bg-blue-50 rounded-lg p-6">
+                    <h3 className="text-xl font-display font-bold text-blue-700 mb-4">
+                      VOORDELEN VAN WATERPLANTEN
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Natuurlijke waterzuivering en filtratie
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Geschikt voor vijvers en waterpartijen
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Creëert unieke aquatische ecosystemen
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'bos' && (
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
+                  Bos matten
+                </h2>
+                
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                  <div className="flex justify-center">
+                    <img 
+                      src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                      alt="Bos matten" 
+                      className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
+                    />
+                  </div>
+                  
+                  <div className="bg-amber-50 rounded-lg p-6">
+                    <h3 className="text-xl font-display font-bold text-amber-700 mb-4">
+                      VOORDELEN VAN BOS MATTEN
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Perfect voor schaduwrijke gebieden
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Bevat mossen, varens en schaduwplanten
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Simuleert natuurlijke bosbodem
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
+
+            {activeTab === 'vaste' && (
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6 text-center">
+                  Vaste plantenmatten
+                </h2>
+                
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                  <div className="flex justify-center">
+                    <img 
+                      src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                      alt="Vaste plantenmatten" 
+                      className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
+                    />
+                  </div>
+                  
+                  <div className="bg-purple-50 rounded-lg p-6">
+                    <h3 className="text-xl font-display font-bold text-purple-700 mb-4">
+                      VOORDELEN VAN VASTE PLANTEN
+                    </h3>
+                    <div className="space-y-3">
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Meerjarige planten die elk seizoen terugkeren
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Langdurige bloeiperiodes voor continue kleur
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm">
+                          Mix van bloeiende planten en siergrassen
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
