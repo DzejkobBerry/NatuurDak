@@ -124,45 +124,33 @@ const GroeneLandbedekkingServicePage = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                   <div className="flex justify-center">
                     <img 
-                      src="https://i.imgur.com/sedum1.png" 
-                      alt="Sedum beplanting systeem" 
+                      src="https://i.imgur.com/5bNa8DG.png" 
+                      alt="Sedum miniatura" 
                       className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
                     />
                   </div>
                   
-                  <div className="bg-green-50 rounded-lg p-6">
+                  <div className="bg-green-50 rounded-lg p-6 h-fit">
                     <h3 className="text-xl font-display font-bold text-green-700 mb-4">
-                      VOORDELEN VAN SEDUM
+                      Voordelen
                     </h3>
-                    <div className="space-y-3">
+                    <div className="space-y-4">
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Extreem droogteresistent, overleeft lange periodes zonder water
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Direct resultaat vanaf dag één met een kant-en-klare mat uitgerold met voorgekweekte vaste planten
                           </p>
                         </div>
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Zeer weinig onderhoud nodig, ideaal voor extensieve beplanting
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Eenvoudig aan te leggen
                           </p>
                         </div>
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Behoudt groene kleur gedurende het hele jaar
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Perfect geschikt voor moeilijke groeiomstandigheden
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm">
-                            Bestand tegen vervuiling en zoutspray in verkeersomgevingen
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Volledige bedekking
                           </p>
                         </div>
                       </div>
@@ -171,53 +159,26 @@ const GroeneLandbedekkingServicePage = () => {
                  
                  {/* Second section with reversed layout */}
                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                   <div className="bg-green-50 rounded-lg p-6">
-                     <h3 className="text-xl font-display font-bold text-green-700 mb-4">
-                       VOORDELEN VAN SEDUM BEPLANTING
-                     </h3>
-                     <div className="space-y-3">
-                       <div className="flex items-start space-x-3">
-                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                         <p className="text-secondary-700 text-sm">
-                           Vermindert hitte-eiland effect in stedelijke gebieden
-                         </p>
-                       </div>
-                       <div className="flex items-start space-x-3">
-                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                         <p className="text-secondary-700 text-sm">
-                           Verbetert luchtkwaliteit door CO2-absorptie en zuurstofproductie
-                         </p>
-                       </div>
-                       <div className="flex items-start space-x-3">
-                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                         <p className="text-secondary-700 text-sm">
-                           Biedt habitat voor insecten en kleine dieren
-                         </p>
-                       </div>
-                       <div className="flex items-start space-x-3">
-                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                         <p className="text-secondary-700 text-sm">
-                           Helpt bij regenwateropvang en -filtering
-                         </p>
-                       </div>
-                       <div className="flex items-start space-x-3">
-                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                         <p className="text-secondary-700 text-sm">
-                           Kosteneffectieve oplossing voor grote oppervlakken
-                         </p>
-                       </div>
-                       <div className="flex items-start space-x-3">
-                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                         <p className="text-secondary-700 text-sm">
-                           Geschikt voor extensieve begroening zonder irrigatie
-                         </p>
-                       </div>
+                   <div className="bg-green-50 rounded-lg p-6 h-fit mt-24">
+                     <h3 className="text-xl font-display font-bold text-green-700 mb-4">Voordelen</h3>
+                     <div className="flex items-start space-x-3">
+                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                       <p className="text-secondary-700 text-sm leading-relaxed">
+                         Laag onderhoudsbehoefte
+                       </p>
+                     </div>
+                     <br />
+                     <div className="flex items-start space-x-3">
+                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                       <p className="text-secondary-700 text-sm leading-relaxed">
+                         Bemoeilijkt onkruidgroei
+                       </p>
                      </div>
                    </div>
                  
                    <div className="flex justify-center">
                       <img 
-                        src="https://i.imgur.com/sedum2.png" 
+                        src="https://i.imgur.com/zh1TMMH.png" 
                         alt="Sedum voordelen voor milieu" 
                         className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
                       />
@@ -401,6 +362,12 @@ const GroeneLandbedekkingServicePage = () => {
                 </div>
               </div>
             )}
+          </div>
+          
+          <div className="text-center mt-8">
+            <a href="/contact" className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg text-lg">
+              Plan Gratis Consultatie
+            </a>
           </div>
         </div>
       </div>
