@@ -157,22 +157,23 @@ const GroeneLandbedekkingServicePage = () => {
                    </div>
                  </div>
                  
-                 {/* Second section with benefits only */}
-                 <div className="grid grid-cols-1 gap-8">
-                   <div className="bg-green-50 rounded-lg p-6 h-fit mt-24">
+                 {/* Second section with benefits and image in one row */}
+                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                   <div className="bg-green-50 rounded-lg p-6 h-fit">
                      <h3 className="text-xl font-display font-bold text-green-700 mb-4">Voordelen</h3>
-                     <div className="flex items-start space-x-3">
-                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                       <p className="text-secondary-700 text-sm leading-relaxed">
-                         Laag onderhoudsbehoefte
-                       </p>
-                     </div>
-                     <br />
-                     <div className="flex items-start space-x-3">
-                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                       <p className="text-secondary-700 text-sm leading-relaxed">
-                         Bemoeilijkt onkruidgroei
-                       </p>
+                     <div className="space-y-4">
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Laag onderhoudsbehoefte
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Bemoeilijkt onkruidgroei
+                         </p>
+                       </div>
                      </div>
                    </div>
                  
