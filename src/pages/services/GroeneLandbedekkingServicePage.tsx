@@ -384,7 +384,7 @@ const GroeneLandbedekkingServicePage = () => {
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <h3 className="text-xl font-bold text-green-800">Voordelen – Waterplantenmat</h3>
+                      <h3 className="text-xl font-bold text-green-800">Waterplantenmat</h3>
                     </div>
                     
                     <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
@@ -392,6 +392,44 @@ const GroeneLandbedekkingServicePage = () => {
                       Ze kunnen ook worden toegepast in wadi's en regenbedden. De waterplantenmatten van Seduna hebben een draaglaag 
                       van kokosmateriaal met voorgekweekte laag- en hooggroeiende moerasplanten.
                     </p>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                      <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                        <div className="flex items-center space-x-2 mb-2">
+                          <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                            <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <span className="font-semibold text-blue-700">Waterzuivering</span>
+                        </div>
+                        <p className="text-sm text-secondary-600">Reduceert fosfor en stikstof effectief</p>
+                      </div>
+                      
+                      <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                        <div className="flex items-center space-x-2 mb-2">
+                          <div className="w-6 h-6 bg-cyan-500 rounded-full flex items-center justify-center">
+                            <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <span className="font-semibold text-cyan-700">Erosiebescherming</span>
+                        </div>
+                        <p className="text-sm text-secondary-600">Voorkomt erosie rond waterpartijen</p>
+                      </div>
+                      
+                      <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                        <div className="flex items-center space-x-2 mb-2">
+                          <div className="w-6 h-6 bg-gradient-to-r from-blue-400 to-green-500 rounded-full flex items-center justify-center">
+                            <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <span className="font-semibold text-green-700">Moerasecosysteem</span>
+                        </div>
+                        <p className="text-sm text-secondary-600">Creëert natuurlijke moerashabitats</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 </div>
@@ -459,12 +497,50 @@ const GroeneLandbedekkingServicePage = () => {
                           <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <h3 className="text-xl font-bold text-green-800">Voordelen – Bos matten</h3>
+                      <h3 className="text-xl font-bold text-green-800">Bos matten</h3>
                     </div>
                     
                     <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
                       Help de natuur een handje bij het herstel na een ingreep. Door het aanleggen van kant-en-klare bosmatten ontstaat er vanaf de eerste dag een volledig resultaat. De bosmatten worden zo uitgesneden dat ze geen extra ingrepen in de natuur veroorzaken. Ze kunnen ook op daken worden toegepast. De bosmatten bestaan uit bosbes, veenbes, kraaihei, heide, mos en korstmossen. Bosmatten gedijen goed op voedselarme grond met een mengsel van zand, grind en turf in een schaduwrijke omgeving.
                     </p>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                      <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                        <div className="flex items-center space-x-2 mb-2">
+                          <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center">
+                            <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <span className="font-semibold text-green-700">Schaduwresistent</span>
+                        </div>
+                        <p className="text-sm text-secondary-600">Gedijt uitstekend in schaduwrijke omgevingen</p>
+                      </div>
+                      
+                      <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                        <div className="flex items-center space-x-2 mb-2">
+                          <div className="w-6 h-6 bg-brown-500 rounded-full flex items-center justify-center">
+                            <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <span className="font-semibold text-amber-700">Natuurlijk herstel</span>
+                        </div>
+                        <p className="text-sm text-secondary-600">Ondersteunt natuurlijk bodemherstel</p>
+                      </div>
+                      
+                      <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                        <div className="flex items-center space-x-2 mb-2">
+                          <div className="w-6 h-6 bg-gradient-to-r from-green-500 to-green-700 rounded-full flex items-center justify-center">
+                            <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                              <path fillRule="evenodd" d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" clipRule="evenodd" />
+                            </svg>
+                          </div>
+                          <span className="font-semibold text-green-700">Ecosysteem</span>
+                        </div>
+                        <p className="text-sm text-secondary-600">Creëert rijke bosecosystemen</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 </div>
@@ -487,19 +563,19 @@ const GroeneLandbedekkingServicePage = () => {
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <p className="text-secondary-700 text-sm leading-relaxed">
-                            Perfect voor schaduwrijke gebieden waar andere planten niet gedijen.
+                            Prefab-mat met voorgekweekte bosplanten
                           </p>
                         </div>
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <p className="text-secondary-700 text-sm leading-relaxed">
-                            Bevat mossen, varens en schaduwminnende planten voor natuurlijk bosgevoel.
+                            Eenvoudig aan te leggen
                           </p>
                         </div>
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <p className="text-secondary-700 text-sm leading-relaxed">
-                            Simuleert natuurlijke bosbodem en creëert een authentieke bossfeer.
+                            Ideaal voor het herstel van bosomgevingen
                           </p>
                         </div>
                       </div>
