@@ -266,7 +266,7 @@ const GroeneLandbedekkingServicePage = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                   <div className="flex justify-center">
                     <img 
-                      src="https://i.imgur.com/Vsyg4rr.png" 
+                      src="https://i.imgur.com/mDuZwT8.png" 
                       alt="Weide matten voordelen" 
                       className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
                     />
@@ -312,43 +312,49 @@ const GroeneLandbedekkingServicePage = () => {
                  </div>
                  
                  {/* Second section with reversed layout */}
-                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                   <div className="bg-green-50 rounded-lg p-6 h-fit mt-24">
+                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                   <div className="bg-green-50 rounded-lg p-6 h-fit">
                      <h3 className="text-xl font-display font-bold text-green-700 mb-4">Voordelen</h3>
-                     <div className="flex items-start space-x-3">
-                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                       <p className="text-secondary-700 text-sm leading-relaxed">
-                         Plantenmateriaal aangepast aan ons Scandinavische klimaat
-                       </p>
+                     <div className="space-y-4">
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Plantenmateriaal aangepast aan ons Scandinavische klimaat
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Kan worden aangevuld met lokaal voorkomende kruiden
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Prefab weidematten met een organische drager die na verloop van tijd natuurlijk afbreekt
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Geen noodzaak om het gebied af te schermen voor het publiek, zoals bij inzaai
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Hoge soortenrijkdom die bestuivers ten goede komt
+                         </p>
+                       </div>
                      </div>
-                     <br />
-                     <div className="flex items-start space-x-3">
-                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                       <p className="text-secondary-700 text-sm leading-relaxed">
-                         Kan worden aangevuld met lokaal voorkomende kruiden
-                       </p>
-                     </div>
-                     <br />
-                     <div className="flex items-start space-x-3">
-                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                       <p className="text-secondary-700 text-sm leading-relaxed">
-                         Prefab weidematten met een organische drager die na verloop van tijd natuurlijk afbreekt
-                       </p>
-                     </div>
-                     <br />
-                     <div className="flex items-start space-x-3">
-                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                       <p className="text-secondary-700 text-sm leading-relaxed">
-                         Geen noodzaak om het gebied af te schermen voor het publiek, zoals bij inzaai
-                       </p>
-                     </div>
-                     <br />
-                     <div className="flex items-start space-x-3">
-                       <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                       <p className="text-secondary-700 text-sm leading-relaxed">
-                         Hoge soortenrijkdom die bestuivers ten goede komt
-                       </p>
-                     </div>
+                   </div>
+                 
+                   <div className="flex justify-center">
+                     <img 
+                       src="https://i.imgur.com/Vsyg4rr.png" 
+                       alt="Weide matten voordelen" 
+                       className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
+                     />
                    </div>
                  </div>
                 </div>
