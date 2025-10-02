@@ -442,6 +442,34 @@ const GroeneLandbedekkingServicePage = () => {
                   Bos matten
                 </h2>
                 
+                <div className="text-center mb-12">
+                  <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                  <div className="flex items-center justify-center mb-6">
+                    <div className="flex space-x-2">
+                      <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                      <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                      <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    <div className="flex items-center justify-center space-x-3 mb-4">
+                      <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <h3 className="text-xl font-bold text-green-800">Voordelen – Bos matten</h3>
+                    </div>
+                    
+                    <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                      Help de natuur een handje bij het herstel na een ingreep. Door het aanleggen van kant-en-klare bosmatten ontstaat er vanaf de eerste dag een volledig resultaat. De bosmatten worden zo uitgesneden dat ze geen extra ingrepen in de natuur veroorzaken. Ze kunnen ook op daken worden toegepast. De bosmatten bestaan uit bosbes, veenbes, kraaihei, heide, mos en korstmossen. Bosmatten gedijen goed op voedselarme grond met een mengsel van zand, grind en turf in een schaduwrijke omgeving.
+                    </p>
+                  </div>
+                </div>
+                </div>
+                
+                {/* First section with image and benefits list */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                   <div className="flex justify-center">
                     <img 
@@ -451,32 +479,33 @@ const GroeneLandbedekkingServicePage = () => {
                     />
                   </div>
                   
-                  <div className="bg-amber-50 rounded-lg p-6">
-                    <h3 className="text-xl font-display font-bold text-amber-700 mb-4">
-                      VOORDELEN VAN BOS MATTEN
+                  <div className="bg-green-50 rounded-lg p-6 h-fit">
+                    <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                      Voordelen
                     </h3>
-                    <div className="space-y-3">
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"></div>
-                        <p className="text-secondary-700 text-sm">
-                          Perfect voor schaduwrijke gebieden
-                        </p>
+                    <div className="space-y-4">
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Perfect voor schaduwrijke gebieden waar andere planten niet gedijen.
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Bevat mossen, varens en schaduwminnende planten voor natuurlijk bosgevoel.
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Simuleert natuurlijke bosbodem en creëert een authentieke bossfeer.
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"></div>
-                        <p className="text-secondary-700 text-sm">
-                          Bevat mossen, varens en schaduwplanten
-                        </p>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-amber-500 rounded-full mt-2"></div>
-                        <p className="text-secondary-700 text-sm">
-                          Simuleert natuurlijke bosbodem
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                   </div>
+                 </div>
+
               </div>
             )}
 
