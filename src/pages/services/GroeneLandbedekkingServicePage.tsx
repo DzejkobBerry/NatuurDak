@@ -608,15 +608,13 @@ const GroeneLandbedekkingServicePage = () => {
                             <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                           </svg>
                         </div>
-                        <h3 className="text-xl font-bold text-green-800">Vaste plantenmatten</h3>
+                        <h3 className="text-xl font-bold text-green-800">Vaste plantenmat</h3>
                       </div>
                       
                       <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
-                        Vaste plantenmatten bieden een duurzame en kleurrijke oplossing voor groene buitenruimtes. 
-                        Deze matten bevatten een zorgvuldig samengestelde mix van meerjarige planten die jaar na jaar terugkeren. 
-                        Met hun langdurige bloeiperiodes zorgen ze voor continue kleur en leven in uw tuin of project. 
-                        De combinatie van bloeiende planten en siergrassen creëert een natuurlijke en onderhoudsvriendelijke beplanting 
-                        die perfect geschikt is voor verschillende toepassingen, van particuliere tuinen tot openbare ruimtes.
+                        De perennematten van Seduna worden geleverd met voorgekweekte vaste planten en wortelen snel op hun nieuwe locatie. 
+                        De vaste planten worden gekweekt op een kokosdrager, waardoor de mat gemakkelijk te hanteren en duurzaam is. 
+                        Vaste plantenmatten zijn geschikt voor bloembedden op de grond en op betonnen constructies.
                       </p>
                       
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
@@ -664,7 +662,7 @@ const GroeneLandbedekkingServicePage = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                   <div className="flex justify-center">
                     <img 
-                      src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                      src="https://i.imgur.com/hu2FTOu.png" 
                       alt="Vaste plantenmatten" 
                       className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
                     />
@@ -678,31 +676,19 @@ const GroeneLandbedekkingServicePage = () => {
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <p className="text-secondary-700 text-sm leading-relaxed">
-                            Meerjarige planten die elk seizoen terugkeren voor langdurige waarde
+                            Direct resultaat vanaf dag één met een prefab-mat met voorgekweekte vaste planten
                           </p>
                         </div>
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <p className="text-secondary-700 text-sm leading-relaxed">
-                            Uitgebreide bloeiperiodes zorgen voor continue kleur door het seizoen
+                            Eenvoudig aan te leggen
                           </p>
                         </div>
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <p className="text-secondary-700 text-sm leading-relaxed">
-                            Zorgvuldig samengestelde mix van bloeiende planten en siergrassen
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm leading-relaxed">
-                            Onderhoudsarm en geschikt voor verschillende grondsoorten
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm leading-relaxed">
-                            Aantrekkelijk voor bestuivers en ondersteunt lokale biodiversiteit
+                            Volledige bedekking
                           </p>
                         </div>
                       </div>
