@@ -488,6 +488,12 @@ const GroeneGevelsServicePage = () => {
                 </div>
               )}
           </div>
+          
+          <div className="text-center mt-8">
+            <a href="/contact" className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg text-lg">
+              Plan Gratis Consultatie
+            </a>
+          </div>
         </div>
       </div>
       
