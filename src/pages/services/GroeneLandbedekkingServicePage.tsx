@@ -124,7 +124,7 @@ const GroeneLandbedekkingServicePage = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                   <div className="flex justify-center">
                     <img 
-                      src="https://i.imgur.com/5bNa8DG.png" 
+                      src="https://i.imgur.com/l3zkBeK.png" 
                       alt="Sedum miniatura" 
                       className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
                     />
@@ -138,19 +138,13 @@ const GroeneLandbedekkingServicePage = () => {
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <p className="text-secondary-700 text-sm leading-relaxed">
-                            Direct resultaat vanaf dag één met een kant-en-klare mat uitgerold met voorgekweekte vaste planten
+                            Sedum op de grond verdraagt zoutbelasting in verkeersomgevingen beter dan veel andere planten.
                           </p>
                         </div>
                         <div className="flex items-start space-x-3">
                           <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                           <p className="text-secondary-700 text-sm leading-relaxed">
-                            Eenvoudig aan te leggen
-                          </p>
-                        </div>
-                        <div className="flex items-start space-x-3">
-                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                          <p className="text-secondary-700 text-sm leading-relaxed">
-                            Volledige bedekking
+                            Sedum op de grond kan goed omgaan met droge en zonnige groeiplaatsen, zoals vaak voorkomt in verkeersomgevingen.
                           </p>
                         </div>
                       </div>
@@ -165,13 +159,13 @@ const GroeneLandbedekkingServicePage = () => {
                        <div className="flex items-start space-x-3">
                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                          <p className="text-secondary-700 text-sm leading-relaxed">
-                           Laag onderhoudsbehoefte
+                           Sedum op de grond is eenvoudig en snel aan te leggen, bijvoorbeeld in rotondes en verkeerseilanden.
                          </p>
                        </div>
                        <div className="flex items-start space-x-3">
                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                          <p className="text-secondary-700 text-sm leading-relaxed">
-                           Bemoeilijkt onkruidgroei
+                           Met sedum op de grond ontstaat vanaf dag één een volledig resultaat.
                          </p>
                        </div>
                      </div>
@@ -179,7 +173,7 @@ const GroeneLandbedekkingServicePage = () => {
                  
                    <div className="flex justify-center">
                       <img 
-                        src="https://i.imgur.com/zh1TMMH.png" 
+                        src="https://i.imgur.com/ijuRCa2.png" 
                         alt="Sedum voordelen voor milieu" 
                         className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
                       />
