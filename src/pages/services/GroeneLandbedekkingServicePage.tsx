@@ -507,31 +507,31 @@ const GroeneLandbedekkingServicePage = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
                       <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
                         <div className="flex items-center space-x-2 mb-2">
-                          <div className="w-6 h-6 bg-green-600 rounded-full flex items-center justify-center">
+                          <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
                             <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                             </svg>
                           </div>
-                          <span className="font-semibold text-green-700">Schaduwresistent</span>
+                          <span className="font-semibold text-blue-700">Schaduwresistent</span>
                         </div>
                         <p className="text-sm text-secondary-600">Gedijt uitstekend in schaduwrijke omgevingen</p>
                       </div>
                       
                       <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
                         <div className="flex items-center space-x-2 mb-2">
-                          <div className="w-6 h-6 bg-brown-500 rounded-full flex items-center justify-center">
+                          <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
                             <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                             </svg>
                           </div>
-                          <span className="font-semibold text-amber-700">Natuurlijk herstel</span>
+                          <span className="font-semibold text-green-700">Natuurlijk herstel</span>
                         </div>
                         <p className="text-sm text-secondary-600">Ondersteunt natuurlijk bodemherstel</p>
                       </div>
                       
                       <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
                         <div className="flex items-center space-x-2 mb-2">
-                          <div className="w-6 h-6 bg-gradient-to-r from-green-500 to-green-700 rounded-full flex items-center justify-center">
+                          <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center">
                             <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
                               <path fillRule="evenodd" d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z" clipRule="evenodd" />
                             </svg>
