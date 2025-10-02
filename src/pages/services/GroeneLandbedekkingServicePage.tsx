@@ -549,7 +549,7 @@ const GroeneLandbedekkingServicePage = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                   <div className="flex justify-center">
                     <img 
-                      src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                      src="https://i.imgur.com/AUaWDBl.png" 
                       alt="Bos matten" 
                       className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
                     />
