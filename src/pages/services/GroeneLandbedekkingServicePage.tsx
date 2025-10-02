@@ -366,41 +366,171 @@ const GroeneLandbedekkingServicePage = () => {
                   Matten met waterplanten
                 </h2>
                 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-                  <div className="flex justify-center">
-                    <img 
-                      src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
-                      alt="Waterplanten matten" 
-                      className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
-                    />
-                  </div>
-                  
-                  <div className="bg-blue-50 rounded-lg p-6">
-                    <h3 className="text-xl font-display font-bold text-blue-700 mb-4">
-                      VOORDELEN VAN WATERPLANTEN
-                    </h3>
-                    <div className="space-y-3">
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                        <p className="text-secondary-700 text-sm">
-                          Natuurlijke waterzuivering en filtratie
-                        </p>
+                <div className="text-center mb-12">
+                  <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                    <div className="flex items-center justify-center mb-6">
+                      <div className="flex space-x-2">
+                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                        <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
                       </div>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                        <p className="text-secondary-700 text-sm">
-                          Geschikt voor vijvers en waterpartijen
-                        </p>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-center space-x-3 mb-4">
+                        <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-green-800">Waterplanten-mat</h3>
                       </div>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-blue-500 rounded-full mt-2"></div>
-                        <p className="text-secondary-700 text-sm">
-                          Creëert unieke aquatische ecosystemen
-                        </p>
+                      
+                      <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                        De waterplantenmat wordt speciaal ontwikkeld voor aquatische omgevingen en is bij levering al goed ontwikkeld met een sterk wortelsysteem. 
+                        De mat bevat meer dan 15 verschillende waterplanten en oeverplanten die zorgen voor natuurlijke waterzuivering. 
+                        De waterplantenmat creëert een rijke aquatische biodiversiteit en ondersteunt het natuurlijke ecosysteem. 
+                        De mat past zich aan de wateromstandigheden van de locatie aan. Uiterlijk en samenstelling variëren per seizoen 
+                        en afhankelijk van de waterdiepte en stroming waarin de mat zich bevindt. De waterplantenmat is geschikt voor vijvers, 
+                        waterpartijen, beekoevers en natuurlijke waterretentiegebieden.
+                      </p>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            <span className="font-semibold text-blue-700">Waterzuivering</span>
+                          </div>
+                          <p className="text-sm text-secondary-600">Natuurlijke filtering van water</p>
+                        </div>
+                        
+                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            <span className="font-semibold text-green-700">Aquatisch</span>
+                          </div>
+                          <p className="text-sm text-secondary-600">Authentieke wateromgeving</p>
+                        </div>
+                        
+                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center">
+                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            <span className="font-semibold text-green-700">Seizoensbloei</span>
+                          </div>
+                          <p className="text-sm text-secondary-600">Waterplanten door het jaar</p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                
+                {/* First section with image and benefits list */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                  <div className="flex justify-center">
+                    <img 
+                      src="https://i.imgur.com/mDuZwT8.png" 
+                      alt="Waterplanten matten voordelen" 
+                      className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
+                    />
+                  </div>
+                  
+                  <div className="bg-green-50 rounded-lg p-6 h-fit">
+                    <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                      Voordelen
+                    </h3>
+                    <div className="space-y-4">
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Snelle vestiging in wateromgeving met directe waterzuivering vanaf installatie
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Hoge aquatische biodiversiteit met verschillende waterplanten
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Ondersteunt waterfauna en creëert natuurlijke habitats
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Flexibele toepassing voor verschillende waterdieptes en stromingen
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Natuurlijke waterzuivering en nutriëntenopname uit het water
+                          </p>
+                        </div>
+                      </div>
+                   </div>
+                 </div>
+                 
+                 {/* Second section with reversed layout */}
+                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                   <div className="bg-green-50 rounded-lg p-6 h-fit">
+                    <h3 className="text-xl font-display font-bold text-green-700 mb-4">Voordelen</h3>
+                    <div className="space-y-4">
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm leading-relaxed">
+                          Waterplanten aangepast aan lokale wateromstandigheden
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm leading-relaxed">
+                          Kan worden gecombineerd met inheemse oeverplanten
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm leading-relaxed">
+                          Prefab waterplantenmatten met biologisch afbreekbare drager
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm leading-relaxed">
+                          Geen verstoring van waterecosysteem tijdens installatie
+                        </p>
+                      </div>
+                      <div className="flex items-start space-x-3">
+                        <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                        <p className="text-secondary-700 text-sm leading-relaxed">
+                          Rijke plantensamenstelling die waterleven ten goede komt
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                 
+                   <div className="flex justify-center">
+                     <img 
+                       src="https://i.imgur.com/Vsyg4rr.png" 
+                       alt="Waterplanten matten voordelen" 
+                       className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
+                     />
+                   </div>
+                 </div>
               </div>
             )}
 
