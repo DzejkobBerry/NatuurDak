@@ -591,6 +591,76 @@ const GroeneLandbedekkingServicePage = () => {
                   Vaste plantenmatten
                 </h2>
                 
+                <div className="text-center mb-12">
+                  <div className="bg-gradient-to-r from-green-50 via-blue-50 to-green-50 rounded-2xl p-8 shadow-lg border border-green-100/50 backdrop-blur-sm">
+                    <div className="flex items-center justify-center mb-6">
+                      <div className="flex space-x-2">
+                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse" style={{animationDelay: '0.2s'}}></div>
+                        <div className="w-3 h-3 bg-green-600 rounded-full animate-pulse" style={{animationDelay: '0.4s'}}></div>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-4">
+                      <div className="flex items-center justify-center space-x-3 mb-4">
+                        <div className="w-8 h-8 bg-gradient-to-r from-green-500 to-blue-500 rounded-full flex items-center justify-center">
+                          <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                            <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                          </svg>
+                        </div>
+                        <h3 className="text-xl font-bold text-green-800">Vaste plantenmatten</h3>
+                      </div>
+                      
+                      <p className="text-lg text-secondary-700 leading-relaxed max-w-4xl mx-auto font-medium">
+                        Vaste plantenmatten bieden een duurzame en kleurrijke oplossing voor groene buitenruimtes. 
+                        Deze matten bevatten een zorgvuldig samengestelde mix van meerjarige planten die jaar na jaar terugkeren. 
+                        Met hun langdurige bloeiperiodes zorgen ze voor continue kleur en leven in uw tuin of project. 
+                        De combinatie van bloeiende planten en siergrassen creëert een natuurlijke en onderhoudsvriendelijke beplanting 
+                        die perfect geschikt is voor verschillende toepassingen, van particuliere tuinen tot openbare ruimtes.
+                      </p>
+                      
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center">
+                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            <span className="font-semibold text-blue-700">Meerjarig</span>
+                          </div>
+                          <p className="text-sm text-secondary-600">Planten keren elk seizoen terug</p>
+                        </div>
+                        
+                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center">
+                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            <span className="font-semibold text-green-700">Kleurrijk</span>
+                          </div>
+                          <p className="text-sm text-secondary-600">Langdurige bloeiperiodes</p>
+                        </div>
+                        
+                        <div className="bg-white/70 rounded-lg p-4 border border-green-200/50 hover:shadow-md transition-all duration-300">
+                          <div className="flex items-center space-x-2 mb-2">
+                            <div className="w-6 h-6 bg-gradient-to-r from-green-400 to-green-600 rounded-full flex items-center justify-center">
+                              <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <path fillRule="evenodd" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" clipRule="evenodd" />
+                              </svg>
+                            </div>
+                            <span className="font-semibold text-green-700">Veelzijdig</span>
+                          </div>
+                          <p className="text-sm text-secondary-600">Geschikt voor diverse toepassingen</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* First section with image and benefits list */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                   <div className="flex justify-center">
                     <img 
@@ -600,32 +670,91 @@ const GroeneLandbedekkingServicePage = () => {
                     />
                   </div>
                   
-                  <div className="bg-purple-50 rounded-lg p-6">
-                    <h3 className="text-xl font-display font-bold text-purple-700 mb-4">
-                      VOORDELEN VAN VASTE PLANTEN
+                  <div className="bg-green-50 rounded-lg p-6 h-fit">
+                    <h3 className="text-xl font-display font-bold text-green-700 mb-4">
+                      Voordelen
                     </h3>
-                    <div className="space-y-3">
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
-                        <p className="text-secondary-700 text-sm">
-                          Meerjarige planten die elk seizoen terugkeren
-                        </p>
+                    <div className="space-y-4">
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Meerjarige planten die elk seizoen terugkeren voor langdurige waarde
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Uitgebreide bloeiperiodes zorgen voor continue kleur door het seizoen
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Zorgvuldig samengestelde mix van bloeiende planten en siergrassen
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Onderhoudsarm en geschikt voor verschillende grondsoorten
+                          </p>
+                        </div>
+                        <div className="flex items-start space-x-3">
+                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                          <p className="text-secondary-700 text-sm leading-relaxed">
+                            Aantrekkelijk voor bestuivers en ondersteunt lokale biodiversiteit
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
-                        <p className="text-secondary-700 text-sm">
-                          Langdurige bloeiperiodes voor continue kleur
-                        </p>
-                      </div>
-                      <div className="flex items-start space-x-3">
-                        <div className="flex-shrink-0 w-2 h-2 bg-purple-500 rounded-full mt-2"></div>
-                        <p className="text-secondary-700 text-sm">
-                          Mix van bloeiende planten en siergrassen
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                   </div>
+                 </div>
+                 
+                 {/* Second section with reversed layout */}
+                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                   <div className="bg-green-50 rounded-lg p-6 h-fit">
+                     <h3 className="text-xl font-display font-bold text-green-700 mb-4">Voordelen</h3>
+                     <div className="space-y-4">
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Seizoensgebonden kleurveranderingen voor een dynamisch uiterlijk
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Kan worden aangepast aan specifieke locatie-eisen en klimaat
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Prefab plantenmatten voor directe resultaten na aanleg
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Geschikt voor tuinen, openbare ruimtes en commerciële projecten
+                         </p>
+                       </div>
+                       <div className="flex items-start space-x-3">
+                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
+                         <p className="text-secondary-700 text-sm leading-relaxed">
+                           Hoge soortenrijkdom die bijdraagt aan een gezond ecosysteem
+                         </p>
+                       </div>
+                     </div>
+                   </div>
+                   
+                   <div className="flex justify-center">
+                     <img 
+                       src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                       alt="Vaste plantenmatten voordelen" 
+                       className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
+                     />
+                   </div>
+                 </div>
               </div>
             )}
           </div>
