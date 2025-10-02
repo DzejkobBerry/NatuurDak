@@ -157,8 +157,8 @@ const GroeneLandbedekkingServicePage = () => {
                    </div>
                  </div>
                  
-                 {/* Second section with reversed layout */}
-                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                 {/* Second section with benefits only */}
+                 <div className="grid grid-cols-1 gap-8">
                    <div className="bg-green-50 rounded-lg p-6 h-fit mt-24">
                      <h3 className="text-xl font-display font-bold text-green-700 mb-4">Voordelen</h3>
                      <div className="flex items-start space-x-3">
@@ -266,9 +266,9 @@ const GroeneLandbedekkingServicePage = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                   <div className="flex justify-center">
                     <img 
-                      src="https://i.imgur.com/7JOPXlY.png" 
-                      alt="Weide matten miniatura" 
-                      className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
+                      src="https://i.imgur.com/Vsyg4rr.png" 
+                      alt="Weide matten voordelen" 
+                      className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
                     />
                   </div>
                   
@@ -350,14 +350,6 @@ const GroeneLandbedekkingServicePage = () => {
                        </p>
                      </div>
                    </div>
-                 
-                   <div className="flex justify-center">
-                      <img 
-                        src="https://i.imgur.com/mDuZwT8.png" 
-                        alt="Weide voordelen voor milieu" 
-                        className="w-full max-w-xs h-auto object-contain rounded-lg shadow-lg"
-                      />
-                    </div>
                  </div>
                 </div>
               )}
