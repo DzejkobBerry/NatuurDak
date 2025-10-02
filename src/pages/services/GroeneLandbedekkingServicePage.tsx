@@ -703,31 +703,13 @@ const GroeneLandbedekkingServicePage = () => {
                        <div className="flex items-start space-x-3">
                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                          <p className="text-secondary-700 text-sm leading-relaxed">
-                           Seizoensgebonden kleurveranderingen voor een dynamisch uiterlijk
+                           Laag onderhoud
                          </p>
                        </div>
                        <div className="flex items-start space-x-3">
                          <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
                          <p className="text-secondary-700 text-sm leading-relaxed">
-                           Kan worden aangepast aan specifieke locatie-eisen en klimaat
-                         </p>
-                       </div>
-                       <div className="flex items-start space-x-3">
-                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                         <p className="text-secondary-700 text-sm leading-relaxed">
-                           Prefab plantenmatten voor directe resultaten na aanleg
-                         </p>
-                       </div>
-                       <div className="flex items-start space-x-3">
-                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                         <p className="text-secondary-700 text-sm leading-relaxed">
-                           Geschikt voor tuinen, openbare ruimtes en commerciële projecten
-                         </p>
-                       </div>
-                       <div className="flex items-start space-x-3">
-                         <div className="flex-shrink-0 w-2 h-2 bg-green-500 rounded-full mt-2"></div>
-                         <p className="text-secondary-700 text-sm leading-relaxed">
-                           Hoge soortenrijkdom die bijdraagt aan een gezond ecosysteem
+                           Bemoeilijkt onkruidgroei
                          </p>
                        </div>
                      </div>
@@ -735,7 +717,7 @@ const GroeneLandbedekkingServicePage = () => {
                    
                    <div className="flex justify-center">
                      <img 
-                       src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" 
+                       src="https://i.imgur.com/rz7X4Ax.png" 
                        alt="Vaste plantenmatten voordelen" 
                        className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
                      />
