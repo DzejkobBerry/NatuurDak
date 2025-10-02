@@ -399,7 +399,7 @@ const GroeneLandbedekkingServicePage = () => {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
                   <div className="flex justify-center">
                     <img 
-                      src="https://i.imgur.com/mDuZwT8.png" 
+                      src="https://i.imgur.com/o1n74lf.png" 
                       alt="Waterplanten matten voordelen" 
                       className="w-full max-w-xs h-auto object-cover rounded-lg shadow-lg"
                     />
