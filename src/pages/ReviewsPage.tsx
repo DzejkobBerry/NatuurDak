@@ -6,84 +6,84 @@ const ReviewsPage = () => {
   const [activeCategory, setActiveCategory] = useState('Alle');
   const reviews = [{
     id: 1,
-    name: 'Anna Kowalska',
+    name: 'Emma van der Berg',
     role: 'Appartement Eigenaar',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
     rating: 5,
     category: 'Platte Daken',
     date: '12.06.2023',
-    title: 'Geweldige transformatie van mijn dak!',
-    content: 'We hebben ons dak getransformeerd in een prachtige tuin met Natuur Dak kunstgras. De installatie was vlekkeloos en twee jaar later ziet het er nog steeds uit als nieuw ondanks constant gebruik en blootstelling aan weersomstandigheden. Het team was professioneel, punctueel en zeer behulpzaam tijdens het hele proces. Ik waardeer vooral hun aandacht voor detail en bereidheid om al mijn vragen te beantwoorden. Ik beveel Natuur Dak aan iedereen die zijn dak wil transformeren in een prachtige, groene ruimte!'
+    title: 'Prachtig Sedumtak voor ons appartement',
+    content: 'We hebben gekozen voor een Sedumtak van NatuurDak en zijn er ontzettend blij mee! Het ziet er niet alleen prachtig uit, maar helpt ook bij de isolatie van ons appartement. Het team was zeer professioneel en legde alles duidelijk uit over het onderhoud. Na een jaar ziet het dak er nog steeds fantastisch uit en de vetplanten bloeien prachtig. Ik kan NatuurDak van harte aanbevelen voor iedereen die een duurzame en mooie dakoplossing zoekt.'
   }, {
     id: 2,
-    name: 'Michiel Nowak',
+    name: 'Pieter de Vries',
     role: 'Restaurant Eigenaar',
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
     rating: 5,
     category: 'Terrassen',
     date: '03.08.2023',
-    title: 'Uitstekende investering voor ons restaurant',
-    content: 'Het ontspanningsgebied op het dak van ons restaurant ziet er fantastisch uit dankzij de kunstgras installatie. Onze klanten houden van de sfeer en het onderhoud is veel gemakkelijker dan echt gras in zo\'n drukke ruimte. Het Natuur Dak team begreep onze behoeften voor intensief gebruik van de ruimte en stelde de perfecte oplossing voor. De installatie werd snel en efficiënt uitgevoerd, waardoor de verstoring van de restaurantactiviteiten tot een minimum werd beperkt. Ik beveel hun diensten zeker aan elke ondernemer die zijn ruimte aantrekkelijker wil maken.'
+    title: 'Groene Gevel transformeerde ons restaurant',
+    content: 'De Groene Gevel die NatuurDak voor ons restaurant heeft geïnstalleerd is werkelijk spectaculair. Onze gasten zijn er dol op en het creëert een unieke, natuurlijke sfeer. Het systeem werkt perfect en het onderhoud is minimaal. De installatie werd vakkundig uitgevoerd zonder verstoring van onze dagelijkse activiteiten. Het heeft onze buitenruimte getransformeerd tot een groene oase in de stad. Absoluut een aanrader voor horecaondernemers!'
   }, {
     id: 3,
-    name: 'Eva Wiśniewska',
+    name: 'Sophie Janssen',
     role: 'Vastgoed Beheerder',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3',
     rating: 4,
     category: 'Platte Daken',
     date: '22.05.2023',
-    title: 'Geweldige oplossing voor ons appartementencomplex',
-    content: 'We hebben kunstgras geïnstalleerd op het dak van ons appartementencomplex en bewoners zijn er dol op. Het Natuur Dak team was professioneel, efficiënt en leverde precies wat ze beloofden. De enige reden waarom ik geen volle 5 sterren geef is een kleine vertraging in het schema, hoewel dit gedeeltelijk te wijten was aan weersomstandigheden. Verder is de kwaliteit van de installatie uitstekend en is de ruimte een favoriete ontmoetingsplaats voor bewoners geworden. Ik waardeer ook de gedetailleerde onderhoudsinstructies die we na voltooiing van het werk ontvingen.'
+    title: 'Uitstekende Groene Landbedekking',
+    content: 'Voor ons appartementencomplex hebben we gekozen voor Groene Landbedekking van NatuurDak. Het resultaat is prachtig en de bewoners zijn er zeer tevreden over. Het team was professioneel en hield zich aan alle afspraken. De enige reden dat ik geen 5 sterren geef is een kleine vertraging door het weer, maar dat was buiten hun controle. De kwaliteit van het werk en de materialen is uitstekend. Het heeft de waarde van ons complex zeker verhoogd.'
   }, {
     id: 4,
-    name: 'Jan Kowalczyk',
+    name: 'Lars Bakker',
     role: 'Landschapsarchitect',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
     rating: 5,
     category: 'Daktuinen',
     date: '10.07.2023',
-    title: 'Hoogste kwaliteit en professionaliteit',
-    content: 'Als landschapsarchitect heb ik met veel kunstgrasbedrijven gewerkt, maar Natuur Dak onderscheidt zich door productkwaliteit en aandacht voor detail, vooral bij dakinstallaties. Ik beveel ze aan al mijn klanten die onderhoudsvrije oplossingen zoeken. Hun technische kennis van drainage en dakconstructies is indrukwekkend, wat cruciaal is voor het langdurige succes van dergelijke installaties. Samenwerking met hen bij verschillende projecten was altijd soepel en professioneel. Ik waardeer ook hun innovatieve benadering van aangepaste ontwerpuitdagingen.'
+    title: 'Professionele Dakframe Systemen',
+    content: 'Als landschapsarchitect werk ik regelmatig samen met NatuurDak voor hun Dakframe Systemen. Hun technische kennis en kwaliteit van materialen is ongeëvenaard. Ze begrijpen perfect hoe belangrijk een goede drainage en structuur is voor langdurig succes. Hun systemen zijn innovatief en duurzaam. Ik beveel ze aan al mijn klanten die op zoek zijn naar betrouwbare dakoplossingen. De samenwerking is altijd professioneel en resultaatgericht.'
   }, {
     id: 5,
-    name: 'Katarzyna Lewandowska',
+    name: 'Marloes Hendriks',
     role: 'Huiseigenaar',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=761&ixlib=rb-4.0.3',
     rating: 5,
     category: 'Hellende Daken',
     date: '05.09.2023',
-    title: 'Innovatieve oplossing voor ons hellende dak',
-    content: 'We waren sceptisch over de mogelijkheid om kunstgras op ons hellende dak te installeren, maar Natuur Dak bewees dat het mogelijk is! Hun gespecialiseerde bevestigingssysteem werkt perfect en het visuele effect overtrof onze verwachtingen. Nu hebben we een unieke ontspanningsruimte met prachtig uitzicht. Het proces van consultatie tot installatie was zeer professioneel. Ik waardeer vooral het geduld van het team bij het uitleggen van technische aspecten van de installatie en het beantwoorden van onze vele vragen. Ik beveel Natuur Dak zeker aan iedereen die innovatieve oplossingen zoekt voor ongewone ruimtes.'
+    title: 'Droge Weiden op ons hellende dak',
+    content: 'We waren aanvankelijk sceptisch over Droge Weiden op ons hellende dak, maar NatuurDak heeft ons volledig overtuigd! Het systeem is perfect aangepast aan de helling en ziet er het hele jaar door prachtig uit. De installatie was complex maar werd vakkundig uitgevoerd. Nu hebben we een unieke, onderhoudsarme tuin op ons dak die veel complimenten krijgt. Het team nam alle tijd om ons alles uit te leggen en was zeer geduldig met onze vragen.'
   }, {
     id: 6,
-    name: 'Piotr Zieliński',
+    name: 'Daan Vermeulen',
     role: 'Hotel Directeur',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3',
     rating: 4,
     category: 'Terrassen',
     date: '18.07.2023',
-    title: 'Uitstekende oplossing voor ons hotel terras',
-    content: 'We besloten kunstgras te installeren op het terras van ons hotel en zijn zeer tevreden met de resultaten. Gasten houden van de nieuwe ruimte en wij waarderen het gemakkelijke onderhoud. Het Natuur Dak team was professioneel en flexibel, aangepast aan ons strakke schema. Het enige kleine minpunt was een lichte budgetoverschrijding, maar gezien de kwaliteit van uitvoering en materialen beschouwen we dit als een goede investering. We waarderen vooral de duurzaamheid van het gras, dat intensief gebruik door onze gasten uitstekend doorstaat.'
+    title: 'Service & Onderhoud van topkwaliteit',
+    content: 'NatuurDak verzorgt de Service & Onderhoud van onze groene daken en gevels. Hun service is uitstekend en ze zijn altijd bereikbaar voor vragen. Het onderhoudsteam is kundig en werkt efficiënt. Ze houden onze groene installaties in perfecte staat, wat belangrijk is voor de uitstraling van ons hotel. Het enige minpuntje is dat de planning soms wat strak is, maar de kwaliteit van het werk compenseert dit ruimschoots. Een betrouwbare partner voor de lange termijn.'
   }, {
     id: 7,
-    name: 'Magdalena Dąbrowska',
+    name: 'Anouk Visser',
     role: 'Appartement Eigenaar',
     image: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3',
     rating: 5,
     category: 'Maatwerk Projecten',
     date: '30.06.2023',
-    title: 'Creatieve oplossing voor mijn ongewone dak',
-    content: 'Mijn dak heeft een ongewone vorm en indeling, wat een uitdaging was voor veel bedrijven. Natuur Dak nam niet alleen deze uitdaging aan, maar creëerde een absoluut spectaculaire ruimte die elke centimeter beschikbare ruimte benut. Hun creatieve benadering en technische know-how zijn echt indrukwekkend. Het ontwerpproces was zeer interactief, ik voelde me betrokken bij elke stap. De installatie verliep soepel en het eindresultaat overtrof mijn verwachtingen. Ik laat met plezier mijn nieuwe dak zien aan vrienden en familie, die onder de indruk zijn van de transformatie.'
+    title: 'Uniek Maatwerk Project voor ons dak',
+    content: 'Ons dak had een zeer ongewone vorm en veel bedrijven zagen er geen mogelijkheden in. NatuurDak daarentegen zag het als een uitdaging en creëerde een op maat gemaakt ontwerp dat perfect bij onze wensen paste. Hun creativiteit en technische expertise zijn indrukwekkend. Het hele proces was transparant en we werden bij elke stap betrokken. Het eindresultaat overtrof onze verwachtingen en we krijgen veel bewonderende blikken van buren en voorbijgangers.'
   }, {
     id: 8,
-    name: 'Tomasz Adamski',
+    name: 'Thijs Koster',
     role: 'Bedrijfseigenaar',
     image: 'https://images.unsplash.com/photo-1566492031773-4f4e44671857?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
     rating: 5,
     category: 'Platte Daken',
     date: '15.08.2023',
-    title: 'Professionele realisatie voor ons kantoorgebouw',
-    content: 'We besloten kunstgras te installeren op het dak van ons kantoorgebouw om een ontspanningsruimte voor werknemers te creëren. Natuur Dak deed fantastisch werk, van ontwerp tot realisatie. Hun team was uiterst professioneel, hield zich aan alle deadlines en budget. De kwaliteit van gebruikte materialen is uitstekend en het drainagesysteem werkt perfect zelfs tijdens intense regenval. Onze werknemers houden van de nieuwe ruimte, wat een positieve invloed heeft gehad op de bedrijfssfeer en productiviteit. Ik beveel Natuur Dak zeker aan voor commerciële projecten.'
+    title: 'Consultatie & Evaluatie van hoge kwaliteit',
+    content: 'Voor ons kantoorgebouw hebben we gebruik gemaakt van de Consultatie & Evaluatie service van NatuurDak. Hun expertise heeft ons geholpen de beste keuze te maken voor onze groene dakoplossing. Ze namen alle tijd om onze situatie te analyseren en kwamen met een perfect passend advies. De implementatie verliep vlekkeloos en binnen budget. Onze werknemers genieten nu van een prachtige groene omgeving die bijdraagt aan hun welzijn en productiviteit.'
   }];
   const filteredReviews = activeCategory === 'Alle' ? reviews : reviews.filter(review => review.category === activeCategory);
   const renderStars = (rating: number) => {
