@@ -16,10 +16,20 @@ const Footer = () => {
               kunstgras van de hoogste kwaliteit.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-primary-400 transition-colors">
+              <a 
+                href="https://www.facebook.com/profile.php?id=61581267250155&mibextid=wwXIfr&rdid=yo8e4VLByiXmqNeM&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1CD3inRD13%2F%3Fmibextid%3DwwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-primary-400 transition-colors"
+              >
                 <FacebookIcon size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-primary-400 transition-colors">
+              <a 
+                href="https://www.instagram.com/netherlandsnatuurdak/?igsh=MWZhazlwbmU5aHRveA%3D%3D&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-gray-300 hover:text-primary-400 transition-colors"
+              >
                 <InstagramIcon size={20} />
               </a>
               <a href="#" className="text-gray-300 hover:text-primary-400 transition-colors">
