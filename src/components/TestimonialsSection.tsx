@@ -10,32 +10,39 @@ interface Testimonial {
 }
 const testimonials: Testimonial[] = [{
   id: 1,
-  name: 'Anna Kowalska',
+  name: 'Emma van der Berg',
   role: 'Appartement Eigenaar',
   image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
   rating: 5,
-  content: 'We hebben ons dak getransformeerd in een geweldige tuin met Natuur Dak kunstgras. De installatie was vlekkeloos en twee jaar later ziet het er nog steeds uit als nieuw ondanks constant gebruik en blootstelling aan de elementen.'
+  content: 'Ons sedumtak van NatuurDak heeft onze verwachtingen overtroffen! Het groene dak zorgt niet alleen voor betere isolatie, maar ook voor een prachtige uitstraling. De installatie verliep vlekkeloos en het onderhoud is minimaal.'
 }, {
   id: 2,
-  name: 'Michał Nowak',
+  name: 'Pieter de Vries',
   role: 'Restaurant Eigenaar',
   image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
   rating: 5,
-  content: 'Het dakterras van ons restaurant ziet er fantastisch uit dankzij de kunstgras installatie. Onze klanten houden van de sfeer en het onderhoud is veel eenvoudiger dan echt gras in zo\'n drukke omgeving.'
+  content: 'De groene gevel van ons restaurant is een echte blikvanger geworden! Klanten complimenteren ons constant over de natuurlijke uitstraling. NatuurDak heeft ons geholpen een unieke sfeer te creëren die perfect past bij onze filosofie.'
 }, {
   id: 3,
-  name: 'Ewa Wiśniewska',
+  name: 'Sophie Janssen',
   role: 'Vastgoedbeheerder',
   image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1976&ixlib=rb-4.0.3',
-  rating: 4,
-  content: 'We hebben kunstgras geïnstalleerd op het dak van ons appartementencomplex en de bewoners zijn er dol op. Het Natuur Dak team was professioneel, efficiënt en leverde precies wat ze beloofden.'
+  rating: 5,
+  content: 'Het maatwerk project voor onze kantoorcomplex was uitstekend uitgevoerd. NatuurDak heeft een perfect dakframe systeem geïnstalleerd met droge weiden die prachtig gedijen. De bewoners zijn zeer tevreden met het resultaat.'
 }, {
   id: 4,
-  name: 'Jan Kowalczyk',
+  name: 'Lars Bakker',
   role: 'Landschapsarchitect',
   image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
   rating: 5,
-  content: 'Als landschapsarchitect heb ik met veel kunstgras bedrijven gewerkt, maar Natuur Dak onderscheidt zich door productkwaliteit en aandacht voor detail, vooral bij dakinstallaties. Ik beveel ze aan bij al mijn klanten die onderhoudsvrije oplossingen zoeken.'
+  content: 'Als professional in de sector kan ik NatuurDak van harte aanbevelen. Hun expertise in groene landbedekking en consultatie services is ongeëvenaard. Ze begrijpen de technische aspecten en leveren altijd duurzame oplossingen.'
+}, {
+  id: 5,
+  name: 'Marloes Hendriks',
+  role: 'Hotelmanager',
+  image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=1974&ixlib=rb-4.0.3',
+  rating: 4,
+  content: 'Het groene dak op ons hotel heeft niet alleen de energiekosten verlaagd, maar ook onze gasten verrast. De service en onderhoud van NatuurDak zorgt ervoor dat alles er het hele jaar door perfect uitziet.'
 }];
 const TestimonialsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
