@@ -53,7 +53,7 @@ const Navbar = () => {
     name: 'Contact',
     path: '/contact'
   }];
-  return <nav className={`fixed w-full z-50 transition-all duration-300 bg-white shadow-md ${isScrolled ? 'py-2' : 'py-4'}`}>
+  return <nav className={`fixed w-full z-[100] transition-all duration-300 bg-white shadow-md ${isScrolled ? 'py-2' : 'py-4'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
