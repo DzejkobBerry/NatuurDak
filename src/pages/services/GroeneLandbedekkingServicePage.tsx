@@ -857,6 +857,46 @@ const GroeneLandbedekkingServicePage = () => {
                              </div>
                    </div>
                  </div>
+                 
+                 {/* Additional Vinca minor white section with swapped layout */}
+                 <div className="mt-16">
+                   <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">Vinca minor white</h3>
+                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                     <div className="flex justify-center items-center">
+                       <img src="https://i.imgur.com/Ke372Ty.png" alt="Vinca minor white" className="w-full max-w-md h-80 object-contain mt-16" />
+                     </div>
+                     <div className="space-y-6">
+                       <div className="bg-green-50 rounded-lg p-6">
+                         <div className="overflow-x-auto">
+                           <table className="w-full">
+                             <tbody>
+                               <tr className="bg-green-100">
+                                 <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Handelsnaam</td>
+                                 <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">Maagdenpalm</td>
+                               </tr>
+                               <tr>
+                                 <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Kleur / Bloei</td>
+                                 <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">Paars, mei/juni</td>
+                               </tr>
+                               <tr className="bg-green-100">
+                                 <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Winterhardheid</td>
+                                 <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">B</td>
+                               </tr>
+                               <tr>
+                                 <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Standplaats</td>
+                                 <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">Zon – schaduw</td>
+                               </tr>
+                               <tr className="bg-green-100">
+                                 <td className="px-4 py-3 font-semibold text-green-800">Hoogte</td>
+                                 <td className="px-4 py-3 text-right font-medium text-green-800">10–15 cm</td>
+                               </tr>
+                             </tbody>
+                           </table>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
               </div>
             )}
           </div>
