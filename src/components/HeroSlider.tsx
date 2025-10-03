@@ -76,11 +76,11 @@ const HeroVideo: React.FC = () => {
       {slides.map((slide, index) => (
         <div 
           key={slide.id} 
-          className={`absolute inset-0 w-full h-full transition-opacity duration-500 ease-in-out z-20 ${
-            index === currentSlide ? 'opacity-100' : 'opacity-0'
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === currentSlide ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
           }`}
         >
-          <div className="relative z-20 flex items-center justify-center h-full">
+          <div className="relative z-50 flex items-center justify-center h-full">
             <div className="text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
               <h1 className={`text-4xl md:text-5xl lg:text-6xl font-display font-bold text-white mb-4 transition-all duration-700 ${
                 index === currentSlide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
@@ -94,7 +94,7 @@ const HeroVideo: React.FC = () => {
               </p>
               <Link 
                 to={slide.ctaLink} 
-                className={`inline-block px-8 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-700 delay-200 ${
+                className={`relative z-50 inline-block px-8 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-700 delay-200 pointer-events-auto ${
                   index === currentSlide ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
                 }`}
               >
@@ -108,21 +108,21 @@ const HeroVideo: React.FC = () => {
       {/* Navigation Arrows */}
       <button 
         onClick={prevSlide} 
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full p-2 transition-all duration-200" 
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-60 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full p-2 transition-all duration-200" 
         aria-label="Previous slide"
       >
         <ChevronLeftIcon className="h-6 w-6 text-white" />
       </button>
       <button 
         onClick={nextSlide} 
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full p-2 transition-all duration-200" 
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-60 bg-white/20 backdrop-blur-sm hover:bg-white/30 rounded-full p-2 transition-all duration-200" 
         aria-label="Next slide"
       >
         <ChevronRightIcon className="h-6 w-6 text-white" />
       </button>
       
       {/* Indicators */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex space-x-2">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-60 flex space-x-2">
         {slides.map((_, index) => (
           <button 
             key={index} 
