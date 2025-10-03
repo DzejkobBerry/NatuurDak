@@ -205,13 +205,24 @@ const ContactPage = () => {
                   </div>
                 </div>
                 
-                {/* Enhanced Map Placeholder */}
-                <div className="bg-gradient-to-br from-secondary-100 to-secondary-200 rounded-2xl h-80 flex items-center justify-center shadow-xl transform hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-secondary-500/10"></div>
-                  <div className="relative text-center">
-                    <MapPinIcon className="h-16 w-16 text-primary-600 mx-auto mb-4" />
-                    <p className="text-secondary-700 font-semibold text-lg">Interactieve Kaart</p>
-                    <p className="text-secondary-600">Wordt binnenkort toegevoegd</p>
+                {/* Google Maps */}
+                <div className="rounded-2xl h-80 shadow-xl transform hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
+                  <iframe
+                    src="https://www.google.com/maps?q=Larixstraat+29,+4537+VJ+Terneuzen,+Netherlands&output=embed"
+                    width="100%"
+                    height="100%"
+                    style={{ border: 0 }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="NatuurDak Locatie - Larixstraat 29, Terneuzen"
+                    className="rounded-2xl"
+                  ></iframe>
+                  <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
+                    <div className="flex items-center space-x-2">
+                      <MapPinIcon className="h-4 w-4 text-primary-600" />
+                      <span className="text-sm font-medium text-gray-800">Larixstraat 29, Terneuzen</span>
+                    </div>
                   </div>
                 </div>
               </div>
