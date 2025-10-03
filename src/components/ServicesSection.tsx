@@ -61,7 +61,7 @@ const ServicesSection = () => {
           {services.map((service, index) => <ServiceCard key={index} title={service.title} description={service.description} image={service.image} link={service.link} />)}
         </div>
         <div className="text-center mt-12">
-          <Link to="/services" className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
+          <Link to="/services/rooftop" className="inline-flex items-center px-6 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
             Bekijk Alle Diensten
           </Link>
         </div>
