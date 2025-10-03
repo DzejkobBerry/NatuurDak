@@ -938,10 +938,13 @@ const GroeneLandbedekkingServicePage = () => {
                    </div>
                  </div>
                  
-                 {/* Fifth Hedera Helix section - duplicate */}
+                 {/* Fifth Waldstenia Ternata section */}
                  <div className="mt-16">
-                   <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">Hedera Helix</h3>
+                   <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">Waldstenia Ternata</h3>
                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                     <div className="flex justify-center items-center">
+                       <img src="https://i.imgur.com/FPHaQJG.png" alt="Waldstenia Ternata" className="w-full max-w-md h-80 object-contain mt-16 rounded-lg" />
+                     </div>
                      <div className="space-y-6">
                        <div className="bg-green-50 rounded-lg p-6">
                          <div className="overflow-x-auto">
@@ -949,11 +952,11 @@ const GroeneLandbedekkingServicePage = () => {
                              <tbody>
                                <tr className="bg-green-100">
                                  <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Handelsnaam</td>
-                                 <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">Klimop</td>
+                                 <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">Geelgroen</td>
                                </tr>
                                <tr>
                                  <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Kleur / Bloei</td>
-                                 <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">Wit/groen, september</td>
+                                 <td className="px-4 py-3 text-right font-medium text-green-800 border-b border-green-200">Geel, mei/juni</td>
                                </tr>
                                <tr className="bg-green-100">
                                  <td className="px-4 py-3 font-semibold text-green-800 border-b border-green-200">Winterhardheid</td>
@@ -965,15 +968,12 @@ const GroeneLandbedekkingServicePage = () => {
                                </tr>
                                <tr className="bg-green-100">
                                  <td className="px-4 py-3 font-semibold text-green-800">Hoogte</td>
-                                 <td className="px-4 py-3 text-right font-medium text-green-800">10–20 cm</td>
+                                 <td className="px-4 py-3 text-right font-medium text-green-800">10–15 cm</td>
                                </tr>
                              </tbody>
                            </table>
                          </div>
                        </div>
-                     </div>
-                     <div className="flex justify-center items-center">
-                       <img src="https://i.imgur.com/XxQMvx3.png" alt="Hedera Helix" className="w-full max-w-md h-80 object-contain mt-16" />
                      </div>
                    </div>
                  </div>
