@@ -858,12 +858,12 @@ const GroeneLandbedekkingServicePage = () => {
                    </div>
                  </div>
                  
-                 {/* Additional Vinca minor white section with swapped layout */}
+                 {/* Additional Vinca minor Atropurea section with swapped layout */}
                  <div className="mt-16">
-                   <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">Vinca minor white</h3>
+                   <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">Vinca minor Atropurea</h3>
                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                      <div className="flex justify-center items-center">
-                       <img src="https://i.imgur.com/Ke372Ty.png" alt="Vinca minor white" className="w-full max-w-md h-80 object-contain mt-16" />
+                       <img src="https://i.imgur.com/vELd1Qw.png" alt="Vinca minor Atropurea" className="w-full max-w-md h-80 object-contain mt-16" />
                      </div>
                      <div className="space-y-6">
                        <div className="bg-green-50 rounded-lg p-6">
