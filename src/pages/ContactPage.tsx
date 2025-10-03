@@ -97,9 +97,25 @@ const ContactPage = () => {
                         className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-300 bg-gray-50 focus:bg-white appearance-none cursor-pointer"
                       >
                         <option value="">Selecteer een dienst</option>
-                        <option value="rooftop">Dak Kunstgras</option>
-                        <option value="ground">Grond Kunstgras</option>
-                        <option value="custom">Maatwerk Project</option>
+                        
+                        <optgroup label="🌿 Hoofddiensten">
+                          <option value="groene-daken">Groene Daken</option>
+                          <option value="groene-gevels">Groene Gevels</option>
+                          <option value="groene-landbedekking">Groene Landbedekking</option>
+                        </optgroup>
+                        
+                        <optgroup label="🏠 Specialistische Dakdiensten">
+                          <option value="sedumtak">Sedumtak</option>
+                          <option value="droge-weiden">Droge Weiden op Daken</option>
+                          <option value="dakframe">Dakframe Systemen</option>
+                        </optgroup>
+                        
+                        <optgroup label="🔧 Aanvullende Diensten">
+                          <option value="maatwerk">Maatwerk Projecten</option>
+                          <option value="consultatie">Consultatie & Evaluatie</option>
+                          <option value="onderhoud">Service & Onderhoud</option>
+                        </optgroup>
+                        
                         <option value="other">Anders/Niet Zeker</option>
                       </select>
                       <div className="absolute right-3 top-1/2 transform -translate-y-1/2 pointer-events-none">
