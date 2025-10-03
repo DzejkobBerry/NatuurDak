@@ -13,8 +13,10 @@ import CustomServicePage from './pages/services/CustomServicePage';
 import GroeneGevelsServicePage from './pages/services/GroeneGevelsServicePage';
 import GroeneLandbedekkingServicePage from './pages/services/GroeneLandbedekkingServicePage';
 import Layout from './components/Layout';
+import ScrollToTop from './components/ScrollToTop';
 export function App() {
   return <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<HomePage />} />
