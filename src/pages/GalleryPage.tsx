@@ -10,28 +10,28 @@ const GalleryPage = () => {
     title: 'Modern Dakterras',
     category: 'Platte Daken',
     location: 'Amsterdam',
-    image: '/images/gallery/placeholder-1.svg',
+    image: '/images/gallery/Modern-Dakterras.png',
     description: 'Transformatie van een plat dak van een appartementencomplex in een groene recreatieruimte met kunstgras en elementen van kleine architectuur.'
   }, {
     id: 2,
     title: 'Groen Hellend Dak',
     category: 'Hellende Daken',
     location: 'Rotterdam',
-    image: '/images/gallery/placeholder-2.svg',
+    image: '/images/gallery/Groen-Hellend-Dak.png',
     description: 'Innovatieve installatie van kunstgras op een hellend dak van een eengezinswoning, met gebruik van een speciaal bevestigingssysteem.'
   }, {
     id: 3,
     title: 'Terras met Uitzicht',
     category: 'Terrassen',
     location: 'Den Haag',
-    image: '/images/gallery/placeholder-3.svg',
+    image: '/images/gallery/Terras-met-Uitzicht.png',
     description: 'Elegant terras met kunstgras, ontworpen voor een restaurant met uitzicht op zee.'
   }, {
     id: 4,
     title: 'Uitgebreide Daktuin',
     category: 'Daktuinen',
     location: 'Utrecht',
-    image: '/images/gallery/placeholder-4.svg',
+    image: '/images/gallery/Uitgebreide-Daktuin.png',
     description: 'Uitgebreid daktuinproject op een kantoorgebouw, dat kunstgras combineert met groenelementen en recreatiezones.'
   }, {
     id: 5,
