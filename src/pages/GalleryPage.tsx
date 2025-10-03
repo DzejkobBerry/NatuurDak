@@ -63,11 +63,11 @@ const GalleryPage = () => {
     description: 'Installatie van kunstgras op het hellende dak van een eengezinswoning, waardoor een unieke recreatieruimte ontstaat.'
   }, {
     id: 9,
-    title: 'Tuin op Kantoorgebouw Dak',
-    category: 'Daktuinen',
+    title: 'Boerderij Hellende Daken',
+    category: 'Hellende Daken',
     location: 'Breda',
-    image: '/images/gallery/placeholder-4.svg',
-    description: 'Uitgebreid tuinproject op het dak van een kantoorgebouw, met kunstgras, ontspanningszones en groenelementen.'
+    image: '/images/gallery/Boerderij-Hellende-Daken.png',
+    description: 'Professionele kunstgras installatie op hellende daken van een boerderij, voor een esthetische uitstraling en functionaliteit.'
   }];
   const filteredProjects = activeCategory === 'Alle' ? projects : projects.filter(project => project.category === activeCategory);
   return <div className="w-full">
