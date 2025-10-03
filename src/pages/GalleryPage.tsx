@@ -35,31 +35,31 @@ const GalleryPage = () => {
     description: 'Uitgebreid daktuinproject op een kantoorgebouw, dat kunstgras combineert met groenelementen en recreatiezones.'
   }, {
     id: 5,
-    title: 'Mini Voetbalveld op Dak',
+    title: 'Kunstgras Fietsenstalling Overkapping',
     category: 'Maatwerk Projecten',
     location: 'Eindhoven',
-    image: '/images/gallery/placeholder-5.svg',
-    description: 'Maatwerk project van een mini voetbalveld op het dak van een school, met gebruik van gespecialiseerd kunstgras.'
+    image: '/images/gallery/Kunstgras-Fietsenstalling-Overkapping.png',
+    description: 'Kunstgras installatie op fietsenstalling overkapping voor een groene en onderhoudsvriendelijke oplossing.'
   }, {
     id: 6,
     title: 'Groen Hotel Terras',
     category: 'Terrassen',
     location: 'Maastricht',
-    image: '/images/gallery/placeholder-6.svg',
+    image: '/images/gallery/Groen-Hotel-Terras.png',
     description: 'Elegant hotelterras met kunstgras, ontworpen als ontspanningsruimte voor gasten.'
   }, {
     id: 7,
-    title: 'Dak Appartementencomplex',
+    title: 'Bedrijfsdak met Zonnepanelen',
     category: 'Platte Daken',
     location: 'Groningen',
-    image: '/images/gallery/placeholder-1.svg',
-    description: 'Transformatie van het dak van een appartementencomplex in een gemeenschappelijke ruimte voor bewoners, met kunstgras en recreatiezones.'
+    image: '/images/gallery/Bedrijfsdak-met-Zonnepanelen.png',
+    description: 'Innovatieve combinatie van kunstgras en zonnepanelen op een bedrijfsdak, waardoor duurzame energie wordt opgewekt in een groene omgeving.'
   }, {
     id: 8,
     title: 'Privé Hellend Dak',
     category: 'Hellende Daken',
     location: 'Tilburg',
-    image: '/images/gallery/placeholder-2.svg',
+    image: '/images/gallery/Prive-Hellend-Dak.png',
     description: 'Installatie van kunstgras op het hellende dak van een eengezinswoning, waardoor een unieke recreatieruimte ontstaat.'
   }, {
     id: 9,
