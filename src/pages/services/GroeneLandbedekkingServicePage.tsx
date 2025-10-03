@@ -1058,9 +1058,9 @@ const GroeneLandbedekkingServicePage = () => {
                    </div>
                  </div>
                  
-                 {/* Eighth Nepeta Walker's Low section - duplicate */}
+                 {/* Eighth Geranium Biokovo section - duplicate */}
                  <div className="mt-16">
-                   <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">Nepeta Walker's Low</h3>
+                   <h3 className="text-2xl font-display font-bold text-green-600 text-center mb-8">Geranium Biokovo</h3>
                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                      <div className="space-y-6">
                        <div className="bg-green-50 rounded-lg p-6">
@@ -1093,7 +1093,7 @@ const GroeneLandbedekkingServicePage = () => {
                        </div>
                      </div>
                      <div className="flex justify-center items-center">
-                       <img src="https://i.imgur.com/3AlkqpF.png" alt="Nepeta Walker's Low" className="w-full max-w-md h-80 object-contain mt-16 rounded-lg" />
+                       <img src="https://i.imgur.com/sUiMk90.png" alt="Geranium Biokovo" className="w-full max-w-md h-80 object-contain mt-16 rounded-lg" />
                      </div>
                    </div>
                  </div>
