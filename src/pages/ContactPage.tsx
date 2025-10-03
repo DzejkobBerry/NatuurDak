@@ -154,7 +154,7 @@ const ContactPage = () => {
                           Ons Adres
                         </h3>
                         <p className="text-secondary-600">
-                          Groene Straat 123, Eco Stad, EC 12345
+                          Larixstraat 29, 4537 VJ TERNEUZEN
                         </p>
                       </div>
                     </div>
@@ -196,8 +196,8 @@ const ContactPage = () => {
                           Openingstijden
                         </h3>
                         <div className="space-y-1 text-secondary-600">
-                          <p>Maandag - Vrijdag: 9:00 - 17:00</p>
-                          <p>Zaterdag: 10:00 - 14:00</p>
+                          <p>Maandag - Vrijdag: 07:00 - 16:00</p>
+                          <p>Zaterdag: 10:00 - 16:00</p>
                           <p>Zondag: Gesloten</p>
                         </div>
                       </div>

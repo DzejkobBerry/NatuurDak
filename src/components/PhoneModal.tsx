@@ -83,7 +83,7 @@ const PhoneModal: React.FC = () => {
         {/* Additional info */}
         <div className="mt-6 text-center">
           <p className="text-sm text-secondary-500">
-            Bereikbaar ma-vr 8:00-18:00 | za 9:00-15:00
+            Bereikbaar ma-vr 07:00-16:00 | za 10:00-16:00
           </p>
         </div>
       </div>

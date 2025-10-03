@@ -109,7 +109,7 @@ const AboutPage = () => {
                   <div className="flex items-start">
                     <CheckCircleIcon className="h-6 w-6 text-primary-600 mr-3 mt-0.5 flex-shrink-0" />
                     <p className="text-secondary-700">
-                      Service voor projecten in heel Nederland en Europa
+                      Service voor projecten in heel Nederland en België
                     </p>
                   </div>
                 </div>

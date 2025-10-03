@@ -13,7 +13,7 @@ interface Slide {
 const slides: Slide[] = [{
   id: 1,
   title: 'Netherlands Natuur Dak',
-  subtitle: 'Uw specialist in kunstgras dakterrassen door heel Nederland. Wij transformeren uw dak in een groene oase met hoogwaardige, duurzame kunstgrasoplossingen die het hele jaar door genieten mogelijk maken.',
+  subtitle: 'Uw specialist in kunstgras dakterrassen door heel Nederland en België. Wij transformeren uw dak in een groene oase met hoogwaardige, duurzame kunstgrasoplossingen die het hele jaar door genieten mogelijk maken.',
   ctaText: 'Ontdek Onze Expertise',
   ctaLink: '/services/rooftop'
 }, {

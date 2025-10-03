@@ -99,7 +99,7 @@ const Footer = () => {
               <div className="flex items-start">
                 <MapPinIcon className="h-5 w-5 text-primary-400 mr-3 mt-1 flex-shrink-0" />
                 <span className="text-gray-300">
-                  Groene Straat 123, Eco Stad, EC 12345
+                  Larixstraat 29, 4537 VJ TERNEUZEN
                 </span>
               </div>
               <div className="flex items-center">
