@@ -1,15 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { usePhoneModal } from '../contexts/PhoneModalContext';
-import { PhoneIcon, CopyIcon, XIcon } from 'lucide-react';
+import { PhoneIcon, CopyIcon, XIcon, CheckIcon } from 'lucide-react';
 
 const PhoneModal: React.FC = () => {
   const { isPhoneModalOpen, closePhoneModal } = usePhoneModal();
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
   const phoneNumber = '+31 616 368 386';
 
   const copyToClipboard = async () => {
     try {
       await navigator.clipboard.writeText(phoneNumber);
-      alert('Telefoonnummer succesvol gekopieerd!');
+      setShowSuccessModal(true);
     } catch (err) {
       // Fallback for older browsers
       const textArea = document.createElement('textarea');
@@ -19,13 +20,30 @@ const PhoneModal: React.FC = () => {
       textArea.select();
       try {
         document.execCommand('copy');
-        alert('Telefoonnummer succesvol gekopieerd!');
+        setShowSuccessModal(true);
       } catch (fallbackErr) {
         alert('Kopiëren mislukt. Probeer het handmatig te kopiëren.');
       }
       document.body.removeChild(textArea);
     }
   };
+
+  // Auto-hide success modal after 3 seconds
+  useEffect(() => {
+    if (showSuccessModal) {
+      const timer = setTimeout(() => {
+        setShowSuccessModal(false);
+      }, 3000);
+      return () => clearTimeout(timer);
+    }
+  }, [showSuccessModal]);
+
+  // Reset success modal when main modal closes
+  useEffect(() => {
+    if (!isPhoneModalOpen) {
+      setShowSuccessModal(false);
+    }
+  }, [isPhoneModalOpen]);
 
   if (!isPhoneModalOpen) return null;
 
@@ -87,6 +105,37 @@ const PhoneModal: React.FC = () => {
           </p>
         </div>
       </div>
+
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-60 animate-fade-in">
+          <div className="bg-white rounded-2xl p-6 max-w-sm w-full mx-4 shadow-2xl transform animate-slide-up border-l-4 border-green-500">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-green-100 rounded-full">
+                  <CheckIcon className="h-6 w-6 text-green-600" />
+                </div>
+              </div>
+              <div className="ml-4">
+                <h3 className="text-lg font-semibold text-gray-900">
+                  Gekopieerd!
+                </h3>
+                <p className="text-sm text-gray-600">
+                  Telefoonnummer succesvol gekopieerd naar klembord
+                </p>
+              </div>
+            </div>
+            <div className="mt-4">
+              <button
+                onClick={() => setShowSuccessModal(false)}
+                className="w-full px-4 py-2 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-all duration-200"
+              >
+                Sluiten
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
