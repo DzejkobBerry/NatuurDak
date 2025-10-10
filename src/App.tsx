@@ -15,7 +15,12 @@ import GroeneLandbedekkingServicePage from './pages/services/GroeneLandbedekking
 import Layout from './components/Layout';
 import ScrollToTop from './components/ScrollToTop';
 export function App() {
-  return <Router>
+  return <Router
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       <ScrollToTop />
       <Layout>
         <Routes>
