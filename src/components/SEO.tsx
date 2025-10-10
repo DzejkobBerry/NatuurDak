@@ -15,7 +15,7 @@ const SEO: React.FC<SEOProps> = ({
   title = "Natuur Dak B.V. - Experts in Dakgras & Groene Daken Nederland",
   description = "Specialist in dakgras, groene daken en kunstgras installaties. Professionele dakbegroening voor platte en hellende daken in heel Nederland. Gratis offerte!",
   keywords = "dakgras, groene daken, kunstgras, dakbegroening, sedumdak, extensief groen dak, Nederland, duurzaam bouwen",
-  ogImage = "https://natuurdak.nl/images/og-image.jpg",
+  ogImage = "https://natuurdak.nl/images/team.jpg",
   ogType = "website",
   canonicalUrl,
   structuredData,
