@@ -21,6 +21,8 @@ const Footer = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-primary-400 transition-colors"
+                title="Volg Natuur Dak op Facebook"
+                aria-label="Facebook pagina van Natuur Dak"
               >
                 <FacebookIcon size={20} />
               </a>
@@ -29,13 +31,25 @@ const Footer = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-primary-400 transition-colors"
+                title="Volg Natuur Dak op Instagram"
+                aria-label="Instagram pagina van Natuur Dak"
               >
                 <InstagramIcon size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-primary-400 transition-colors">
+              <a 
+                href="#" 
+                className="text-gray-300 hover:text-primary-400 transition-colors"
+                title="Volg Natuur Dak op Twitter"
+                aria-label="Twitter pagina van Natuur Dak"
+              >
                 <TwitterIcon size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-primary-400 transition-colors">
+              <a 
+                href="#" 
+                className="text-gray-300 hover:text-primary-400 transition-colors"
+                title="Volg Natuur Dak op LinkedIn"
+                aria-label="LinkedIn pagina van Natuur Dak"
+              >
                 <LinkedinIcon size={20} />
               </a>
             </div>
@@ -45,27 +59,47 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Snelle Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Ga naar Home pagina"
+                >
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/about" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Ga naar Over Ons pagina"
+                >
                   Over Ons
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/services" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Ga naar Diensten pagina"
+                >
                   Diensten
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/gallery" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Ga naar Galerij pagina"
+                >
                   Galerij
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/contact" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Ga naar Contact pagina"
+                >
                   Contact
                 </Link>
               </li>
@@ -76,27 +110,47 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Onze Diensten</h3>
             <ul className="space-y-2">
               <li>
-                <Link to="/services/rooftop" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/services/rooftop" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Lees meer over Groene Daken"
+                >
                   Groene Daken
                 </Link>
               </li>
               <li>
-                <Link to="/services/groene-gevels" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/services/groene-gevels" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Lees meer over Groene Gevels"
+                >
                   Groene Gevels
                 </Link>
               </li>
               <li>
-                <Link to="/services/groene-landbedekking" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/services/groene-landbedekking" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Lees meer over Groene Landbedekking"
+                >
                   Groene Landbedekking
                 </Link>
               </li>
               <li>
-                <Link to="/how-it-works" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/how-it-works" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Lees meer over Hoe Het Werkt"
+                >
                   Hoe Het Werkt
                 </Link>
               </li>
               <li>
-                <Link to="/reviews" className="text-gray-300 hover:text-primary-400 transition-colors">
+                <Link 
+                  to="/reviews" 
+                  className="text-gray-300 hover:text-primary-400 transition-colors"
+                  title="Lees meer over Klantbeoordelingen"
+                >
                   Klantbeoordelingen
                 </Link>
               </li>

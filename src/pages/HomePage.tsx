@@ -5,6 +5,7 @@ import ServicesSection from '../components/ServicesSection';
 import ProcessSection from '../components/ProcessSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import CtaSection from '../components/CtaSection';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { ArrowRightIcon, ShieldCheckIcon, LeafIcon, DropletIcon } from 'lucide-react';
 const HomePage = () => {
@@ -21,10 +22,54 @@ const HomePage = () => {
     title: 'Geavanceerde Drainage',
     description: 'Gespecialiseerde drainagesystemen zorgen voor juiste waterafvoer en beschermen de dakconstructie tegen vocht en schade.'
   }];
+
+  // SEO: Structured data for homepage
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Natuur Dak B.V. - Experts in Dakgras & Groene Daken Nederland",
+    "description": "Specialist in dakgras, groene daken en kunstgras installaties. Professionele dakbegroening voor platte en hellende daken in heel Nederland.",
+    "url": "https://natuurdak.nl/",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Natuur Dak B.V.",
+      "url": "https://natuurdak.nl",
+      "description": "Specialist in dakgras, groene daken en kunstgras installaties in Nederland"
+    },
+    "breadcrumb": {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://natuurdak.nl/"
+        }
+      ]
+    }
+  };
+
   return <div className="w-full">
-      <HeroVideo />
-      <AboutSection />
-      <section className="py-20 bg-secondary-50">
+      {/* SEO: Meta tags and structured data */}
+      <SEO 
+        title="Natuur Dak B.V. - Experts in Dakgras & Groene Daken Nederland"
+        description="Specialist in dakgras, groene daken en kunstgras installaties. Professionele dakbegroening voor platte en hellende daken in heel Nederland. Gratis offerte!"
+        keywords="dakgras, groene daken, kunstgras, dakbegroening, sedumdak, extensief groen dak, Nederland, duurzaam bouwen, platte daken, hellende daken"
+        canonicalUrl="https://natuurdak.nl/"
+        structuredData={structuredData}
+      />
+      
+      {/* SEO: Semantic HTML5 sections */}
+      <section aria-label="Hero sectie">
+        <HeroVideo />
+      </section>
+      
+      <section aria-label="Over ons sectie">
+        <AboutSection />
+      </section>
+      
+      {/* SEO: Features section with proper heading hierarchy */}
+      <section className="py-20 bg-secondary-50" aria-label="Waarom kiezen voor Natuur Dak">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
@@ -39,26 +84,42 @@ const HomePage = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => <div key={index} className="bg-white p-8 rounded-lg shadow-lg text-center">
+            {features.map((feature, index) => <article key={index} className="bg-white p-8 rounded-lg shadow-lg text-center">
                 <div className="flex justify-center mb-4">{feature.icon}</div>
                 <h3 className="text-xl font-bold text-secondary-900 mb-3">
                   {feature.title}
                 </h3>
                 <p className="text-secondary-600 mb-4">{feature.description}</p>
-              </div>)}
+              </article>)}
           </div>
           <div className="text-center mt-12">
-            <Link to="/services/rooftop" className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors">
+            <Link 
+              to="/services/rooftop" 
+              className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors"
+              title="Meer informatie over dakgras oplossingen"
+            >
               Lees meer over onze dakoplossingen{' '}
-              <ArrowRightIcon className="ml-2 h-4 w-4" />
+              <ArrowRightIcon className="ml-2 h-4 w-4" aria-hidden="true" />
             </Link>
           </div>
         </div>
       </section>
-      <ServicesSection />
-      <ProcessSection />
-      <TestimonialsSection />
-      <CtaSection />
+      
+      <section aria-label="Onze diensten">
+        <ServicesSection />
+      </section>
+      
+      <section aria-label="Ons werkproces">
+        <ProcessSection />
+      </section>
+      
+      <section aria-label="Klantbeoordelingen">
+        <TestimonialsSection />
+      </section>
+      
+      <section aria-label="Call to action">
+        <CtaSection />
+      </section>
     </div>;
 };
 export default HomePage;

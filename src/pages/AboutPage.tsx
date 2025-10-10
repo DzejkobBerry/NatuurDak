@@ -1,5 +1,6 @@
 import React from 'react';
 import CtaSection from '../components/CtaSection';
+import SEO from '../components/SEO';
 import { CheckCircleIcon, UserIcon, TrophyIcon, HeartIcon } from 'lucide-react';
 import { Link } from 'react-router-dom';
 const AboutPage = () => {
@@ -38,9 +39,56 @@ const AboutPage = () => {
     description: 'Onze passie voor groene ruimtes drijft ons om innovatieve en duurzame oplossingen te creëren.'
   }];
   return <div className="w-full">
-      <div className="relative bg-primary-600 py-32">
+      {/* SEO Component for About Page */}
+      <SEO 
+        title="Over Natuur Dak B.V. - Experts in Dakgras en Groene Daken"
+        description="Leer meer over Natuur Dak B.V., marktleider in dakgras installaties sinds 2013. Ontmoet ons team van experts en ontdek onze missie voor groene dakoplossingen."
+        keywords="over natuur dak, dakgras experts, groene daken specialist, team, geschiedenis, missie"
+        canonicalUrl="https://natuurdak.nl/about"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "Over Natuur Dak B.V.",
+          "description": "Informatie over Natuur Dak B.V., specialist in dakgras en groene dakoplossingen",
+          "url": "https://natuurdak.nl/about",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Natuur Dak B.V.",
+            "foundingDate": "2013",
+            "numberOfEmployees": "25",
+            "description": "Specialist in dakgras installaties en groene dakoplossingen"
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://natuurdak.nl"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Over Ons",
+                "item": "https://natuurdak.nl/about"
+              }
+            ]
+          }
+        }}
+      />
+      
+      {/* Hero Section */}
+      <header className="relative bg-primary-600 py-32" aria-label="Over Natuur Dak Hero">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="O firmie GreenTurf" className="w-full h-full object-cover" />
+          <img 
+            src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+            alt="Groene dakinstallatie met kunstgras - Natuur Dak expertise" 
+            className="w-full h-full object-cover"
+            width="2070"
+            height="1380"
+            loading="eager"
+          />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
@@ -51,11 +99,13 @@ const AboutPage = () => {
             Leer meer over ons bedrijf, missie en toewijding aan kwaliteit
           </p>
         </div>
-      </div>
-      <div className="py-16 bg-white">
+      </header>
+      
+      {/* Main Content */}
+      <main className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Our Story Section */}
-          <div className="mb-20">
+          <section className="mb-20" aria-label="Onze Geschiedenis">
             <div className="text-center mb-10">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
                 Onze Geschiedenis
@@ -67,7 +117,14 @@ const AboutPage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="relative">
                 <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img src="/images/team.jpg" alt="Geschiedenis Natuur Dak" className="w-full h-auto object-cover" />
+                  <img 
+                    src="/images/team.jpg" 
+                    alt="Natuur Dak team aan het werk - geschiedenis van het bedrijf sinds 2013" 
+                    className="w-full h-auto object-cover"
+                    width="600"
+                    height="400"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="absolute -bottom-6 -right-6 bg-primary-600 text-white p-6 rounded-lg shadow-lg hidden md:block">
                   <p className="text-3xl font-bold">2013</p>
@@ -115,9 +172,10 @@ const AboutPage = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
+          
           {/* Our Mission Section */}
-          <div className="mb-20 bg-secondary-50 py-16 px-6 rounded-xl">
+          <section className="mb-20 bg-secondary-50 py-16 px-6 rounded-xl" aria-label="Onze Missie">
             <div className="text-center mb-10">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
                 Onze Missie
@@ -130,17 +188,18 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {values.map((value, index) => <div key={index} className="bg-white p-8 rounded-lg shadow-md text-center">
+              {values.map((value, index) => <article key={index} className="bg-white p-8 rounded-lg shadow-md text-center">
                   <div className="flex justify-center mb-4">{value.icon}</div>
                   <h3 className="text-xl font-bold text-secondary-900 mb-3">
                     {value.title}
                   </h3>
                   <p className="text-secondary-600">{value.description}</p>
-                </div>)}
+                </article>)}
             </div>
-          </div>
+          </section>
+          
           {/* Our Team Section */}
-          <div className="mb-16">
+          <section className="mb-16" aria-label="Ons Team">
             <div className="text-center mb-10">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
                 Ons Team
@@ -153,9 +212,16 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {teamMembers.map((member, index) => <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+              {teamMembers.map((member, index) => <article key={index} className="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
                   <div className="h-64 overflow-hidden">
-                    <img src={member.image} alt={member.name} className="w-full h-full object-cover" />
+                    <img 
+                      src={member.image} 
+                      alt={`${member.name} - ${member.position} bij Natuur Dak B.V.`} 
+                      className="w-full h-full object-cover"
+                      width="300"
+                      height="256"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-secondary-900 mb-1">
@@ -166,23 +232,28 @@ const AboutPage = () => {
                     </p>
                     <p className="text-secondary-600">{member.bio}</p>
                   </div>
-                </div>)}
+                </article>)}
             </div>
-          </div>
-          {/* CTA */}
-          <div className="text-center">
+          </section>
+          
+          {/* CTA Section */}
+          <section className="text-center" aria-label="Contact Call to Action">
             <h3 className="text-2xl font-bold text-secondary-900 mb-4">
               Klaar voor Samenwerking?
             </h3>
             <p className="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto">
               Ons team van experts staat klaar om u te helpen bij het transformeren van uw dakruimte in een groene oase.
             </p>
-            <Link to="/contact" className="inline-flex items-center px-8 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center px-8 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg"
+              title="Neem contact op met Natuur Dak voor een gratis offerte"
+            >
               Neem Contact Met Ons Op
             </Link>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
       <CtaSection />
     </div>;
 };

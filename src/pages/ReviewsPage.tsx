@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CtaSection from '../components/CtaSection';
+import SEO from '../components/SEO';
 import { StarIcon, ThumbsUpIcon, CheckCircleIcon } from 'lucide-react';
 const ReviewsPage = () => {
   const categories = ['Alle', 'Platte Daken', 'Hellende Daken', 'Terrassen', 'Daktuinen', 'Maatwerk Projecten'];
@@ -103,9 +104,60 @@ const ReviewsPage = () => {
     icon: <StarIcon className="h-8 w-8 text-yellow-400" fill="currentColor" />
   }];
   return <div className="w-full">
-      <div className="relative bg-primary-600 py-32">
+      {/* SEO Component for Reviews Page */}
+      <SEO 
+        title="Klantbeoordelingen - Natuur Dak B.V. | Reviews & Testimonials"
+        description="Lees wat onze tevreden klanten zeggen over onze dakgras en groene daken installaties. 500+ tevreden klanten, 4.9/5 sterren gemiddelde beoordeling."
+        keywords="klantbeoordelingen, reviews, testimonials, dakgras ervaringen, groene daken reviews, klanttevredenheid"
+        canonicalUrl="https://natuurdak.nl/reviews"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Klantbeoordelingen Natuur Dak",
+          "description": "Beoordelingen en testimonials van tevreden klanten",
+          "url": "https://natuurdak.nl/reviews",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Natuur Dak B.V.",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "500",
+              "bestRating": "5",
+              "worstRating": "1"
+            }
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://natuurdak.nl/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Beoordelingen",
+                "item": "https://natuurdak.nl/reviews"
+              }
+            ]
+          }
+        }}
+      />
+      
+      {/* Hero Section */}
+      <header className="relative bg-primary-600 py-32" aria-label="Beoordelingen Hero">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Klantbeoordelingen Natuur Dak" className="w-full h-full object-cover" />
+          <img 
+            src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+            alt="Klantbeoordelingen Natuur Dak - tevreden klanten groene daken" 
+            className="w-full h-full object-cover"
+            width="1200"
+            height="800"
+            loading="eager"
+          />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
@@ -116,35 +168,51 @@ const ReviewsPage = () => {
             Zie wat tevreden klanten over ons zeggen
           </p>
         </div>
-      </div>
-      <div className="py-16 bg-white">
+      </header>
+      
+      {/* Main Content */}
+      <main className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Stats Section */}
-          <div className="mb-16">
+          <section className="mb-16" aria-label="Statistieken">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {stats.map((stat, index) => <div key={index} className="bg-white p-8 rounded-lg shadow-lg text-center">
+              {stats.map((stat, index) => <article key={index} className="bg-white p-8 rounded-lg shadow-lg text-center">
                   <div className="flex justify-center mb-4">{stat.icon}</div>
                   <p className="text-4xl font-bold text-secondary-900 mb-2">
                     {stat.value}
                   </p>
                   <p className="text-secondary-600">{stat.label}</p>
-                </div>)}
+                </article>)}
             </div>
-          </div>
+          </section>
+          
           {/* Category Filters */}
-          <div className="mb-12 overflow-x-auto">
+          <section className="mb-12 overflow-x-auto" aria-label="Beoordeling Categorieën">
             <div className="flex flex-wrap justify-center gap-3 min-w-max mx-auto">
-              {categories.map(category => <button key={category} onClick={() => setActiveCategory(category)} className={`px-6 py-2 rounded-full transition-colors duration-300 ${activeCategory === category ? 'bg-primary-600 text-white' : 'bg-secondary-100 text-secondary-700 hover:bg-secondary-200'}`}>
+              {categories.map(category => <button 
+                key={category} 
+                onClick={() => setActiveCategory(category)} 
+                className={`px-6 py-2 rounded-full transition-colors duration-300 ${activeCategory === category ? 'bg-primary-600 text-white' : 'bg-secondary-100 text-secondary-700 hover:bg-secondary-200'}`}
+                aria-pressed={activeCategory === category}
+                title={`Filter beoordelingen voor ${category}`}
+              >
                   {category}
                 </button>)}
             </div>
-          </div>
+          </section>
           {/* Reviews Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {filteredReviews.map(review => <div key={review.id} className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
+          <section className="grid grid-cols-1 lg:grid-cols-2 gap-8" aria-label="Klantbeoordelingen">
+            {filteredReviews.map(review => <article key={review.id} className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-100">
                 <div className="p-6">
                   <div className="flex items-center mb-4">
-                    <img src={review.image} alt={review.name} className="h-16 w-16 rounded-full object-cover mr-4" />
+                    <img 
+                      src={review.image} 
+                      alt={`Profielfoto van ${review.name}, ${review.role}`} 
+                      className="h-16 w-16 rounded-full object-cover mr-4"
+                      width="64"
+                      height="64"
+                      loading="lazy"
+                    />
                     <div>
                       <h3 className="font-bold text-lg text-secondary-900">
                         {review.name}
@@ -152,7 +220,7 @@ const ReviewsPage = () => {
                       <p className="text-secondary-600 text-sm">
                         {review.role}
                       </p>
-                      <div className="flex mt-1">
+                      <div className="flex mt-1" aria-label={`Beoordeling: ${review.rating} van 5 sterren`}>
                         {renderStars(review.rating)}
                       </div>
                     </div>
@@ -174,10 +242,11 @@ const ReviewsPage = () => {
                     <p className="text-secondary-700">{review.content}</p>
                   </div>
                 </div>
-              </div>)}
-          </div>
+              </article>)}
+          </section>
+          
           {/* No Reviews Message */}
-          {filteredReviews.length === 0 && <div className="text-center py-12">
+          {filteredReviews.length === 0 && <section className="text-center py-12" aria-label="Geen Resultaten">
               <h3 className="text-xl font-bold text-secondary-900 mb-2">
                 Geen beoordelingen in deze categorie
               </h3>
@@ -185,9 +254,10 @@ const ReviewsPage = () => {
                 Selecteer een andere categorie of kom later terug wanneer we
                 meer beoordelingen hebben toegevoegd.
               </p>
-            </div>}
+            </section>}
+            
           {/* CTA */}
-          <div className="text-center mt-16">
+          <section className="text-center mt-16" aria-label="Call to Action">
             <h3 className="text-2xl font-bold text-secondary-900 mb-4">
               Word Onderdeel van Onze Tevreden Klanten
             </h3>
@@ -195,12 +265,16 @@ const ReviewsPage = () => {
               Neem vandaag nog contact met ons op om uw project te bespreken en
               word onderdeel van honderden tevreden Natuur Dak klanten.
             </p>
-            <a href="/contact" className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
+            <a 
+              href="/contact" 
+              className="inline-flex items-center px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg"
+              title="Neem contact op voor een gratis offerte"
+            >
               Begin Uw Transformatie
             </a>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
       <CtaSection />
     </div>;
 };

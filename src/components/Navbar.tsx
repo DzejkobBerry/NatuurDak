@@ -57,7 +57,11 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center">
           <div className="flex-shrink-0">
-            <Link to="/" className="flex items-center group">
+            <Link 
+              to="/" 
+              className="flex items-center group"
+              title="Natuur Dak B.V. - Ga naar homepage"
+            >
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-700 rounded-lg flex items-center justify-center shadow-md group-hover:shadow-lg transition-all duration-300">
                   <span className="text-white font-bold text-sm">🌱</span>
@@ -71,7 +75,12 @@ const Navbar = () => {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-6">
-              {navLinks.map(link => !link.subLinks ? <Link key={link.name} to={link.path} className={`font-medium transition-colors duration-200 hover:text-primary-600 ${location.pathname === link.path ? 'text-primary-600' : 'text-secondary-700'}`}>
+              {navLinks.map(link => !link.subLinks ? <Link 
+                    key={link.name} 
+                    to={link.path} 
+                    className={`font-medium transition-colors duration-200 hover:text-primary-600 ${location.pathname === link.path ? 'text-primary-600' : 'text-secondary-700'}`}
+                    title={`Ga naar ${link.name} pagina`}
+                  >
                     {link.name}
                   </Link> : <div key={link.name} className="relative">
                     <button className={`font-medium flex items-center transition-colors duration-200 hover:text-primary-600 ${location.pathname.includes(link.path) ? 'text-primary-600' : 'text-secondary-700'}`} onClick={() => setServicesOpen(!servicesOpen)}>
@@ -79,7 +88,12 @@ const Navbar = () => {
                       <ChevronDownIcon className="ml-1 h-4 w-4" />
                     </button>
                     {servicesOpen && <div className="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10">
-                        {link.subLinks.map(subLink => <Link key={subLink.name} to={subLink.path} className="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-600">
+                        {link.subLinks.map(subLink => <Link 
+                            key={subLink.name} 
+                            to={subLink.path} 
+                            className="block px-4 py-2 text-sm text-secondary-700 hover:bg-primary-50 hover:text-primary-600"
+                            title={`Lees meer over ${subLink.name}`}
+                          >
                             {subLink.name}
                           </Link>)}
                       </div>}

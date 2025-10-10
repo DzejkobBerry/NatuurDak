@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SEO from '../components/SEO';
 import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, UserIcon, AtSignIcon, MessageSquareIcon, BriefcaseIcon, CheckCircleIcon, XIcon } from 'lucide-react';
 
 const ContactPage = () => {
@@ -36,7 +37,48 @@ const ContactPage = () => {
 
   return (
     <div className="w-full">
-        <div className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 py-24 relative overflow-hidden">
+      <SEO 
+        title="Contact - Neem Contact Op | Natuur Dak"
+        description="Neem contact op met Natuur Dak voor een gratis consultatie en offerte voor kunstgras op uw dak. Bel, mail of vul ons contactformulier in."
+        keywords="contact, offerte, consultatie, kunstgras dak, Natuur Dak, gratis advies"
+        canonicalUrl="https://natuurdak.nl/contact"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact - Natuur Dak",
+          "description": "Contactpagina voor Natuur Dak - kunstgras specialisten",
+          "url": "https://natuurdak.nl/contact",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Natuur Dak",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+31-6-12345678",
+              "contactType": "customer service",
+              "availableLanguage": "Dutch"
+            }
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://natuurdak.nl"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Contact",
+                "item": "https://natuurdak.nl/contact"
+              }
+            ]
+          }
+        }}
+      />
+      
+      <header className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 py-24 relative overflow-hidden" aria-label="Contact Hero">
           <div className="absolute inset-0 bg-black/10"></div>
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-4xl md:text-5xl font-display font-bold text-white mb-4 animate-fade-in">
@@ -46,13 +88,14 @@ const ContactPage = () => {
               Neem contact op voor een consultatie of offerte
             </p>
           </div>
-        </div>
+        </header>
         
-        <div className="py-16 bg-gray-50">
+        {/* Main Content */}
+        <main className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:items-start">
               {/* Contact Form */}
-              <div className="bg-white rounded-2xl shadow-xl p-6 lg:p-8 transform hover:scale-[1.02] transition-all duration-300 h-fit">
+              <section className="bg-white rounded-2xl shadow-xl p-6 lg:p-8 transform hover:scale-[1.02] transition-all duration-300 h-fit" aria-label="Contactformulier">
                 <h2 className="text-2xl lg:text-3xl font-bold text-secondary-900 mb-6 lg:mb-8 text-center">
                   Stuur Ons een Bericht
                 </h2>
@@ -203,15 +246,15 @@ const ContactPage = () => {
                     </span>
                   </button>
                 </form>
-              </div>
+              </section>
               
               {/* Contact Information */}
-              <div className="space-y-6 lg:space-y-8">
+              <section className="space-y-6 lg:space-y-8" aria-label="Contactinformatie">
                 <h2 className="text-2xl lg:text-3xl font-bold text-secondary-900 text-center lg:text-left">
                   Contactinformatie
                 </h2>
                 
-                <div className="bg-white rounded-2xl shadow-xl p-6 lg:p-8 transform hover:scale-[1.02] transition-all duration-300">
+                <article className="bg-white rounded-2xl shadow-xl p-6 lg:p-8 transform hover:scale-[1.02] transition-all duration-300">
                   <div className="space-y-6">
                     <div className="flex items-start group hover:bg-primary-50 p-4 rounded-xl transition-all duration-300">
                       <div className="bg-primary-100 p-3 rounded-full group-hover:bg-primary-200 transition-colors">
@@ -271,10 +314,9 @@ const ContactPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </article>
                 
-                {/* Google Maps */}
-                <div className="rounded-2xl h-80 shadow-xl transform hover:scale-[1.02] transition-all duration-300 relative overflow-hidden">
+                <section className="rounded-2xl h-80 shadow-xl transform hover:scale-[1.02] transition-all duration-300 relative overflow-hidden" aria-label="Locatie Kaart">
                   <iframe
                     src="https://www.google.com/maps?q=Larixstraat+29,+4537+VJ+Terneuzen,+Netherlands&output=embed"
                     width="100%"
@@ -292,11 +334,11 @@ const ContactPage = () => {
                       <span className="text-sm font-medium text-gray-800">Larixstraat 29, Terneuzen</span>
                     </div>
                   </div>
-                </div>
-              </div>
+                </section>
+              </section>
             </div>
           </div>
-        </div>
+        </main>
 
         {/* Success Modal */}
         {showSuccessModal && (

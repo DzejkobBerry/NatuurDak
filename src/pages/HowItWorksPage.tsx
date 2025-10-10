@@ -1,5 +1,6 @@
 import React from 'react';
 import CtaSection from '../components/CtaSection';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { ClipboardIcon, RulerIcon, Shovel, ThumbsUpIcon, PhoneIcon, MailIcon } from 'lucide-react';
 import { usePhoneModal } from '../contexts/PhoneModalContext';
@@ -50,9 +51,74 @@ const HowItWorksPage = () => {
     answer: 'Kunstgras op het dak vereist minimaal onderhoud. We raden aan om regelmatig bladeren en ander vuil te verwijderen met een bladblazer of hark met zachte tanden en periodiek te spoelen met water. Bij intensief gebruikte gebieden kan incidenteel borstelen nodig zijn om de vezels rechtop te houden.'
   }];
   return <div className="w-full">
-      <div className="relative bg-primary-600 py-32">
+      <SEO 
+        title="Hoe Wij Werken - Ons Installatieproces | Natuur Dak"
+        description="Ontdek ons gestroomlijnde proces van consultatie tot installatie van kunstgras op daken. Van gratis evaluatie tot professionele installatie en nazorg."
+        keywords="installatieproces, kunstgras installatie, dak renovatie, gratis consultatie, professionele installatie, nazorg"
+        canonicalUrl="https://natuurdak.nl/hoe-het-werkt"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": "Hoe Wij Werken - Installatieproces",
+          "description": "Ons gestroomlijnde proces van consultatie tot installatie van kunstgras op daken",
+          "url": "https://natuurdak.nl/hoe-het-werkt",
+          "mainEntity": {
+            "@type": "HowTo",
+            "name": "Kunstgras Installatie op Dak",
+            "description": "Stap-voor-stap proces voor kunstgras installatie op daken",
+            "step": [
+              {
+                "@type": "HowToStep",
+                "name": "Gratis Consultatie en Evaluatie",
+                "text": "Gratis consultatie waarin we uw behoeften, voorkeuren en budget bespreken"
+              },
+              {
+                "@type": "HowToStep", 
+                "name": "Gedetailleerd Ontwerp en Offerte",
+                "text": "Gedetailleerd ontwerp en nauwkeurige offerte op basis van consultatie"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Professionele Installatie", 
+                "text": "Professionele installatie door gespecialiseerd team"
+              },
+              {
+                "@type": "HowToStep",
+                "name": "Oplevering en Nazorg",
+                "text": "Eindcontrole, instructies en garantie op diensten"
+              }
+            ]
+          },
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://natuurdak.nl"
+              },
+              {
+                "@type": "ListItem", 
+                "position": 2,
+                "name": "Hoe Wij Werken",
+                "item": "https://natuurdak.nl/hoe-het-werkt"
+              }
+            ]
+          }
+        }}
+      />
+      
+      <header className="relative bg-primary-600 py-32" aria-label="Hoe Wij Werken Hero">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Kunstgras installatieproces" className="w-full h-full object-cover" />
+          <img 
+            src="https://images.unsplash.com/photo-1588880331179-bc9b93a8cb5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+            alt="Professioneel team bezig met kunstgras installatieproces op dak" 
+            className="w-full h-full object-cover"
+            width="2070"
+            height="1380"
+            loading="eager"
+          />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
@@ -63,11 +129,13 @@ const HowItWorksPage = () => {
             Ons gestroomlijnde proces van consultatie tot installatie
           </p>
         </div>
-      </div>
-      <div className="py-16 bg-white">
+      </header>
+      
+      {/* Main Content */}
+      <main className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Process Overview */}
-          <div className="mb-20">
+          <section className="mb-20" aria-label="Proces Overzicht">
             <div className="text-center mb-12">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
                 Ons Proces
@@ -84,7 +152,7 @@ const HowItWorksPage = () => {
             </div>
             {/* Process Steps */}
             <div className="max-w-5xl mx-auto">
-              {processSteps.map((step, index) => <div key={index} className="mb-16">
+              {processSteps.map((step, index) => <article key={index} className="mb-16">
                   <div className="flex flex-col md:flex-row gap-8">
                     <div className="flex-shrink-0">
                       <div className="bg-primary-100 rounded-full h-32 w-32 flex items-center justify-center relative">
@@ -116,11 +184,12 @@ const HowItWorksPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>)}
+                </article>)}
             </div>
-          </div>
+          </section>
+          
           {/* FAQ Section */}
-          <div className="mb-20 bg-secondary-50 py-16 px-6 rounded-xl">
+          <section className="mb-20 bg-secondary-50 py-16 px-6 rounded-xl" aria-label="Veelgestelde Vragen">
             <div className="text-center mb-12">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
                 FAQ
@@ -134,16 +203,17 @@ const HowItWorksPage = () => {
               </p>
             </div>
             <div className="max-w-4xl mx-auto space-y-6">
-              {faqs.map((faq, index) => <div key={index} className="bg-white p-6 rounded-lg shadow-md">
+              {faqs.map((faq, index) => <article key={index} className="bg-white p-6 rounded-lg shadow-md">
                   <h3 className="text-xl font-bold text-secondary-900 mb-3">
                     {faq.question}
                   </h3>
                   <p className="text-secondary-600">{faq.answer}</p>
-                </div>)}
+                </article>)}
             </div>
-          </div>
+          </section>
+          
           {/* Get Started Section */}
-          <div className="text-center mb-12">
+          <section className="text-center mb-12" aria-label="Call to Action">
             <h2 className="text-3xl font-display font-bold text-secondary-900 mb-6">
               Klaar om het Proces te Starten?
             </h2>
@@ -153,19 +223,24 @@ const HowItWorksPage = () => {
               dak.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link to="/contact" className="px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center">
+              <Link 
+                to="/contact" 
+                className="px-8 py-4 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center"
+                title="Plan een gratis online consultatie"
+              >
                 <MailIcon className="mr-2 h-5 w-5" /> Plan Online Consultatie
               </Link>
               <button 
                 onClick={openPhoneModal}
                 className="px-8 py-4 bg-secondary-700 text-white font-medium rounded-md hover:bg-secondary-800 transition-all duration-300 shadow-md hover:shadow-xl flex items-center justify-center"
+                title="Bel direct voor advies"
               >
                 <PhoneIcon className="mr-2 h-5 w-5" /> Bel Nu
               </button>
             </div>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
       <CtaSection />
     </div>;
 };

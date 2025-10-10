@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://natuurdak.nl/sitemap.xml
+
+# Disallow crawling of admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+
+# Allow crawling of important directories
+Allow: /images/
+Allow: /assets/
+Allow: /css/
+Allow: /js/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1

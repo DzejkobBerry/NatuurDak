@@ -1,5 +1,6 @@
 import React from 'react';
 import CtaSection from '../components/CtaSection';
+import SEO from '../components/SEO';
 import { Link } from 'react-router-dom';
 import { ArrowRightIcon, ShieldIcon, LeafIcon, SunIcon, DropletIcon } from 'lucide-react';
 const ServicesPage = () => {
@@ -37,9 +38,55 @@ const ServicesPage = () => {
     description: 'Installatie van optionele irrigatiesystemen voor potplanten en groene elementen die het kunstgras aanvullen.'
   }];
   return <div className="w-full">
-      <div className="relative bg-primary-600 py-32">
+      {/* SEO Component for Services Page */}
+      <SEO 
+        title="Onze Diensten - Natuur Dak B.V. | Dakgras & Groene Daken Services"
+        description="Ontdek onze complete dienstverlening: groene daken, groene gevels, landbedekking, consultatie en onderhoud. Professionele kunstgras installaties in heel Nederland."
+        keywords="dakgras diensten, groene daken service, groene gevels, landbedekking, dak consultatie, kunstgras onderhoud, Nederland"
+        canonicalUrl="https://natuurdak.nl/services"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": "Natuur Dak Diensten",
+          "description": "Complete dienstverlening voor groene daken, gevels en landbedekking",
+          "url": "https://natuurdak.nl/services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Natuur Dak B.V.",
+            "url": "https://natuurdak.nl"
+          },
+          "serviceType": ["Groene Daken", "Groene Gevels", "Groene Landbedekking", "Consultatie", "Onderhoud"],
+          "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://natuurdak.nl/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Diensten",
+                "item": "https://natuurdak.nl/services"
+              }
+            ]
+          }
+        }}
+      />
+      
+      {/* Hero Section */}
+      <header className="relative bg-primary-600 py-32" aria-label="Diensten Hero">
         <div className="absolute inset-0 z-0 opacity-30">
-          <img src="/images/team.jpg" alt="Usługi GreenTurf" className="w-full h-full object-cover" />
+          <img 
+            src="/images/team.jpg" 
+            alt="Natuur Dak diensten - groene daken en kunstgras installaties" 
+            className="w-full h-full object-cover"
+            width="1200"
+            height="800"
+            loading="eager"
+          />
         </div>
         <div className="absolute inset-0 bg-primary-600 opacity-70 z-10"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-20">
@@ -50,11 +97,13 @@ const ServicesPage = () => {
             Ontdek onze premium kunstgrasinstallatie diensten voor daken en meer
           </p>
         </div>
-      </div>
-      <div className="py-16 bg-white">
+      </header>
+      
+      {/* Main Content */}
+      <main className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Main Services Section */}
-          <div className="mb-20">
+          <section className="mb-20" aria-label="Hoofddiensten">
             <div className="text-center mb-12">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
                 Hoofddiensten
@@ -67,9 +116,16 @@ const ServicesPage = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {mainServices.map((service, index) => <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group">
+              {mainServices.map((service, index) => <article key={index} className="bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 group">
                   <div className="h-64 overflow-hidden">
-                    <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                    <img 
+                      src={service.image} 
+                      alt={`${service.title} - Natuur Dak dienstverlening`} 
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      width="600"
+                      height="400"
+                      loading="lazy"
+                    />
                   </div>
                   <div className="p-6">
                     <h3 className="text-xl font-bold text-secondary-900 mb-3">
@@ -78,16 +134,20 @@ const ServicesPage = () => {
                     <p className="text-secondary-600 mb-4">
                       {service.description}
                     </p>
-                    <Link to={service.link} className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors">
+                    <Link 
+                      to={service.link} 
+                      className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors"
+                      title={`Meer informatie over ${service.title}`}
+                    >
                       Lees meer{' '}
                       <ArrowRightIcon className="ml-2 h-4 w-4" />
                     </Link>
                   </div>
-                </div>)}
+                </article>)}
             </div>
-          </div>
+          </section>
           {/* Additional Services Section */}
-          <div className="mb-20 bg-secondary-50 py-16 px-6 rounded-xl">
+          <section className="mb-20 bg-secondary-50 py-16 px-6 rounded-xl" aria-label="Aanvullende Diensten">
             <div className="text-center mb-12">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
                 Aanvullende Diensten
@@ -100,17 +160,17 @@ const ServicesPage = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {additionalServices.map((service, index) => <div key={index} className="bg-white p-8 rounded-lg shadow-md text-center">
+              {additionalServices.map((service, index) => <article key={index} className="bg-white p-8 rounded-lg shadow-md text-center">
                   <div className="flex justify-center mb-4">{service.icon}</div>
                   <h3 className="text-xl font-bold text-secondary-900 mb-3">
                     {service.title}
                   </h3>
                   <p className="text-secondary-600">{service.description}</p>
-                </div>)}
+                </article>)}
             </div>
-          </div>
+          </section>
           {/* Why Choose Us Section */}
-          <div className="mb-16">
+          <section className="mb-16" aria-label="Waarom Natuur Dak">
             <div className="text-center mb-12">
               <div className="inline-block px-3 py-1 rounded-full bg-primary-100 text-primary-800 font-medium text-sm mb-4">
                 Waarom Wij
@@ -151,25 +211,37 @@ const ServicesPage = () => {
               </div>
               <div className="relative">
                 <div className="rounded-lg overflow-hidden shadow-xl">
-                  <img src="https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Jakość usług GreenTurf" className="w-full h-auto object-cover" />
+                  <img 
+                    src="https://images.unsplash.com/photo-1627434620903-936deb7d9957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                    alt="Natuur Dak kwaliteit dienstverlening - groene daken expertise" 
+                    className="w-full h-auto object-cover"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
                 </div>
               </div>
             </div>
-          </div>
-          {/* CTA */}
-          <div className="text-center">
+          </section>
+          
+          {/* CTA Section */}
+          <section className="text-center" aria-label="Call to Action">
             <h3 className="text-2xl font-bold text-secondary-900 mb-4">
               Klaar voor Transformatie?
             </h3>
             <p className="text-lg text-secondary-600 mb-6 max-w-2xl mx-auto">
               Neem vandaag nog contact met ons op om uw project te bespreken en een gratis offerte te ontvangen.
             </p>
-            <Link to="/contact" className="inline-flex items-center px-8 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg">
+            <Link 
+              to="/contact" 
+              className="inline-flex items-center px-8 py-3 bg-primary-600 text-white font-medium rounded-md hover:bg-primary-700 transition-all duration-300 shadow-md hover:shadow-lg"
+              title="Contact opnemen voor gratis offerte"
+            >
               Ontvang Gratis Offerte
             </Link>
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
       <CtaSection />
     </div>;
 };

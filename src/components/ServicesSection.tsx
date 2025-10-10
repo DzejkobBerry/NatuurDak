@@ -20,7 +20,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <div className="p-6">
         <h3 className="text-xl font-bold text-secondary-900 mb-3">{title}</h3>
         <p className="text-secondary-600 mb-4">{description}</p>
-        <Link to={link} className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors">
+        <Link 
+          to={link} 
+          className="inline-flex items-center text-primary-600 font-medium hover:text-primary-700 transition-colors"
+          title={`Lees meer over ${title}`}
+        >
           Lees meer <ArrowRightIcon className="ml-2 h-4 w-4" />
         </Link>
       </div>
