@@ -24,7 +24,7 @@ const ContactPage = () => {
                 <h2 className="text-2xl lg:text-3xl font-bold text-secondary-900 mb-6 lg:mb-8 text-center">
                   Stuur Ons een Bericht
                 </h2>
-                <form className="space-y-5">
+                <form action="https://formspree.io/f/xanppbdk" method="POST" className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div className="group">
                       <label htmlFor="firstName" className="block text-sm font-semibold text-secondary-700 mb-2">
@@ -35,8 +35,10 @@ const ContactPage = () => {
                         <input 
                           type="text" 
                           id="firstName" 
+                          name="firstName"
                           className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-300 bg-gray-50 focus:bg-white" 
                           placeholder="Uw voornaam"
+                          required
                         />
                       </div>
                     </div>
@@ -49,8 +51,10 @@ const ContactPage = () => {
                         <input 
                           type="text" 
                           id="lastName" 
+                          name="lastName"
                           className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-300 bg-gray-50 focus:bg-white" 
                           placeholder="Uw achternaam"
+                          required
                         />
                       </div>
                     </div>
@@ -65,8 +69,10 @@ const ContactPage = () => {
                       <input 
                         type="email" 
                         id="email" 
+                        name="email"
                         className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-300 bg-gray-50 focus:bg-white" 
                         placeholder="uw.email@voorbeeld.nl"
+                        required
                       />
                     </div>
                   </div>
@@ -80,6 +86,7 @@ const ContactPage = () => {
                       <input 
                         type="tel" 
                         id="phone" 
+                        name="phone"
                         className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-300 bg-gray-50 focus:bg-white" 
                         placeholder="+31 6 12 34 56 78"
                       />
@@ -94,6 +101,7 @@ const ContactPage = () => {
                       <BriefcaseIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-primary-500 group-focus-within:text-primary-600 transition-colors" />
                       <select 
                         id="service" 
+                        name="service"
                         className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-300 bg-gray-50 focus:bg-white appearance-none cursor-pointer"
                       >
                         <option value="">Selecteer een dienst</option>
@@ -134,9 +142,11 @@ const ContactPage = () => {
                       <MessageSquareIcon className="absolute left-3 top-4 h-5 w-5 text-primary-500 group-focus-within:text-primary-600 transition-colors" />
                       <textarea 
                         id="message" 
+                        name="message"
                         rows={4} 
                         className="w-full pl-10 pr-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all duration-300 hover:border-primary-300 bg-gray-50 focus:bg-white resize-none" 
                         placeholder="Vertel ons over uw project..."
+                        required
                       ></textarea>
                     </div>
                   </div>
