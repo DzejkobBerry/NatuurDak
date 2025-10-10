@@ -1,7 +1,39 @@
-import React from 'react';
-import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, UserIcon, AtSignIcon, MessageSquareIcon, BriefcaseIcon } from 'lucide-react';
+import React, { useState } from 'react';
+import { MapPinIcon, PhoneIcon, MailIcon, ClockIcon, UserIcon, AtSignIcon, MessageSquareIcon, BriefcaseIcon, CheckCircleIcon, XIcon } from 'lucide-react';
 
 const ContactPage = () => {
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xanppbdk', {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setShowSuccessModal(true);
+        form.reset();
+      } else {
+        throw new Error('Er is een fout opgetreden bij het verzenden van het bericht.');
+      }
+    } catch (error) {
+      alert('Er is een fout opgetreden bij het verzenden van het bericht. Probeer het opnieuw.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div className="w-full">
         <div className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 py-24 relative overflow-hidden">
@@ -24,7 +56,7 @@ const ContactPage = () => {
                 <h2 className="text-2xl lg:text-3xl font-bold text-secondary-900 mb-6 lg:mb-8 text-center">
                   Stuur Ons een Bericht
                 </h2>
-                <form action="https://formspree.io/f/xanppbdk" method="POST" className="space-y-5">
+                <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <div className="group">
                       <label htmlFor="firstName" className="block text-sm font-semibold text-secondary-700 mb-2">
@@ -153,11 +185,21 @@ const ContactPage = () => {
                   
                   <button 
                     type="submit" 
-                    className="w-full px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 mt-6"
+                    disabled={isSubmitting}
+                    className="w-full px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 disabled:from-gray-400 disabled:to-gray-500 disabled:cursor-not-allowed text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] disabled:hover:scale-100 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300 mt-6"
                   >
                     <span className="flex items-center justify-center">
-                      <MailIcon className="h-5 w-5 mr-2" />
-                      Verstuur Bericht
+                      {isSubmitting ? (
+                        <>
+                          <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                          Bezig met verzenden...
+                        </>
+                      ) : (
+                        <>
+                          <MailIcon className="h-5 w-5 mr-2" />
+                          Verstuur Bericht
+                        </>
+                      )}
                     </span>
                   </button>
                 </form>
@@ -255,6 +297,50 @@ const ContactPage = () => {
             </div>
           </div>
         </div>
+
+        {/* Success Modal */}
+        {showSuccessModal && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 transform animate-fade-in">
+              <div className="p-6 text-center">
+                <div className="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
+                  <CheckCircleIcon className="h-8 w-8 text-green-600" />
+                </div>
+                
+                <h3 className="text-xl font-bold text-gray-900 mb-2">
+                  Bericht Succesvol Verzonden!
+                </h3>
+                
+                <p className="text-gray-600 mb-6 leading-relaxed">
+                  Bedankt voor uw bericht. Wij hebben uw aanvraag ontvangen en zullen zo spoedig mogelijk contact met u opnemen.
+                </p>
+                
+                <div className="bg-green-50 rounded-lg p-4 mb-6">
+                  <p className="text-sm text-green-800">
+                    <strong>Wat gebeurt er nu?</strong><br />
+                    • Wij bekijken uw aanvraag binnen 24 uur<br />
+                    • U ontvangt een persoonlijke reactie<br />
+                    • Bij complexe projecten plannen wij een gesprek in
+                  </p>
+                </div>
+                
+                <button
+                  onClick={() => setShowSuccessModal(false)}
+                  className="w-full px-6 py-3 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transform hover:scale-[1.02] transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-primary-300"
+                >
+                  Sluiten
+                </button>
+              </div>
+              
+              <button
+                onClick={() => setShowSuccessModal(false)}
+                className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <XIcon className="h-6 w-6" />
+              </button>
+            </div>
+          </div>
+        )}
     </div>
     );
 };
